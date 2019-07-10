@@ -1,5 +1,5 @@
 .services{
-    background-color: #060606;
+    background-color: rgb(231, 231, 231);
     padding-top: 120px;
     padding-bottom: 120px;
     text-align: center;
@@ -14,8 +14,32 @@
 }
 
 .services h2{
-    color: #fff;
+    color: #000;
     font-size: 48px;
     margin-bottom: 48px;
     margin-top: 0;
+}
+
+.services >  .row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.services >  .row span{
+    background-color: #fff;
+    width: 112px;
+    height: 112px;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 36px;
+    line-height: 120px;
+}
+
+.services > .row > div > h4{
+    margin-bottom: 8px;
+    font-family: inherit;
+    font-weight:  500;
+    line-height: 1.2;
+    color: inherit;
+    font-size: 24px;
 }
