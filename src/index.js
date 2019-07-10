@@ -4,6 +4,7 @@ import './index.css';
 // import App from './App';
 import Navigation from './Navigation';
 import Header from './Header';
+import Services from './Services';
 import * as serviceWorker from './serviceWorker';
 
 class App extends React.Component{
@@ -11,7 +12,8 @@ class App extends React.Component{
     return (
       <div>
         <Navigation logoTitle="Marie Otaki"/>
-        <Header title="Stylish Portfolio"/>
+        <Header title="Stylish Portfolio" button="Find Out More"/>
+        <Services />
       </div>
     );
   }

@@ -1,0 +1,21 @@
+.services{
+    background-color: #060606;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.services h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(236, 184, 7);
+    margin: 0;
+    padding: 0;
+}
+
+.services h2{
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 48px;
+    margin-top: 0;
+}
