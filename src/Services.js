@@ -9,38 +9,51 @@ class Services extends React.Component{
         <h2>What we offer</h2>
 
         <div className="row">
-          <div>
-            <span>
-              <ion-icon name="phone-portrait"></ion-icon>
-            </span>
-            <h4>Responsive</h4>
-            <p>We create responsive design services.</p>
-          </div>
-          <div>
-            <span>
-              <ion-icon name="cube"></ion-icon>
-            </span>
-            <h4>Redesign</h4>
-            <p>Revise the design better.</p>
-          </div>
-          <div>
-            <span>
-              <ion-icon name="thumbs-up"></ion-icon>
-            </span>
-            <h4>Favorite</h4>
-            <p>Millions of users <ion-icon name="heart"></ion-icon> get started our services.</p>
-          </div>
-          <div>
-            <span>
-              <ion-icon name="help"></ion-icon>
-            </span>
-            <h4>Question</h4>
-            <p>Welcome your feedback.</p>
-          </div>
+          <Icons myIcon={iconObj[0].icon} myTitle={iconObj[0].title} myDiscription={iconObj[0].discription} />
+          <Icons myIcon={iconObj[1].icon} myTitle={iconObj[1].title} myDiscription={iconObj[1].discription} />
+          <Icons myIcon={iconObj[2].icon} myTitle={iconObj[2].title} myDiscription={iconObj[2].discription} />
+          <Icons myIcon={iconObj[3].icon} myTitle={iconObj[3].title} myDiscription={iconObj[3].discription} />
         </div>
       </div>
     );
   }
 }
 
+const iconObj = [
+  {
+    icon: <ion-icon name="phone-portrait"></ion-icon>,
+    title: 'Responsive',
+    discription: 'We create responsive design services.'
+  },
+  {
+    icon: <ion-icon name="cube"></ion-icon>,
+    title: 'Redesign',
+    discription: 'Revise the design better.'
+  },
+  {
+    icon: <ion-icon name="thumbs-up"></ion-icon>,
+    title: 'Favorite',
+    discription: 'Millions of users love get started our services.'
+  },
+  {
+    icon: <ion-icon name="help"></ion-icon>,
+    title: 'Question',
+    discription: 'Welcome your feedback.'
+  }
+];
+
+class Icons extends React.Component{
+  render(){
+      return (
+        <div>
+          <span>
+            {this.props.myIcon}
+          </span>
+          <h4>{this.props.myTitle}</h4>
+          <p>{this.props.myDiscription}</p>
+        </div>
+      );
+  
+    }
+}
 export default Services;
