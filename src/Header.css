@@ -1,12 +1,13 @@
 header{
     margin: 0 auto;
     text-align: center;
-    padding-top: 280px;
+    margin-bottom: 100px;
 }
 header h1{
     margin: 0;
     font-size: 3rem;
     color: #fff;
+    padding-top: 280px;
     /* color:#060606; */
 }
 

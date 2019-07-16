@@ -14,8 +14,8 @@ class App extends React.Component{
       <div>
         <Navigation logoTitle="Marie Otaki"/>
         <Header title="Stylish Portfolio" button="Find Out More"/>
-        <Services />
         <Contents />
+        <Services />
       </div>
     );
   }
