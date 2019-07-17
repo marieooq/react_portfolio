@@ -31,9 +31,9 @@ const iconObj = [
     discription: 'Revise the design better.'
   },
   {
-    icon: <ion-icon name="thumbs-up"></ion-icon>,
-    title: 'Favorite',
-    discription: 'Millions of users love get started our services.'
+    icon: <i class="fab fa-twitter"></i>,
+    title: 'twitter',
+    discription: 'twitter'
   },
   {
     icon: <ion-icon name="help"></ion-icon>,

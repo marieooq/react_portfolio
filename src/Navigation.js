@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
 import './Navigation.css';
+import { Link } from 'react-router-dom'
 
 class Navigation extends React.Component{
   render() {
     const sections = ['Home', 'Work', 'About', 'Contact'];
     const navLinks = sections.map(section => {
       return (
-        <li><a href={'#'+section}>{section}</a></li>
+        <li><Link to={'/'+section}>{section}</Link></li>
       )
     }); 
     return (

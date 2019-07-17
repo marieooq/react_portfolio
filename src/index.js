@@ -1,21 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';  
-// import App from './App';
-import Navigation from './Navigation';
-import Header from './Header';
-import Services from './Services';
+import './index.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faIgloo } from '@fortawesome/free-solid-svg-icons';
 import * as serviceWorker from './serviceWorker';
-import Contents from './Contents';
+import Home from './Home';
+
+
+library.add(faIgloo);
 
 class App extends React.Component{
   render() {
     return (
       <div>
-        <Navigation logoTitle="Marie Otaki"/>
-        <Header title="Stylish Portfolio" button="Find Out More"/>
-        <Contents />
-        <Services />
+        <Home />
       </div>
     );
   }
