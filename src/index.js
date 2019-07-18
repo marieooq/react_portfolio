@@ -5,8 +5,13 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faIgloo } from '@fortawesome/free-solid-svg-icons';
 import * as serviceWorker from './serviceWorker';
 import Navigation from './Navigation';
-import About from './About';
 import Home from './Home';
+import About from './About';
+import Work from './Work';
+import Work1 from './Work1';
+import Work2 from './Work2';
+import Work3 from './Work3';
+import Contact from './Contact';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
@@ -20,6 +25,11 @@ class App extends React.Component{
           <Navigation logoTitle="Marie Otaki"/>
           <Route exact path='/' component={Home}/>
           <Route exact path='/about' component={About}/>
+          <Route exact path='/work' component={Work}/>
+          <Route exact path='/contact' component={Contact}/>
+          <Route exact path='/work1' component={Work1}/>
+          <Route exact path='/work2' component={Work2}/>
+          <Route exact path='/work3' component={Work3}/>
 
         </div>
       </Router>

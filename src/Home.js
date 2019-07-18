@@ -3,8 +3,6 @@ import './index.css';
 import Header from './Header';
 import Services from './Services';
 import Contents from './Contents';
-import About from './About';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 class Home extends React.Component{
