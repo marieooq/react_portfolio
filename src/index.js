@@ -4,7 +4,10 @@ import './index.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faIgloo } from '@fortawesome/free-solid-svg-icons';
 import * as serviceWorker from './serviceWorker';
+import Navigation from './Navigation';
+import About from './About';
 import Home from './Home';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 library.add(faIgloo);
@@ -12,9 +15,14 @@ library.add(faIgloo);
 class App extends React.Component{
   render() {
     return (
-      <div>
-        <Home />
-      </div>
+      <Router>
+        <div>
+          <Navigation logoTitle="Marie Otaki"/>
+          <Route exact path='/' component={Home}/>
+          <Route exact path='/about' component={About}/>
+
+        </div>
+      </Router>
     );
   }
 }
