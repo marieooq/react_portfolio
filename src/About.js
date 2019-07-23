@@ -19,16 +19,17 @@ class About extends React.Component{
     const data = { params: { rss_url: mediumRssFeed } };
     axios.get(rssToJsonApi, data).then(res => {
       console.log(res.data.items);
-      let items = [];
-      items = res.data.items.map(item => {
-        // items.push(item);
-        return item;
+      let contents = [];
+      contents = res.data.items.map(item => {
+        // contents.push(item);
+        return item.content;
       })
 
-      console.log(items);
+      console.log(contents);
+
 
       self.setState({
-        articles: [items[0].content]
+        articles: [contents]
       })
     
       });
