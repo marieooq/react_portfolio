@@ -21,15 +21,36 @@ class About extends React.Component{
       console.log(res.data.items);
       let contents = [];
       contents = res.data.items.map(item => {
-        return item.content;
+        return {
+          title: item.title,
+          thumbnail: item.thumbnail,
+          link: item.link
+        }
+        // return item.content;
       })
 
       console.log(contents);
+      
+      let titleArray = [];
+      titleArray = contents.map(obj => obj.title);
+      console.log(titleArray);
+
+      let thumbnailArray = [];
+      thumbnailArray = contents.map(obj => obj.thumbnail);
+      console.log(thumbnailArray);
+
+      let linkArray = [];
+      linkArray = contents.map(obj => obj.link);
+      console.log(linkArray);
+
 
       
 
       self.setState({
-        articles: [{__html: contents}]
+        // articles: [contents]
+        titles: [titleArray],
+        thumbnails: [thumbnailArray],
+        links: [linkArray]
       })
     
       });
@@ -40,9 +61,11 @@ class About extends React.Component{
     return (
       <div>
         <h2>About</h2>
-        {this.state.articles.map(article => (
-          <div dangerouslySetInnerHTML={article}/>
-        ))}
+        <div>{this.state.titles}</div>
+        <a href={this.state.links}><img src={this.state.thumbnails}></img></a>
+          {/* {this.state.articles.map(article => (
+          <div>{article[0]}</div>
+        ))} */}
       </div>
     );
   }
