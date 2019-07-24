@@ -70,10 +70,16 @@ class About extends React.Component{
     console.log(this.state)
     return (
       <div>
-        <h2>About</h2>
-        <a href={this.state.links}><img src={this.state.thumbnails}></img></a>
-        <div>{this.state.titles}</div>
-        <div>{this.state.dates}</div>
+        <h2>Medium</h2>
+        <div className="card">
+          <a href={this.state.links}>
+            <img className="card-img" src={this.state.thumbnails}></img>
+          </a>
+          <div class="card-content">
+            <div className="blog-title">{this.state.titles}</div>
+            <p className="blog-date">{this.state.dates}</p>
+          </div>
+        </div>
       </div>
     );
   }
