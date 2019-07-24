@@ -21,15 +21,28 @@ class About extends React.Component{
       console.log(res.data.items);
       let contents = [];
       contents = res.data.items.map(item => {
-        // contents.push(item);
         return item.content;
       })
 
       console.log(contents);
 
+      // function createArticles(contents){
+      //   console.log(contents);
+      //   let articles = contents.forEach(data => {
+      //     const div = document.createElement("div");
+      //     console.log(div);
+      //     console.log(data);
+      //     div.innerHTML = data;
+      //     console.log(div);
+      //     return div;
+      //   })
+      //   console.log(articles);
+      //   return articles;
+      // }
 
       self.setState({
         articles: [contents]
+        // articles: [create]
       })
     
       });
