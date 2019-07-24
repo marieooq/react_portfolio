@@ -24,7 +24,8 @@ class About extends React.Component{
         return {
           title: item.title,
           thumbnail: item.thumbnail,
-          link: item.link
+          link: item.link,
+          date: item.pubDate
         }
         // return item.content;
       })
@@ -43,6 +44,14 @@ class About extends React.Component{
       linkArray = contents.map(obj => obj.link);
       console.log(linkArray);
 
+      let dateArray = [];
+      dateArray = contents.map(obj => {
+        const spaceIndex = obj.date.indexOf(' ');
+        const publishDate = obj.date.slice(0, spaceIndex);
+        return publishDate;
+      });
+      console.log(dateArray);
+
 
       
 
@@ -50,7 +59,8 @@ class About extends React.Component{
         // articles: [contents]
         titles: [titleArray],
         thumbnails: [thumbnailArray],
-        links: [linkArray]
+        links: [linkArray],
+        dates: [dateArray]
       })
     
       });
@@ -61,11 +71,9 @@ class About extends React.Component{
     return (
       <div>
         <h2>About</h2>
-        <div>{this.state.titles}</div>
         <a href={this.state.links}><img src={this.state.thumbnails}></img></a>
-          {/* {this.state.articles.map(article => (
-          <div>{article[0]}</div>
-        ))} */}
+        <div>{this.state.titles}</div>
+        <div>{this.state.dates}</div>
       </div>
     );
   }
