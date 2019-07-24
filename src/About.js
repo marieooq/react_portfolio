@@ -26,23 +26,10 @@ class About extends React.Component{
 
       console.log(contents);
 
-      // function createArticles(contents){
-      //   console.log(contents);
-      //   let articles = contents.forEach(data => {
-      //     const div = document.createElement("div");
-      //     console.log(div);
-      //     console.log(data);
-      //     div.innerHTML = data;
-      //     console.log(div);
-      //     return div;
-      //   })
-      //   console.log(articles);
-      //   return articles;
-      // }
+      
 
       self.setState({
-        articles: [contents]
-        // articles: [create]
+        articles: [{__html: contents}]
       })
     
       });
@@ -54,7 +41,7 @@ class About extends React.Component{
       <div>
         <h2>About</h2>
         {this.state.articles.map(article => (
-          <div>{article}</div>
+          <div dangerouslySetInnerHTML={article}/>
         ))}
       </div>
     );
