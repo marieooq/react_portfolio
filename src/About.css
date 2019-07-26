@@ -23,13 +23,20 @@ h2{
 .blog-title {
     font-size: 20px;
     margin-bottom: 20px;
-    /* text-align: center; */
+    font-weight: 800;
     color: #333;
 }
 
 .card-content > p.blog-date{
     display: inline;
     font-size: 16px;
-    text-align: right;
+    /* text-align: right; */
+    float: right;
     /* margin: 0 0 0 auto; */
 }
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }

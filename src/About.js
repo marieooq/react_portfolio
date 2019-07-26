@@ -75,7 +75,7 @@ class About extends React.Component{
           <a href={this.state.links}>
             <img className="card-img" src={this.state.thumbnails}></img>
           </a>
-          <div class="card-content">
+          <div class="card-content clearfix">
             <div className="blog-title">{this.state.titles}</div>
             <p className="blog-date">{this.state.dates}</p>
           </div>
