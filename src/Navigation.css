@@ -2,7 +2,7 @@ nav{
     background-color: transparent;
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
 }
 
