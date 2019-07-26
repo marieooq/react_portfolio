@@ -3,9 +3,6 @@ import Content_image1 from './img/host_family.png';
 import Content_image2 from './img/host_family.png';
 import Content_image3 from './img/host_family.png';
 import './Contents.css';
-import Work1 from './Work1';
-import Work2 from './Work2';
-import Work3 from './Work3';
 import { Link } from 'react-router-dom'
 
 
