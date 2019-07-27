@@ -4,6 +4,7 @@ nav{
     justify-content: space-between;
     /* position: fixed; */
     width: 100%;
+    margin: 2% 0;
 }
 
 .logo{

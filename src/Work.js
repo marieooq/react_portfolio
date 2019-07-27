@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import './Work.css';
 import Content_image1 from './img/host_family.png';
+import Content_image2 from './img/react_note.png';
 import { Link } from 'react-router-dom'
 
 class Work extends React.Component{
@@ -10,10 +11,10 @@ class Work extends React.Component{
 
     return (
       <div className="container">
-        <WorkContent myTitle="Title1" myURL={sections.title1}/>
-        <WorkContent myTitle="Title2" myURL={sections.title2}/>
-        <WorkContent myTitle="Title3" myURL={sections.title3}/>
-        <WorkContent myTitle="Title4" myURL={sections.title4}/>
+        <WorkContent myTitle="Title1" myURL={sections.title1} myImg={Content_image1}/>
+        <WorkContent myTitle="Title2" myURL={sections.title2} myImg={Content_image2}/>
+        <WorkContent myTitle="Title3" myURL={sections.title3} myImg={Content_image1}/>
+        <WorkContent myTitle="Title4" myURL={sections.title4} myImg={Content_image2}/>
       </div>
     );
   }
@@ -25,7 +26,7 @@ class WorkContent extends React.Component{
         <div className="content">
           <p className="content-title">{this.props.myTitle}</p>
           <Link to={this.props.myURL}>
-            < img className="content-img" src={Content_image1}></img>
+            < img className="content-img" src={this.props.myImg}></img>
           </Link>
         </div>
     );
