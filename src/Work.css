@@ -7,21 +7,34 @@
 .content{
     width: 46%;
     position: relative;
+    overflow: hidden;
 }
 
 .content-title{
     opacity: 0;
+    color: #fff;
     font-size: 40px;
+    font-weight: 700;
     position: absolute;	
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 99;
     text-align: center;
     transition: all 1s ease;
 }
 
 .content:hover .content-title{
     opacity: 1;
+}
+
+img.content-img{
+    transition: all 1s ease;
+}
+
+.content:hover img.content-img{
+    filter:blur(12px);
+    transform: scale(1.1);
 }
 
 .content:nth-child(odd){

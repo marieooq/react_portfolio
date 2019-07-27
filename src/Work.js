@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import './Work.css';
-import Content_image1 from './img/work1.jpg';
+import Content_image1 from './img/host_family.png';
 import { Link } from 'react-router-dom'
 
 class Work extends React.Component{
