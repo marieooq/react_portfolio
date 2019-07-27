@@ -10,12 +10,18 @@
 }
 
 .content-title{
+    opacity: 0;
     font-size: 40px;
     position: absolute;	
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    transition: all 1s ease;
+}
+
+.content:hover .content-title{
+    opacity: 1;
 }
 
 .content:nth-child(odd){
