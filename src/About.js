@@ -3,6 +3,7 @@ import './App.css';
 import './About.css';
 import axios from "axios";
 import { isTSEnumDeclaration } from '@babel/types';
+import ProfileImg from './img/profile_photo.jpg';
 
 class About extends React.Component{
   constructor(props) {
@@ -30,19 +31,15 @@ class About extends React.Component{
         // return item.content;
       })
 
-      console.log(contents);
       
       let titleArray = [];
       titleArray = contents.map(obj => obj.title);
-      console.log(titleArray);
 
       let thumbnailArray = [];
       thumbnailArray = contents.map(obj => obj.thumbnail);
-      console.log(thumbnailArray);
 
       let linkArray = [];
       linkArray = contents.map(obj => obj.link);
-      console.log(linkArray);
 
       let dateArray = [];
       dateArray = contents.map(obj => {
@@ -50,9 +47,6 @@ class About extends React.Component{
         const publishDate = obj.date.slice(0, spaceIndex);
         return publishDate;
       });
-      console.log(dateArray);
-
-
       
 
       self.setState({
@@ -70,16 +64,28 @@ class About extends React.Component{
     console.log(this.state)
     return (
       <div>
-        <h2>Medium</h2>
-        <div className="card">
-          <a href={this.state.links}>
-            <img className="card-img" src={this.state.thumbnails}></img>
-          </a>
-          <div class="card-content clearfix">
-            <div className="blog-title">{this.state.titles}</div>
-            <p className="blog-date">{this.state.dates}</p>
+        <div className="about">
+          <h2>About me</h2>
+          <div>
+            {/* <img src={ProfileImg}></img> */}
+          </div>
+          <div className="about-me-description"></div>
+
+        </div>
+
+        <div className="medium">
+          <h2>Medium</h2>
+          <div className="card">
+            <a href={this.state.links}>
+              <img className="card-img" src={this.state.thumbnails}></img>
+            </a>
+            <div class="card-content clearfix">
+              <div className="blog-title">{this.state.titles}</div>
+              <p className="blog-date">{this.state.dates}</p>
+            </div>
           </div>
         </div>
+
       </div>
     );
   }
