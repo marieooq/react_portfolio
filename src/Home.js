@@ -9,7 +9,7 @@ class Home extends React.Component{
   render() {
     return (
       <div>
-          <Header title="Stylish Portfolio" button="Find Out More"/>
+          <Header title="Portfolio" button="Find Out More"/>
           <Contents />
           <Services />
       </div>
