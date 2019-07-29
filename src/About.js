@@ -3,7 +3,7 @@ import './App.css';
 import './About.css';
 import axios from "axios";
 import { isTSEnumDeclaration } from '@babel/types';
-import ProfileImg from './img/profile_photo.jpg';
+import ProfileImg from './img/profile_photo.png';
 
 class About extends React.Component{
   constructor(props) {
@@ -66,22 +66,34 @@ class About extends React.Component{
       <div>
         <div className="about">
           <h2>About me</h2>
-          <div>
-            {/* <img src={ProfileImg}></img> */}
+          <div className="about-inner">
+            <div className="profile-image">
+              <img src={ProfileImg}></img>
+            </div>
+            <div className="about-description">
+              I'm Marie Otaki, rased in Japan and based in Vancouver. 
+              After getting through various kinds of careers I’ve decided to go back to a student to be a web developer. 
+              Now I'm studying front-end technologies like HTML, CSS, JavaScript and React.js.
+              I'm also interested in UI design, so I'd like to work as a  web developer who can understand visual design as well.
+              I'm earger to learn new technology. 
+              <br></br>
+              <a className="resume-btn" href="#">Resume</a>
+            </div>
           </div>
-          <div className="about-me-description"></div>
 
         </div>
 
         <div className="medium">
           <h2>Medium</h2>
-          <div className="card">
-            <a href={this.state.links}>
-              <img className="card-img" src={this.state.thumbnails}></img>
-            </a>
-            <div class="card-content clearfix">
-              <div className="blog-title">{this.state.titles}</div>
-              <p className="blog-date">{this.state.dates}</p>
+          <div className="medium-inner">
+            <div className="card">
+              <a href={this.state.links}>
+                <img className="card-img" src={this.state.thumbnails}></img>
+              </a>
+              <div class="card-content clearfix">
+                <div className="blog-title">{this.state.titles}</div>
+                <p className="blog-date">{this.state.dates}</p>
+              </div>
             </div>
           </div>
         </div>

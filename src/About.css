@@ -1,8 +1,47 @@
 h2{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
 }
+.about{
+    margin-bottom: 10%;
+}
 
+.about-inner{
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    /* background-color: beige; */
+}
+.profile-image img{
+    width: 250px;
+    border-radius: 10%;
+}
+
+.about-description{
+    width: 60%;
+    /* background-color: aquamarine; */
+    /* padding: 5% 0 5% 5%; */
+    line-height: 200%;
+}
+
+a.resume-btn{
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    color: blue;
+    border: 1px solid blue;
+    padding: 1.2em 3em;
+    border-radius: 5em;
+    letter-spacing: 0em;
+    line-height: 1.1em;
+    margin-top: 20px;
+}
+
+.medium-inner{
+    margin: 5% 0;
+}
 .card {
     margin: 30px auto;
     width: 350px;
