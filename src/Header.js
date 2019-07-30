@@ -1,6 +1,7 @@
 import React from 'react';
 import Background from './img/header.jpg';
 import './Header.css';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 const myStyles = {
   backgroundImage : `url(${Background})`,
@@ -12,7 +13,10 @@ class Header extends React.Component{
   render(){
     return(
       <header>
-      <div className="main-img"style={myStyles}></div>
+      
+      <CSSTransitionGroup>
+        <div className="main-img"style={myStyles}></div>
+      </CSSTransitionGroup>
       <div className="introduction">
         <div className="introduction-inner">
           <p>Hi, there!<br></br>

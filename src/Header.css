@@ -13,6 +13,24 @@ header{
     right: 5%;
 }
 
+.mainImgIn-in-enter {
+    opacity: 0.01;
+  }
+  
+.mainImgIn-in-enter.mainImgIn-in-enter-active {
+opacity: 1;
+transition: opacity 500ms ease-in;
+}
+
+.mainImgIn-in-leave {
+opacity: 1;
+}
+
+.mainImgIn-in-leave.mainImgIn-in-leave-active {
+opacity: 0.01;
+transition: opacity 300ms ease-in;
+}
+
 .introduction{
     position: absolute;
     bottom: 18%;
