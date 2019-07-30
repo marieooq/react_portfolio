@@ -9,20 +9,24 @@ nav{
 
 .logo{
     font-size: 30px;
+    margin-left: 5%;
+}
+
+.logo a{
+    text-decoration: none;
     color: #000;
-    margin-left: 3%;
 }
 
 nav ul{
     display: flex;
     align-items: center;
     list-style: none;
-    margin-right: 3%;
+    margin-right: 5%;
 }
 
 nav ul li{
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 45px;
 }
 
 nav ul li:last-child{
@@ -33,4 +37,8 @@ nav ul li a{
     font-size: 20px;
     text-decoration: none;  
     color: #000;
+}
+
+nav ul li a:hover{
+    opacity: 0.6;
 }
