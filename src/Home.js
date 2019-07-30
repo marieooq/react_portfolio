@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import Header from './Header';
-import Services from './Services';
+import Social from './Social';
 import Contents from './Contents';
 
 
@@ -11,7 +11,7 @@ class Home extends React.Component{
       <div>
           <Header title="Portfolio" button="Find Out More"/>
           <Contents />
-          <Services />
+          <Social />
       </div>
     );
   }

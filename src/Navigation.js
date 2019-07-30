@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 class Navigation extends React.Component{
   render() {
-    const sections = {Home: '/', Work: '/work', About: '/about', Contact: '/contact'};
+    const sections = {Home: '/', Work: '/work', About: '/about'};
     
     const navLinks = Object.keys(sections).map(keyName => {
       return (

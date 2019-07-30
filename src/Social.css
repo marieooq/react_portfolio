@@ -1,0 +1,25 @@
+.social{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 100px;
+    border-top: 1px solid grey;
+    text-align: center;
+}
+
+.social >  .row{
+    width: 15%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social >  .row > a{
+
+    text-decoration: none;
+}
+
+.social >  .row span{
+    color: #000;
+    font-size: 28px;
+    cursor: pointer;
+}
