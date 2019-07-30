@@ -1,14 +1,13 @@
 import React from 'react';
-import Content_image1 from './img/host_family.png';
+import Content_image1 from './img/react_note.png';
 import Content_image2 from './img/host_family.png';
-import Content_image3 from './img/host_family.png';
 import './Contents.css';
 import { Link } from 'react-router-dom'
 
 
 class Contents extends React.Component{
   render(){
-    const photos = [{Content_image1}, {Content_image2},  {Content_image3}];
+    const photos = [{Content_image1}, {Content_image2}];
     return(
       <div className="contents_wrapper">
         <div className="contents">
@@ -26,15 +25,6 @@ class Contents extends React.Component{
           </div>
           <div className="contents_description">
             <Description myTitle={contentsObj[1].title} myDescription={contentsObj[1].description} myURL={contentsObj[1].url}/>
-        </div>
-        </div>
-
-        <div className="contents">
-          <div className="contents_image">
-            <img src= {Content_image3}/>
-          </div>
-          <div className="contents_description">
-            <Description myTitle={contentsObj[2].title} myDescription={contentsObj[2].description} myURL={contentsObj[2].url}/>
           </div>
         </div>
       </div>
@@ -45,20 +35,15 @@ class Contents extends React.Component{
 
 const contentsObj = [
   {
-    title: 'Title1',
+    title: 'React based To-Do List',
     description: 'Exploride is a head-up display for cars, which allows users to access music, maps, calls and texts through its transparent display, as well as gesture and hands-free voice controls.',
     url: '/work1'
   },
   {
-    title: 'Title2',
+    title: 'Illustration',
     description: 'Exploride is a head-up display for cars, which allows users to access music, maps, calls and texts through its transparent display, as well as gesture and hands-free voice controls.',
     url: '/work2'
   }, 
-  {
-    title: 'Title3',
-    description: 'Exploride is a head-up display for cars, which allows users to access music, maps, calls and texts through its transparent display, as well as gesture and hands-free voice controls.',
-    url: '/work3'
-  } 
 ];
 
 class Description extends React.Component{
