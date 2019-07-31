@@ -9,11 +9,6 @@ const tagList = tags.map((elm) =>{
   return <li>{elm}</li>;
 });
 
-// const myStyles = {
-//   backgroundImage : `url(${Content_image1})`,
-//   height: '100vh',
-//   backgroundSize: 'cover'
-// }
 
 class WorkTemplate extends React.Component{
   render() {

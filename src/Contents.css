@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
+    margin-bottom: 5%;
     padding: 0;
 }
 
@@ -14,7 +14,6 @@
 }
 
 .contents_image{
-    /* background-color: aqua; */
     padding: 1.5% 0 1.5% 3% ;
 }
 .contents_description{
@@ -41,12 +40,11 @@
     font-size: 16px;
     text-decoration: none;
     display: inline-block;
-    color: blue;
-    border: 1px solid blue;
+    color: rgb(44, 166, 197);
+    border: 2px solid rgb(44, 166, 197);
     padding: 1.2em 3em;
     border-radius: 5em;
     letter-spacing: 0em;
     line-height: 1.1em;
     margin-top: 20px;
-    
 }
