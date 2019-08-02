@@ -27,7 +27,7 @@ const iconObj = [
   },
   {
     icon: <ion-icon className="icon" name="logo-twitter"></ion-icon>,
-    url: "https://twitter.com/MarieWoq"
+    url: "https://twitter.com/MariewoqE"
   },
   {
     icon: <ion-icon className="icon" name="logo-instagram"></ion-icon>,
