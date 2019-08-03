@@ -3,7 +3,7 @@ import './App.css';
 import './WorkTemplate.css';
 import Content_image1 from './img/work1.jpg';
 
-const tags = ['HTML', 'CSS', 'JavaScript', 'React'];
+const tags = ['HTML', 'CSS', 'JavaScript', 'React', 'illustrator', 'Firebase'];
 
 const tagList = tags.map((elm) =>{
   return <li>{elm}</li>;
