@@ -12,10 +12,8 @@ class WorkTemplate extends React.Component{
         <div className="work_description">
           <h2 className="work_title">{this.props.title}</h2>
           <p className="work_detail">{this.props.description}</p>
-          <div className="work_links">
-            <ul>
-              <li><a href="https://medium.com/@marie_woq/i-dont-know-what-react-exactly-is-although-i-ve-created-an-app-using-it-e0aaf7dcabc5" target="_blank">Medium</a></li>
-            </ul>
+          <div className="work_links"> 
+            <a href={this.props.url} target="_blank"><ion-icon name="open"></ion-icon>{this.props.url_title}</a>
           </div>
           <div className="work_skills">
             <ul className="tags">

@@ -16,20 +16,28 @@
     font-size: 50px;
     text-align: center;
 }
-.work_links > ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.work_detail{
+    margin-bottom: 10px;
 }
-.work_links > ul > li{
+
+.work_links{
     margin-bottom: 30px;
 }
-.work_links > ul > li > a {
+
+
+.work_links a{
+    color: var(--baseColor);
     text-decoration: none;
-    border-bottom: 1px solid #000;
-    color: #000;
 }
-.work_links > ul > li > a:hover{
+
+.work_links a ion-icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+
+}
+
+.work_links a:hover{
     opacity: 0.6;
 }
 .work_skills > .tags{

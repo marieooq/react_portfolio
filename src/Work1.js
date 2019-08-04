@@ -16,7 +16,9 @@ class Work1 extends React.Component{
       <div>
         <WorkTemplate img={Content_image1} title="React based To-Do List" 
         description="This is a simple to Do List using React.js and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved if they refresh it. It’s very intuitive design and easy to manipulate. I posted an article on Medium about what I struggled creating this app. Please check it out if you’d like to know more about it."
-          tags={tagList}/>        
+        url= "https://medium.com/@marie_woq/i-dont-know-what-react-exactly-is-although-i-ve-created-an-app-using-it-e0aaf7dcabc5"
+        url_title="Medium"
+        tags={tagList}/>        
       </div>
     );
   }
