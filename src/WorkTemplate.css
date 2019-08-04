@@ -1,15 +1,36 @@
 .mainImage img{
-    width: 100%;
-    height: 100vh;
+    display: block;
+    width: 80%;
+    /* height: 80vh; */
+    margin: 0 auto;
+    box-shadow: 0 2px 5px #ccc;
 }
 .work_description{
     width: 70%;
     margin: 10% auto;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 .work_title{
     font-size: 50px;
     text-align: center;
+}
+.work_links > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.work_links > ul > li{
+    margin-bottom: 30px;
+}
+.work_links > ul > li > a {
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+.work_links > ul > li > a:hover{
+    opacity: 0.6;
 }
 .work_skills > .tags{
     margin: 0;
@@ -20,7 +41,7 @@
     color: #fff;
     list-style: none;
     display: inline-block;
-    background-color:#c9b3b1;
+    background-color: var(--baseColor);
     border-radius: 10px;
     margin: 0 15px 0 0;
     padding: 0.5em 1em;

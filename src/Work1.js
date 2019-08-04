@@ -1,16 +1,22 @@
 import React from 'react';
 import './App.css';
 import WorkTemplate from './WorkTemplate';
+import Content_image1 from './img/work1.png';
+
+
+const tags = ['HTML', 'CSS', 'JavaScript', 'React.js'];
+
+const tagList = tags.map((elm) =>{
+  return <li>{elm}</li>;
+});
 
 class Work1 extends React.Component{
   render() {
     return (
       <div>
-        <WorkTemplate title="React based To-Do List" description="Floweraura.com is an online flower & cakes store that delivers flowers, cakes and many other great gifts all over India and I got the opportunity to re-design their Desktop and Mobile website.
-          Powered by a strong affiliate network and channel stores, Floweraura is ready to offer its gifts in more than 180 cities across India.
-          Floweraura.com is an online flower & cakes store that delivers flowers, cakes and many other great gifts all over India and I got the opportunity to re-design their Desktop and Mobile website.
-          Powered by a strong affiliate network and channel stores, Floweraura is ready to offer its gifts in more than 180 cities across India." />
-        
+        <WorkTemplate img={Content_image1} title="React based To-Do List" 
+        description="This is a simple to Do List using React.js and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved if they refresh it. It’s very intuitive design and easy to manipulate. I posted an article on Medium about what I struggled creating this app. Please check it out if you’d like to know more about it."
+          tags={tagList}/>        
       </div>
     );
   }
