@@ -28,7 +28,7 @@
 
 @media screen and (max-width:768px){
     .social >  .row{
-        width: 20%;
+        width: 30%;
     }
 
     .social >  .row span{
@@ -38,10 +38,6 @@
 }
 
 @media screen and (max-width:375px){
-    .social >  .row{
-        width: 30%;
-    }
-
     .social >  .row span{
         font-size: 1.2rem;
     }

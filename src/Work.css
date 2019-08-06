@@ -17,8 +17,7 @@
 .content-title{
     opacity: 0;
     color: #000;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 2.5rem;
     position: absolute;	
     top: 45%;
     left: 50%;
@@ -27,7 +26,6 @@
     text-align: center;
     transition: all 1s ease;
 }
-
 
 
 img.content-img{
@@ -45,14 +43,36 @@ img.content-img{
     transform: scale(1.1);
 }
 
-.content:nth-child(1){
-    /* margin-top: 5%; */
- }
-
- .content:nth-child(2){
-    /* margin-top: 5%; */
- }
-
 .container > .content > a > img.content-img{
    width: 100%;
+}
+
+@media screen and (max-width: 1179px) {
+    .content-title{
+        font-size: 2rem;
+        top: 40%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container{
+        margin: 10% auto 0;
+        display: block;
+    }
+
+
+    .content{
+        width: 80%;
+        margin: 0 auto 10%;
+    }
+
+    .content-title{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width:375px){
+    
+
 }
