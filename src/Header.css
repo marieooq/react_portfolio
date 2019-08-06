@@ -7,64 +7,49 @@ header{
 }
 
 .main-img{
-    width: 850px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-img img{
+    display: block;
+    width: 65%;
     position: absolute;
     top: 0;
     right: 5%;
 }
 
-.mainImgIn-in-enter {
-    opacity: 0.01;
-  }
-  
-.mainImgIn-in-enter.mainImgIn-in-enter-active {
-opacity: 1;
-transition: opacity 500ms ease-in;
-}
-
-.mainImgIn-in-leave {
-opacity: 1;
-}
-
-.mainImgIn-in-leave.mainImgIn-in-leave-active {
-opacity: 0.01;
-transition: opacity 300ms ease-in;
-}
 
 .introduction{
     position: absolute;
-    bottom: 18%;
+    top: 18%;
     left: 5%;
-    width: 600px;
-    height: 500px;
+    width: 43%;
     background-color: #000;
 }
 
 header .introduction > .introduction-inner{
-   width: 500px;
-   margin: 65px auto;
-   /* background-color: aqua; */
-}
-header .introduction > .introduction-inner h1{
-    margin: 0;
-    font-size: 3rem;
-    color: #fff;
+   width: 75%;
+   margin: 10% auto;
 }
 
 header .introduction > .introduction-inner p{
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Helvetica";
     font-weight: 700;
     color: #fff;
-    margin-bottom: 30px;
+    margin: 0 0 5% 0;
+    padding: 0;
 }
 
 header .introduction > .introduction-inner span{
-    color: #fff;
+    display: block;
+    padding: 0;
+    color:#fff;
 }
 
 header .introduction > .introduction-inner a{
-    font-size: 20px;
+    font-size: 1.4rem;
     text-decoration: none;
     display: inline-block;
     color: #fff;
@@ -73,6 +58,68 @@ header .introduction > .introduction-inner a{
     border-radius: 5em;
     letter-spacing: 0em;
     line-height: 1.1em;
-    margin-top: 20px;
+    margin-top: 7%;
+}
+
+@media screen and (max-width: 1179px) {
+    .introduction{
+        top: 10%;
+        
+    }
+    header .introduction > .introduction-inner p{
+        font-size: 2.2rem;
+        margin: 13% 0 5% 0;
+    }
+    header .introduction > .introduction-inner span{
+        font-size: 0.8rem;
+    }
+    
+    header .introduction > .introduction-inner a{
+        font-size: 0.5rem;    
+    }
 
 }
+
+@media screen and (max-width:768px){
+    .main-img img{
+        right: 3%;
+    }
+    .introduction{
+        top: 8%;
+        left: 3%;
+    }
+    header .introduction > .introduction-inner p{
+        font-size: 1.4rem;
+        margin: 13% 0 5% 0;
+    }
+    
+    header .introduction > .introduction-inner a{
+        font-size: 0.5rem;        
+        padding: 1em 2em;
+        border-radius: 5em;
+        letter-spacing: 0em;
+        line-height: 1.5em;
+        margin-top: 7%;
+    }
+}
+
+@media screen and (max-width:375px){
+    .introduction{
+        top: 8%;
+    }
+    header .introduction > .introduction-inner p{
+        font-size: 0.8rem;
+        margin: 13% 0 5% 0;
+    }
+
+    header .introduction > .introduction-inner span{
+        font-size: 0.5rem;
+    }
+    
+    header .introduction > .introduction-inner a{
+        font-size: 0.3rem;        
+        padding: 0.5em 1em;
+    }
+}
+  
+    
