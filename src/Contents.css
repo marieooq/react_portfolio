@@ -1,3 +1,7 @@
+.contents_wrapper{
+    margin: 0;
+    padding: 0;
+}
 .contents{
     width: 100%;
     display: flex;
@@ -25,19 +29,19 @@
 }
 
 .contents_description h3{
-    font-size: 50px;
+    font-size: 3.5rem;
     line-height: 1.5em;
     padding: 0;
     margin: 0;
 }
 
 .contents_description p{
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 1.5em;
 }
 
 .contents_description a{
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     display: inline-block;
     color: var(--baseColor);
@@ -46,5 +50,54 @@
     border-radius: 5em;
     letter-spacing: 0em;
     line-height: 1.1em;
-    margin-top: 20px;
+    margin-top: 1.2rem;
+}
+
+@media screen and (max-width: 1179px) {
+    .contents_description h3{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .contents_description h3{
+        font-size: 2rem;
+        line-height: 1.4em;
+    }
+    
+    .contents_description p{
+        font-size: 1rem;
+        line-height: 1.4em;
+    }
+    
+    .contents_description a{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width:375px){
+    .contents{
+        width: 80%;
+        margin: 0 auto 6%;
+        display: block;
+        /* margin-bottom: 5%; */
+        padding: 0;
+    }
+    
+    .contents_description h3{
+        font-size: 1.5rem;
+        line-height: 1.3em;
+    }
+    
+    .contents_description p{
+        font-size: 0.8rem;
+        line-height: 1.3em;
+    }
+    
+    .contents_description a{
+        font-size: 0.6rem;
+        margin-top: 0.6rem;
+    }
+ 
 }

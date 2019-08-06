@@ -1,8 +1,8 @@
 header{
     margin: 0 auto;
     width: 100%;
-    height: 100vh;
-    margin-bottom: 100px;
+    height: 850px;
+    /* margin-bottom: 100px; */
     position: relative;
 }
 
@@ -62,9 +62,12 @@ header .introduction > .introduction-inner a{
 }
 
 @media screen and (max-width: 1179px) {
+    header{
+        height: 700px;
+    }
+
     .introduction{
-        top: 10%;
-        
+        top: 18%;
     }
     header .introduction > .introduction-inner p{
         font-size: 2.2rem;
@@ -81,11 +84,15 @@ header .introduction > .introduction-inner a{
 }
 
 @media screen and (max-width:768px){
+    header{
+        height: 400px;
+    }
+
     .main-img img{
         right: 3%;
     }
     .introduction{
-        top: 8%;
+        top: 23%;
         left: 3%;
     }
     header .introduction > .introduction-inner p{
@@ -104,11 +111,23 @@ header .introduction > .introduction-inner a{
 }
 
 @media screen and (max-width:375px){
+    .main-img img{
+        display: block;
+        width: 75%;
+        right: 7%;
+    }
+    
+    header{
+        height: 380px;
+    }
+
     .introduction{
-        top: 8%;
+        width: 70%;
+        left: 7%;
+        top: 30%;
     }
     header .introduction > .introduction-inner p{
-        font-size: 0.8rem;
+        /* font-size: 1.rem; */
         margin: 13% 0 5% 0;
     }
 

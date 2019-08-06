@@ -54,5 +54,16 @@ nav ul li a:hover{
 }
 
 @media screen and (max-width:375px){
+    nav{
+        margin: 6% 0;
+    }
+    
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    nav ul li a{
+        font-size: 0.8rem;
+    }
  
 }
