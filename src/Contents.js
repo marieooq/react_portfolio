@@ -36,7 +36,7 @@ class Contents extends React.Component{
 const contentsObj = [
   {
     title: 'React based To-Do List',
-    description: 'Exploride is a head-up display for cars, which allows users to access music, maps, calls and texts through its transparent display, as well as gesture and hands-free voice controls.',
+    description: 'This is a simple to Do List using React.js and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved if they refresh it. It’s very intuitive design and easy to manipulate. ',
     url: '/work1'
   },
   {

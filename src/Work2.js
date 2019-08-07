@@ -13,10 +13,8 @@ class Work2 extends React.Component{
   render() {
     return (
       <div>
-          <WorkTemplate img={Content_image2} title="Illustration" description="Floweraura.com is an online flower & cakes store that delivers flowers, cakes and many other great gifts all over India and I got the opportunity to re-design their Desktop and Mobile website.
-          Powered by a strong affiliate network and channel stores, Floweraura is ready to offer its gifts in more than 180 cities across India.
-          Floweraura.com is an online flower & cakes store that delivers flowers, cakes and many other great gifts all over India and I got the opportunity to re-design their Desktop and Mobile website.
-          Powered by a strong affiliate network and channel stores, Floweraura is ready to offer its gifts in more than 180 cities across India." 
+          <WorkTemplate img={Content_image2} title="Illustration" description="The illustration is drawn using illustrator. I drew it to express my gratitude. 
+ I traced a picture of the family that host father keep it affectionately. Using the same tone of colors enables it looks organized. The yellow used in background color expresses the brightness they have." 
           tags={tagList}/>
 
       </div>
