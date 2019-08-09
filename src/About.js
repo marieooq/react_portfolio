@@ -19,7 +19,6 @@ class About extends React.Component{
     const rssToJsonApi = "https://api.rss2json.com/v1/api.json";
     const data = { params: { rss_url: mediumRssFeed } };
     axios.get(rssToJsonApi, data).then(res => {
-      console.log(res.data.items);
       let contents = [];
       contents = res.data.items.map(item => {
         return {
@@ -28,7 +27,6 @@ class About extends React.Component{
           link: item.link,
           date: item.pubDate
         }
-        // return item.content;
       })
 
       
@@ -61,7 +59,6 @@ class About extends React.Component{
   }
 
   render() {
-    console.log(this.state)
     return (
       <div>
         <div className="about">
