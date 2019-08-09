@@ -16,14 +16,14 @@ header{
     width: 65%;
     position: absolute;
     top: 0;
-    right: 5%;
+    right: 8%;
 }
 
 
 .introduction{
     position: absolute;
-    top: 18%;
-    left: 5%;
+    top: 13%;
+    left: 8%;
     width: 43%;
     background-color: #000;
 }

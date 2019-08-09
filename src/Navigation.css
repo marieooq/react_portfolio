@@ -7,8 +7,7 @@ nav{
 }
 
 .logo{
-    font-size: 2rem;
-    margin-left: 5%;
+    margin-left: 8%;
 }
 
 .logo a{
@@ -16,11 +15,16 @@ nav{
     color: #000;
 }
 
+.logo img.logo-icon{
+    display: inline-block;
+    width: 48px;
+}
+
 nav ul{
     display: flex;
     align-items: center;
     list-style: none;
-    margin-right: 5%;
+    margin-right: 8%;
 }
 
 nav ul li{
@@ -47,9 +51,15 @@ nav ul li a:hover{
 }
 
 @media screen and (max-width:768px){
+    nav ul{
+        margin-right: 5%;
+    }
     .logo{
-        font-size: 1.7rem;
-        margin-left: 3%;
+        margin-left: 5%;
+    }
+
+    .logo img.logo-icon{
+        width: 35px;
     }
 }
 

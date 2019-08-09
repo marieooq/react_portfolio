@@ -18,7 +18,7 @@
 }
 
 .contents_image{
-    padding: 1.5% 0 1.5% 3% ;
+    padding: 1.5% 0 1.5% 8% ;
 }
 .contents_description{
     padding: 5%;
@@ -60,6 +60,9 @@
 }
 
 @media screen and (max-width:768px){
+    .contents_image{
+        padding-left: 5% ;
+    }
     .contents_description h3{
         font-size: 2rem;
         line-height: 1.4em;

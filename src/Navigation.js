@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import './Navigation.css';
 import { Link } from 'react-router-dom'
+import logo from './img/logo.png';
 
 class Navigation extends React.Component{
   render() {
@@ -14,7 +15,9 @@ class Navigation extends React.Component{
     }); 
     return (
       <nav>
-        <h2 className="logo"><Link to={sections.Home}>{this.props.logoTitle}</Link></h2>
+        <h2 className="logo"><Link to={sections.Home}>
+          <img className="logo-icon" src={logo}></img>
+          </Link></h2>
         <ul>
           {navLinks}
         </ul>
