@@ -11,6 +11,7 @@ import Work2 from './Work2';
 import Work3 from './Work3';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css'; 
+import ScrollToTop from './ScrollToTop';
 
 
 
@@ -18,6 +19,7 @@ class App extends React.Component{
   render() {
     return (
       <Router>
+        <ScrollToTop>
         <div>
           <Navigation logoTitle="Marie Otaki"/>
           <Route exact path='/' component={Home}/>
@@ -28,6 +30,7 @@ class App extends React.Component{
           <Route exact path='/work3' component={Work3}/>
 
         </div>
+        </ScrollToTop>
       </Router>
     );
   }
