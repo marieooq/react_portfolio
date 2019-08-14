@@ -13,7 +13,7 @@ class WorkTemplate extends React.Component{
           <h2 className="work_title">{this.props.title}</h2>
           <p className="work_detail">{this.props.description}</p>
           <div className="work_links"> 
-            <a href={this.props.url} target="_blank"><ion-icon name="open"></ion-icon>{this.props.url_title}</a>
+            <a href={this.props.url} target="_blank">{this.props.url_title}</a>
           </div>
           <div className="work_skills">
             <ul className="tags">
