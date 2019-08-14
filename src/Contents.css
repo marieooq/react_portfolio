@@ -21,7 +21,7 @@
     padding: 1.5% 0 1.5% 8% ;
 }
 .contents_description{
-    padding: 5%;
+    padding: 5% 8% 5% 5%;
 }
 .contents_image,
 .contents_description{
@@ -62,6 +62,9 @@
 @media screen and (max-width:768px){
     .contents_image{
         padding-left: 5% ;
+    }
+    .contents_description{
+        padding-right: 5%;
     }
     .contents_description h3{
         font-size: 2rem;
