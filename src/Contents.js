@@ -41,7 +41,7 @@ const contentsObj = [
   },
   {
     title: 'Illustration',
-    description: 'Exploride is a head-up display for cars, which allows users to access music, maps, calls and texts through its transparent display, as well as gesture and hands-free voice controls.',
+    description: 'The illustration is drawn using illustrator. I drew it to express my gratitude.  I traced a picture of the family that host father keep it affectionately. Using the same tone of colors enables it looks organized. The yellow used in background color expresses the brightness they have.',
     url: '/work2'
   }, 
 ];
