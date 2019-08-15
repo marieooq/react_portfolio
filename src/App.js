@@ -36,7 +36,7 @@ class App extends React.Component{
             <meta property="og:type" content="website" />
             <meta property="og:url" content="marieotaki.com" />
             <meta property="og:image" content={OgpImage} />
-            <meta property="og:site_name" content="Portfolio | Marie Otaki" />
+            <meta property="og:site_name" content="Marie Otaki | Portfolio" />
             <meta property="og:description" content="This is the portfoliosite created by Marie Otaki." />
           </Helmet>
 
