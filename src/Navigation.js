@@ -16,7 +16,7 @@ class Navigation extends React.Component{
     return (
       <nav>
         <h2 className="logo"><Link to={sections.Home}>
-          <img className="logo-icon" src={logo}></img>
+          <img className="logo-icon" src={logo} alt="logo-image"></img>
           </Link></h2>
         <ul>
           {navLinks}

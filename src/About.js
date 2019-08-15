@@ -65,7 +65,7 @@ class About extends React.Component{
           <h2>About me</h2>
           <div className="about-inner">
             <div className="profile-image">
-              <img src={ProfileImg}></img>
+              <img src={ProfileImg} alt="profile-image"></img>
             </div>
             <div className="about-description">
               I'm Marie Otaki, rased in Japan and based in Vancouver. 
@@ -85,7 +85,7 @@ class About extends React.Component{
           <div className="medium-inner">
             <div className="card">
               <a href={this.state.links}>
-                <img className="card-img" src={this.state.thumbnails}></img>
+                <img className="card-img" src={this.state.thumbnails} alt="blog-image"></img>
               </a>
               <div className="card-content clearfix">
                 <div className="blog-title">{this.state.titles}</div>

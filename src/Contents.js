@@ -12,7 +12,7 @@ class Contents extends React.Component{
       <div className="contents_wrapper">
         <div className="contents">
           <div className="contents_image">
-            <img src= {Content_image1}/>
+            <img src= {Content_image1} alt="content-image1"/>
           </div>
           <div className="contents_description">
             <Description myTitle={contentsObj[0].title} myDescription={contentsObj[0].description} myURL={contentsObj[0].url}/>
@@ -21,7 +21,7 @@ class Contents extends React.Component{
 
         <div className="contents">
           <div className="contents_image">
-            <img src= {Content_image2}/>
+            <img src= {Content_image2} alt="content-image2"/>
           </div>
           <div className="contents_description">
             <Description myTitle={contentsObj[1].title} myDescription={contentsObj[1].description} myURL={contentsObj[1].url}/>
