@@ -74,7 +74,7 @@ class About extends React.Component{
               I'm also interested in UI design, so I'd like to work as a  web developer who can understand visual design as well.
               I'm earger to learn new technology. 
               <br></br>
-              <a className="resume-btn" href="#">Resume</a>
+              {/* <a className="resume-btn" href="#">Resume</a> */}
             </div>
           </div>
 
