@@ -120,9 +120,7 @@ a.resume-btn {
     font-size: 0.8rem;
     text-decoration: none;
   }
-}
 
-@media screen and (max-width: 480px) {
   .card-container {
     display: block;
   }
@@ -131,4 +129,7 @@ a.resume-btn {
     width: 100%;
     margin: 0 auto 10%;
   }
+}
+
+@media screen and (max-width: 480px) {
 }
