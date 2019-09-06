@@ -1,127 +1,134 @@
-h2{
-    font-size: 2.5rem;
-    text-align: center;
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
 }
-.about{
-    margin-bottom: 10%;
-}
-
-.about-inner{
-    width: 80%;
-    margin: 5% auto;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
+.about {
+  margin-bottom: 10%;
 }
 
-.profile-image img{
-    width: 250px;
-    border-radius: 10%;
+.about-inner {
+  width: 80%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.about-description{
-    width: 60%;
-    font-size: 18px;
-    line-height: 200%;
+.profile-image img {
+  width: 250px;
+  border-radius: 10%;
 }
 
-a.resume-btn{
-    font-size: 1rem;
-    text-decoration: none;
-    display: inline-block;
-    color: var(--baseColor);
-    border: 2px solid var(--baseColor);
-    padding: 1.2em 3em;
-    border-radius: 5em;
-    letter-spacing: 0em;
-    line-height: 1.1em;
-    margin-top: 1.4rem;
+.about-description {
+  width: 60%;
+  font-size: 18px;
+  line-height: 200%;
 }
 
-.medium-inner{
-    margin: 5% 0;
+a.resume-btn {
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--baseColor);
+  border: 2px solid var(--baseColor);
+  padding: 1.2em 3em;
+  border-radius: 5em;
+  letter-spacing: 0em;
+  line-height: 1.1em;
+  margin-top: 1.4rem;
+}
+
+.medium-inner {
+  width: 80%;
+  margin: 5% auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: flex-start;
 }
 .card {
-    margin: 30px auto;
-    width: 350px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px #ccc;
+  /* margin: 0 auto; */
+  width: 28%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  margin-right: 10%;
 }
 
 .card > a > img.card-img {
-    border-radius: 5px 5px 0 0;
-    max-width: 100%;
-    height: auto;
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
 }
 
 .card-content {
-    padding: 20px;
+  padding: 20px;
 }
 .blog-title {
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-weight: 800;
-    color: #333;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  color: #333;
 }
 
-.card-content > p.blog-date{
-    display: inline;
-    font-size: 16px;
-    /* text-align: right; */
-    float: right;
-    /* margin: 0 0 0 auto; */
+.card-content > p.blog-date {
+  display: inline;
+  font-size: 16px;
+  float: right;
 }
 
 .clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
+  content: "";
+  display: block;
+  clear: both;
+}
 
 @media screen and (max-width: 1179px) {
-
 }
 
-@media screen and (max-width:768px){
-    h2{
-        font-size: 2rem;
-    }
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
 
-    .about-inner{
-        width: 80%;
-        margin: 5% auto;
-        display: block;
-        justify-content:space-around;
-        align-items: center;
-        /* background-color: aqua; */
-    }
+  .about-inner {
+    width: 80%;
+    margin: 5% auto;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua; */
+  }
 
-    .profile-image{
-        float: left;
-        margin: 0 3% 3% 0;
-    }
+  .profile-image {
+    float: left;
+    margin: 0 3% 3% 0;
+  }
 
-    .profile-image img{
-        width: 200px;
-        border-radius: 10%;
-    }
+  .profile-image img {
+    width: 200px;
+    border-radius: 10%;
+  }
 
-    .about-description{
-        width: 100%;
-        font-size: 0.9rem;
-    }
+  .about-description {
+    width: 100%;
+    font-size: 0.9rem;
+  }
 
-    a.resume-btn{
-        font-size: 0.8rem;
-        text-decoration: none;
-        
-    }
-
-    
-
+  a.resume-btn {
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width: 480px) {
+  .card-container {
+    display: block;
+  }
 
+  .card {
+    width: 100%;
+    margin: 0 auto 10%;
+  }
 }
