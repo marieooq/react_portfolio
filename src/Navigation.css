@@ -1,79 +1,81 @@
-nav{
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0;
+nav {
+  /* background-color: transparent; */
+  background-color: aqua;
+
+  /* display: flex; */
+  /* justify-content: space-between; */
+  width: 20%;
+  height: 100vh;
+  margin: 0;
+  z-index: 3;
+  position: fixed;
 }
 
-.logo{
-    margin-left: 8%;
+#nav-inner {
+  width: 60%;
+  margin: 0 auto;
+  background-color: aquamarine;
 }
 
-.logo a{
-    text-decoration: none;
-    color: #000;
+.logo a {
+  text-decoration: none;
+  color: #000;
 }
 
-.logo img.logo-icon{
-    display: inline-block;
-    width: 48px;
+.logo img.logo-icon {
+  width: 48px;
 }
 
-nav ul{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin-right: 8%;
+nav ul {
+  list-style: none;
+  margin-right: 8%;
 }
 
-nav ul li{
-    display: inline-block;
-    margin-right: 45px;
+nav ul li {
+  display: block;
+  margin-right: 45px;
 }
 
-nav ul li:last-child{
-    margin-right: 0;
+nav ul li:last-child {
+  margin-right: 0;
 }
 
-nav ul li a{
-    font-size: 1.2rem;
-    text-decoration: none;  
-    color: #000;
+nav ul li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000;
 }
 
-nav ul li a:hover{
-    opacity: 0.6;
+nav ul li a:hover {
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 1179px) {
-
 }
 
-@media screen and (max-width:768px){
-    nav ul{
-        margin-right: 5%;
-    }
-    .logo{
-        margin-left: 5%;
-    }
+@media screen and (max-width: 768px) {
+  nav ul {
+    margin-right: 5%;
+  }
+  .logo {
+    margin-left: 5%;
+  }
 
-    .logo img.logo-icon{
-        width: 35px;
-    }
+  .logo img.logo-icon {
+    width: 35px;
+  }
 }
 
-@media screen and (max-width:375px){
-    nav{
-        margin: 6% 0;
-    }
-    
-    .logo{
-        font-size: 1.2rem;
-    }
+@media screen and (max-width: 375px) {
+  nav {
+    margin: 6% 0;
+  }
 
-    nav ul li a{
-        font-size: 0.8rem;
-    }
- 
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  nav ul li a {
+    font-size: 0.8rem;
+  }
 }
