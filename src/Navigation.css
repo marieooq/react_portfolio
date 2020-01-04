@@ -1,11 +1,10 @@
 nav {
-  /* background-color: transparent; */
-  background-color: aqua;
-
-  /* display: flex; */
-  /* justify-content: space-between; */
+  /* background-color: aqua; */
   width: 20%;
-  height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   z-index: 3;
   position: fixed;
@@ -13,8 +12,7 @@ nav {
 
 #nav-inner {
   width: 60%;
-  margin: 0 auto;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 .logo {
@@ -29,7 +27,8 @@ nav {
 }
 
 .logo img.logo-icon {
-  width: 48px;
+  width: 38px;
+  margin-bottom: 51px;
 }
 
 nav ul {
@@ -39,11 +38,13 @@ nav ul {
   font-size: 17px;
   color: #45484f;
   text-align: right;
+  /* background-color: palevioletred; */
 }
 
 nav ul li {
   line-height: 19px;
   margin-bottom: 34px;
+  /* background-color: yellowgreen; */
 }
 
 nav ul li:last-child {
