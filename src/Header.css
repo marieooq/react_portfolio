@@ -1,9 +1,10 @@
 header {
   margin: 0 auto;
   width: 100%;
-  height: 850px;
+  height: 650px;
   /* margin-bottom: 100px; */
   position: relative;
+  /* background-color: var(--lightBlueColor); */
 }
 
 .main-img {
@@ -13,52 +14,45 @@ header {
 
 .main-img img {
   display: block;
-  width: 65%;
+  height: 500px;
   position: absolute;
-  top: 0;
-  right: 8%;
+  top: 5%;
+  right: 0;
+  border-radius: 8px;
 }
 
 .introduction {
+  width: 500px;
   position: absolute;
-  top: 13%;
-  left: 8%;
-  width: 43%;
-  background-color: #000;
+  top: 20%;
+  left: 5%;
 }
 
-header .introduction > .introduction-inner {
-  width: 75%;
-  margin: 10% auto;
-}
-
-header .introduction > .introduction-inner p {
+header .introduction > .introduction-inner h1 {
   font-size: 3rem;
-  font-family: "Helvetica";
+  font-family: var(--mainFont);
+  font-weight: 400;
+  line-height: 1.14;
+  color: var(--subFontColor);
+}
+
+header .introduction > .introduction-inner h1 span {
   font-weight: 700;
-  color: #fff;
-  margin: 0 0 5% 0;
-  padding: 0;
+  color: var(--fontColor);
 }
 
-header .introduction > .introduction-inner span {
-  display: block;
-  padding: 0;
-  color: #fff;
-}
-
-header .introduction > .introduction-inner a {
-  font-size: 1.4rem;
+/* header .introduction > .introduction-inner a {
+  font-size: 1rem;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
-  border: 1px solid #fff;
+  color: var(--subFontColor);
+  border: 1px solid var(--subFontColor);
   padding: 1.2em 3em;
-  border-radius: 5em;
+  border-radius: 8px;
   letter-spacing: 0em;
   line-height: 1.1em;
-  margin-top: 7%;
-}
+  margin-top: 0.5em;
+} */
 
 @media screen and (max-width: 1179px) {
   header {

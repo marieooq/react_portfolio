@@ -1,4 +1,6 @@
 #content-inner {
-  width: 60%;
-  margin: 0 auto;
+  width: 56%;
+  margin-left: 23%;
+  padding: 0;
+  /* background-color: aqua; */
 }

@@ -1,5 +1,10 @@
 :root {
   --baseColor: rgb(119, 172, 185);
+  --fontColor: #21242c;
+  --subFontColor: #6e7075;
+  --accentColor: #ef6130;
+  --greyColor: #c1c2c6;
+  --lightBlueColor: #63bfe8;
   --mainFont: "PT Sans", sans-serif;
   --subFont: "PT Mono", monospace;
 }
