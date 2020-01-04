@@ -1,10 +1,14 @@
-:root{
-  --baseColor:rgb(119, 172, 185);;
+:root {
+  --baseColor: rgb(119, 172, 185);
+  --mainFont: "PT Sans", sans-serif;
+  --subFont: "PT Mono", monospace;
 }
-body{
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: "PT Mono", monospace;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Open Sans", sans-serif; */
   font-size: 16px;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }

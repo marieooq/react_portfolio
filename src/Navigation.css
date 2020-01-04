@@ -17,6 +17,12 @@ nav {
   background-color: aquamarine;
 }
 
+.logo {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
 .logo a {
   text-decoration: none;
   color: #000;
@@ -28,12 +34,16 @@ nav {
 
 nav ul {
   list-style: none;
-  margin-right: 8%;
+  margin: 0 auto;
+  font-family: var(--subFont);
+  font-size: 17px;
+  color: #45484f;
+  text-align: right;
 }
 
 nav ul li {
-  display: block;
-  margin-right: 45px;
+  line-height: 19px;
+  margin-bottom: 34px;
 }
 
 nav ul li:last-child {
