@@ -55,7 +55,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  opacity: 0.6;
+  color: var(--accentColor);
 }
 
 @media screen and (max-width: 1179px) {
