@@ -3,14 +3,14 @@ import React from "react";
 import "./Home.css";
 import Header from "./Header";
 import Social from "./Social";
-import Contents from "./Contents";
+import ContentsContainer from "./ContentsContainer";
 
 class Home extends React.Component {
   render() {
     return (
       <div id="content-inner">
         <Header title="Portfolio" />
-        <Contents />
+        <ContentsContainer />
         {/* <Social /> */}
       </div>
     );
