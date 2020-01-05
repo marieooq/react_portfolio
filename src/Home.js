@@ -9,9 +9,9 @@ class Home extends React.Component {
   render() {
     return (
       <div id="content-inner">
-        <Header title="Portfolio" button="Find Out More" />
+        <Header title="Portfolio" />
         <Contents />
-        <Social />
+        {/* <Social /> */}
       </div>
     );
   }

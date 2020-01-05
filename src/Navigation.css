@@ -7,6 +7,7 @@ nav {
   margin: 0;
   z-index: 3;
   position: fixed;
+  background-color: transparent;
 }
 
 #nav-inner {

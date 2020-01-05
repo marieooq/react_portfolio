@@ -21,6 +21,7 @@ class App extends React.Component {
         <ScrollToTop>
           <div id="wrapper">
             <Navigation logoTitle="Marie Otaki" />
+
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
             <Route exact path="/work" component={Work} />

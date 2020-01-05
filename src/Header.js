@@ -17,7 +17,6 @@ class Header extends React.Component {
               <span>Marie Otaki</span> is a software developer based in
               Vancouver.
             </h1>
-            {/* <Link to="/about">{this.props.button}</Link> */}
           </div>
         </div>
       </header>
