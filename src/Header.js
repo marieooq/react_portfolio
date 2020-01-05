@@ -4,8 +4,9 @@ import "./Header.css";
 // import { CSSTransitionGroup } from 'react-transition-group';
 import { Link } from "react-router-dom";
 
-class Header extends React.Component {
-  render() {
+const Header = props => {
+  if (props.section === "header") {
+    console.log("this is header.");
     return (
       <header>
         <div className="main-img">
@@ -21,7 +22,10 @@ class Header extends React.Component {
         </div>
       </header>
     );
+  } else if (props.section === "about") {
+    console.log("this is not header");
+    return <img src={props.imgSrc} alt="about" id="about_photo" />;
   }
-}
+};
 
 export default Header;

@@ -9,7 +9,7 @@ class Home extends React.Component {
   render() {
     return (
       <div id="content-inner">
-        <Header title="Portfolio" />
+        <Header section="header" />
         <ContentsContainer />
         {/* <Social /> */}
       </div>

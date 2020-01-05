@@ -45,6 +45,14 @@ header .introduction > .introduction-inner h1 span#job-title {
   color: var(--accentColor);
 }
 
+img#about_photo {
+  display: block;
+  width: 50%;
+  margin-top: 1%;
+  margin-left: 29%;
+  border-radius: 8px;
+}
+
 @media screen and (max-width: 1179px) {
   header {
     height: 700px;

@@ -1,4 +1,6 @@
 import React from "react";
+import Header from "./Header";
+import About_image from "./img/about_photo.jpg";
 import "./App.css";
 import "./About.css";
 import axios from "axios";
@@ -27,7 +29,7 @@ class About extends React.Component {
             <img
               className="card-img"
               src={item.thumbnail}
-              alt="blog-image"
+              alt="blog-thumbnail"
             ></img>
           </a>
           <div className="card-content clearfix">
@@ -41,10 +43,11 @@ class About extends React.Component {
     return (
       <div>
         <div className="about">
+          <Header section="about" imgSrc={About_image} />
           <h2>About me</h2>
           <div className="about-inner">
             <div className="profile-image">
-              <img src={ProfileImg} alt="profile-image"></img>
+              <img src={ProfileImg} alt="profile"></img>
             </div>
             <div className="about-description">
               I'm Marie Otaki, rased in Japan and based in Vancouver. After

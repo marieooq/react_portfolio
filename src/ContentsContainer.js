@@ -24,7 +24,6 @@ class ContentsContainer extends React.Component {
     ];
 
     const contentLists = contentsObj.map((obj, index) => {
-      console.log(obj.image);
       return (
         <Content
           imageSrc={obj.image}
