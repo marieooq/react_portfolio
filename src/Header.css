@@ -6,6 +6,14 @@ header {
   /* background-color: aqua; */
 }
 
+header.about-header {
+  width: 56%;
+  height: 450px;
+  margin-left: 23%;
+  position: relative;
+  /* background-color: aqua; */
+}
+
 .main-img {
   margin: 0;
   padding: 0;
@@ -47,9 +55,10 @@ header .introduction > .introduction-inner h1 span#job-title {
 
 img#about_photo {
   display: block;
-  width: 50%;
-  margin-top: 1%;
-  margin-left: 29%;
+  height: 500px;
+  position: absolute;
+  top: 5%;
+  left: 15%;
   border-radius: 8px;
 }
 

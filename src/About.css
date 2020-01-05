@@ -3,7 +3,11 @@ h2 {
   text-align: center;
 }
 .about {
-  margin-bottom: 10%;
+  margin-top: 450px;
+  padding: 150px 0 0 0;
+  margin: 0 3%;
+  border-radius: 8px;
+  background-color: var(--lightBlueColor);
 }
 
 .about-inner {

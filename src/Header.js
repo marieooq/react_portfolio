@@ -24,7 +24,11 @@ const Header = props => {
     );
   } else if (props.section === "about") {
     console.log("this is not header");
-    return <img src={props.imgSrc} alt="about" id="about_photo" />;
+    return (
+      <header className="about-header">
+        <img src={props.imgSrc} alt="about" id="about_photo" />
+      </header>
+    );
   }
 };
 
