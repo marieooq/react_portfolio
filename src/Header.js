@@ -14,8 +14,8 @@ class Header extends React.Component {
         <div className="introduction">
           <div className="introduction-inner">
             <h1>
-              <span>Marie Otaki</span> is a software developer based in
-              Vancouver.
+              <span id="name">Marie Otaki</span> is a{" "}
+              <span id="job-title">software developer</span> based in Vancouver.
             </h1>
           </div>
         </div>

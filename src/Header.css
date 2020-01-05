@@ -35,9 +35,14 @@ header .introduction > .introduction-inner h1 {
   color: var(--subFontColor);
 }
 
-header .introduction > .introduction-inner h1 span {
+header .introduction > .introduction-inner h1 span#name {
   font-weight: 700;
   color: var(--fontColor);
+}
+
+header .introduction > .introduction-inner h1 span#job-title {
+  /* font-weight: 700; */
+  color: var(--accentColor);
 }
 
 @media screen and (max-width: 1179px) {

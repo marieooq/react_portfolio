@@ -5,13 +5,14 @@
   --accentColor: #ef6130;
   --greyColor: #c1c2c6;
   /* --lightBlueColor: #63bfe8; */
-  --lightBlueColor: #c0dae5;
+  --lightBlueColor: #a3cfe4;
   --mainFont: "PT Sans", sans-serif;
   --subFont: "PT Mono", monospace;
 }
 body {
   margin: 0;
   padding: 0;
+  font-family: var(--mainFont);
   /* font-family: "PT Mono", monospace;
   font-family: "PT Sans", sans-serif;
   font-family: "Open Sans", sans-serif; */

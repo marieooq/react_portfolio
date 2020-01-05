@@ -11,6 +11,7 @@ class Contents extends React.Component {
       <div className="contents_wrapper">
         <div className="contents-inner">
           <div className="contents">
+            <h3 className="chapter-number">01</h3>
             <div className="contents_image">
               <img src={Content_image1} alt="content-image1" />
             </div>
@@ -24,6 +25,7 @@ class Contents extends React.Component {
           </div>
 
           <div className="contents">
+            <h3 className="chapter-number">02</h3>
             <div className="contents_image">
               <img src={Content_image2} alt="content-image2" />
             </div>
