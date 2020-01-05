@@ -8,35 +8,35 @@ class ContentsContainer extends React.Component {
   render() {
     const contentsObj = [
       {
+        image: Content_image1,
         title: "React based To-Do List",
         description:
           "This is a simple to Do List using React.js and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved if they refresh it. It’s very intuitive design and easy to manipulate. ",
         url: "/work1"
       },
       {
+        image: Content_image2,
         title: "Illustration",
         description:
           "The illustration is drawn using illustrator. I drew it to express my gratitude.  I traced a picture of the family that host father keep it affectionately. Using the same tone of colors enables it looks organized. The yellow used in background color expresses the brightness they have.",
         url: "/work2"
       }
     ];
+
+    const contentLists = contentsObj.map((obj, index) => {
+      console.log(obj.image);
+      return (
+        <Content
+          imageSrc={obj.image}
+          myTitle={contentsObj[index].title}
+          myDescription={contentsObj[index].description}
+          myURL={contentsObj[index].url}
+        />
+      );
+    });
     return (
       <div className="contents_wrapper">
-        <div className="contents-inner">
-          <Content
-            imageSrc={Content_image1}
-            myTitle={contentsObj[0].title}
-            myDescription={contentsObj[0].description}
-            myURL={contentsObj[0].url}
-          />
-
-          <Content
-            imageSrc={Content_image2}
-            myTitle={contentsObj[1].title}
-            myDescription={contentsObj[1].description}
-            myURL={contentsObj[1].url}
-          />
-        </div>
+        <div className="contents-inner">{contentLists}</div>
       </div>
     );
   }
