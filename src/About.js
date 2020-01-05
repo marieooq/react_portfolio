@@ -4,8 +4,8 @@ import About_image from "./img/about_photo.jpg";
 import "./App.css";
 import "./About.css";
 import axios from "axios";
-import { isTSEnumDeclaration } from "@babel/types";
-import ProfileImg from "./img/profile_photo.png";
+import { Link } from "react-router-dom";
+// import { isTSEnumDeclaration } from "@babel/types";
 
 class About extends React.Component {
   state = {
@@ -40,6 +40,21 @@ class About extends React.Component {
       );
     });
 
+    const links = {
+      Resume: "#",
+      Email: "#",
+      LinkedIn: "https://www.linkedin.com/in/marie-otaki-a67773186/",
+      GitHub: "https://github.com/marieooq"
+    };
+
+    const snsLinks = Object.keys(links).map(keyName => {
+      return (
+        <li>
+          <a href={links[keyName]}>{keyName}</a>
+        </li>
+      );
+    });
+
     return (
       <div>
         <div className="about-wrapper">
@@ -47,10 +62,16 @@ class About extends React.Component {
 
           <div className="about">
             <div className="about-inner">
-              <h1>
-                👋 Hi, I'm Marie. I love to think about new ideas and solve
-                problems. Let's talk about such topics like...{" "}
-              </h1>
+              <section className="about-introduction">
+                <h1>
+                  <span role="img" aria-label="wave">
+                    👋🏼{" "}
+                  </span>
+                  Hi, I'm Marie. I love to think about new ideas and solve
+                  problems. Let's talk about topics like...{" "}
+                </h1>
+                <ul id="sns-links">{snsLinks}</ul>
+              </section>
             </div>
           </div>
         </div>
