@@ -11,35 +11,14 @@ h2 {
 }
 
 .about-inner {
-  width: 80%;
-  margin: 5% auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 56%;
+  margin-left: 24%;
 }
 
-.profile-image img {
-  width: 250px;
-  border-radius: 10%;
-}
-
-.about-description {
-  width: 60%;
-  font-size: 18px;
-  line-height: 200%;
-}
-
-a.resume-btn {
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  color: var(--baseColor);
-  border: 2px solid var(--baseColor);
-  padding: 1.2em 3em;
-  border-radius: 5em;
-  letter-spacing: 0em;
-  line-height: 1.1em;
-  margin-top: 1.4rem;
+.about-inner h1 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.3;
 }
 
 .medium-inner {

@@ -46,22 +46,11 @@ class About extends React.Component {
           <Header section="about" imgSrc={About_image} />
 
           <div className="about">
-            <h2>About me</h2>
             <div className="about-inner">
-              <div className="profile-image">
-                <img src={ProfileImg} alt="profile"></img>
-              </div>
-              <div className="about-description">
-                I'm Marie Otaki, rased in Japan and based in Vancouver. After
-                getting through various kinds of careers I’ve decided to go back
-                to a student to be a web developer. Now I'm studying front-end
-                technologies like HTML, CSS, JavaScript and React.js. I'm also
-                interested in UI design, so I'd like to work as a web developer
-                who can understand visual design as well. I'm earger to learn
-                new technology.
-                <br></br>
-                {/* <a className="resume-btn" href="#">Resume</a> */}
-              </div>
+              <h1>
+                👋 Hi, I'm Marie. I love to think about new ideas and solve
+                problems. Let's talk about such topics like...{" "}
+              </h1>
             </div>
           </div>
         </div>
