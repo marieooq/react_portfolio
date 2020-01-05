@@ -1,11 +1,14 @@
 .contents_wrapper {
   padding: 150px 0 0 0;
+  margin: 0 3%;
+  border-radius: 8px;
   background-color: var(--lightBlueColor);
+  /* background-color: #585858; */
 }
 
 .contents-inner {
   width: 56%;
-  margin-left: 23%;
+  margin-left: 25%;
 }
 
 .contents {
@@ -17,23 +20,10 @@
   padding: 0;
 }
 
-.chapter-number {
-  font-size: 28px;
-  font-weight: 400;
-  color: var(--accentColor);
-}
-
 .contents_image img {
   display: block;
   border-radius: 8px;
   width: 320px;
-}
-
-.contents_image {
-  /* padding: 1.5% 0 1.5% 8%; */
-}
-.contents_description {
-  /* padding: 5% 8% 5% 5%; */
 }
 .contents_image,
 .contents_description {
@@ -43,21 +33,23 @@
 .contents_description h3 {
   font-size: 33px;
   line-height: 1.14;
+  /* color: #fff; */
   padding: 0;
   margin: 0;
 }
 
 .contents_description p {
-  font-size: 1.2rem;
-  line-height: 1.5em;
+  font-size: 18px;
+  line-height: 1.27;
+  color: var(--subFontColor);
 }
 
 .contents_description a {
   font-size: 1rem;
   text-decoration: none;
   display: inline-block;
-  color: var(--baseColor);
-  border: 2px solid var(--baseColor);
+  color: var(--accentColor);
+  border: 2px solid var(--accentColor);
   padding: 1.2em 3em;
   border-radius: 5em;
   letter-spacing: 0em;
