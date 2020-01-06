@@ -6,7 +6,7 @@ import logo from "./img/logo.png";
 
 class Navigation extends React.Component {
   render() {
-    const sections = { Home: "/", About: "/about", Work: "/work" };
+    const sections = { Home: "/", Works: "/works", About: "/about" };
 
     const navLinks = Object.keys(sections).map(keyName => {
       return (

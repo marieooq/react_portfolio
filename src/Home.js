@@ -3,6 +3,7 @@ import React from "react";
 import "./Home.css";
 import Header from "./Header";
 import Social from "./Social";
+import HomeContents from "./HomeContents";
 import ContentsContainer from "./ContentsContainer";
 
 class Home extends React.Component {
@@ -10,7 +11,7 @@ class Home extends React.Component {
     return (
       <div id="content-inner">
         <Header section="header" />
-        <ContentsContainer />
+        <HomeContents />
         {/* <Social /> */}
       </div>
     );

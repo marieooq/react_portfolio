@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import About_image from "./img/about_photo.jpg";
+import aboutImage from "./img/about_photo.jpg";
 import "./App.css";
 import "./About.scss";
 import axios from "axios";
@@ -114,7 +114,7 @@ class About extends React.Component {
     return (
       <div>
         <div className="about-wrapper">
-          <Header section="about" imgSrc={About_image} />
+          <Header section="about" imgSrc={aboutImage} />
 
           <div className="about">
             <div className="about-inner">
