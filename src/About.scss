@@ -44,6 +44,18 @@ ul#sns-links li a:hover {
   text-decoration: underline;
 }
 
+.topic {
+  & h2 {
+    font-size: 33px;
+    line-height: 1.14;
+  }
+  & p {
+    font-size: 18px;
+    line-height: 1.28;
+    color: var(--subFontColor);
+  }
+}
+
 .medium-inner {
   width: 80%;
   margin: 5% auto;
