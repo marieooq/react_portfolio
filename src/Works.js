@@ -6,7 +6,6 @@ import "./Works.css";
 import ContentsContainer from "./ContentsContainer";
 import Content_image1 from "./img/react_note.png";
 import Content_image2 from "./img/host_family.png";
-import { Link } from "react-router-dom";
 
 class Works extends React.Component {
   render() {

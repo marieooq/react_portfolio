@@ -22,24 +22,6 @@ class About extends React.Component {
   }
 
   render() {
-    const createArticles = this.state.articles.map(item => {
-      return (
-        <div className="card">
-          <a href={item.link}>
-            <img
-              className="card-img"
-              src={item.thumbnail}
-              alt="blog-thumbnail"
-            ></img>
-          </a>
-          <div className="card-content clearfix">
-            <div className="blog-title">{item.title}</div>
-            <p className="blog-date">{item.pubDate.slice(0, 10)}</p>
-          </div>
-        </div>
-      );
-    });
-
     const links = {
       Resume: "#",
       Email: "#",
@@ -131,13 +113,6 @@ class About extends React.Component {
 
               <section className="about-topics">{topicsLinks}</section>
             </div>
-          </div>
-        </div>
-
-        <div className="medium">
-          <h2>Medium</h2>
-          <div className="medium-inner">
-            <div className="card-container">{createArticles}</div>
           </div>
         </div>
       </div>
