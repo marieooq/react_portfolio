@@ -2,10 +2,7 @@ import React from "react";
 import Header from "./Header";
 import worksImage from "./img/about_photo.jpg";
 import "./App.css";
-import "./Blog.css";
-import ContentsContainer from "./ContentsContainer";
-import Content_image1 from "./img/react_note.png";
-import Content_image2 from "./img/host_family.png";
+import "./Blog.scss";
 import axios from "axios";
 
 class Blog extends React.Component {
@@ -27,12 +24,16 @@ class Blog extends React.Component {
       return (
         <div className="blog-inner">
           <div className="blog-image">
-            <a href={item.link}>
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
               <img src={item.thumbnail} alt="blog-thumbnail"></img>
             </a>
           </div>
           <div className="blog-description">
-            <h3>{item.title}</h3>
+            <h3>
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                {item.title}
+              </a>
+            </h3>
             <p>{item.pubDate.slice(0, 10)}</p>
           </div>
         </div>
@@ -42,7 +43,6 @@ class Blog extends React.Component {
     return (
       <div className="works-wrapper">
         <Header section="about" imgSrc={worksImage} />
-        {/* <ContentsContainer obj={contentsObj} /> */}
         <div className="blog">
           <div className="blog-wrapper">{articleLists}</div>
         </div>

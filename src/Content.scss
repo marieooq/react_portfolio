@@ -15,32 +15,36 @@
 .contents_image,
 .contents_description {
   flex: 1;
-}
 
-.contents_description h3 {
-  font-size: 33px;
-  line-height: 1.14;
-  padding: 0;
-  margin: 0;
-}
+  h3 {
+    font-size: 33px;
+    line-height: 1.14;
+    padding: 0;
+    margin: 0;
+  }
 
-.contents_description p {
-  font-size: 18px;
-  line-height: 1.27;
-  color: var(--subFontColor);
-}
+  p {
+    font-size: 18px;
+    line-height: 1.27;
+    color: var(--subFontColor);
+  }
+  a.contents-detail {
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--accentColor);
+    border: 2px solid var(--accentColor);
+    padding: 1.2em 3em;
+    border-radius: 8px;
+    letter-spacing: 0em;
+    line-height: 1.1em;
+    margin-top: 1.2rem;
+  }
 
-.contents_description a {
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  color: var(--accentColor);
-  border: 2px solid var(--accentColor);
-  padding: 1.2em 3em;
-  border-radius: 5em;
-  letter-spacing: 0em;
-  line-height: 1.1em;
-  margin-top: 1.2rem;
+  a.contents-detail:hover {
+    color: #fff;
+    background-color: var(--accentColor);
+  }
 }
 
 @media screen and (max-width: 1179px) {
