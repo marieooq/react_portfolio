@@ -3,43 +3,37 @@ import Header from "./Header";
 import worksImage from "./img/about_photo.jpg";
 import "./App.css";
 import "./Works.css";
+import ContentsContainer from "./ContentsContainer";
 import Content_image1 from "./img/react_note.png";
 import Content_image2 from "./img/host_family.png";
 import { Link } from "react-router-dom";
 
 class Works extends React.Component {
   render() {
-    const sections = { title1: "/work1", title2: "/work2" };
+    const contentsObj = [
+      {
+        image: Content_image1,
+        title: "React based To-Do List",
+        description:
+          "This is a simple to Do List using React.js and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved if they refresh it. It’s very intuitive design and easy to manipulate. ",
+        url: "/work1"
+      },
+      {
+        image: Content_image2,
+        title: "Illustration",
+        description:
+          "The illustration is drawn using illustrator. I drew it to express my gratitude.  I traced a picture of the family that host father keep it affectionately. Using the same tone of colors enables it looks organized. The yellow used in background color expresses the brightness they have.",
+        url: "/work2"
+      }
+    ];
 
     return (
       <div className="works-wrapper">
         <Header section="about" imgSrc={worksImage} />
-        <div className="works">
-          <WorkContent
-            myTitle="React based To-Do List"
-            myURL={sections.title1}
-            myImg={Content_image1}
-          />
-          <WorkContent
-            myTitle="Illustration"
-            myURL={sections.title2}
-            myImg={Content_image2}
-          />
-        </div>
+        <ContentsContainer obj={contentsObj} />
       </div>
     );
   }
 }
-
-const WorkContent = props => {
-  return (
-    <div className="content">
-      <p className="content-title">{props.myTitle}</p>
-      <Link to={props.myURL}>
-        <img className="content-img" src={props.myImg}></img>
-      </Link>
-    </div>
-  );
-};
 
 export default Works;

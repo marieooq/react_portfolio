@@ -1,7 +1,5 @@
 import React from "react";
 import Content from "./Content";
-// import Content_image1 from "./img/react_note.png";
-// import Content_image2 from "./img/host_family.png";
 import "./ContentsContainer.css";
 
 const ContentsContainer = props => {
