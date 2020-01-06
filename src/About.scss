@@ -1,6 +1,6 @@
 .about {
   margin-top: 450px;
-  padding: 100px 0 0 0;
+  padding: 100px 0;
   margin: 0 3%;
   border-radius: 8px;
   background-color: var(--lightBlueColor);
@@ -16,6 +16,7 @@ section.about-introduction {
 }
 
 .about-introduction {
+  margin-bottom: 40px;
   h1 {
     font-weight: 400;
     font-size: 48px;
@@ -45,9 +46,12 @@ ul#sns-links li a:hover {
 }
 
 .topic {
+  margin-bottom: 40px;
   & h2 {
     font-size: 33px;
     line-height: 1.14;
+    margin: 0;
+    padding: 0;
   }
   & p {
     font-size: 18px;
