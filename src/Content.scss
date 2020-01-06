@@ -39,11 +39,13 @@
     letter-spacing: 0em;
     line-height: 1.1em;
     margin-top: 1.2rem;
+    transition: background-color 0.5s;
   }
 
   a.contents-detail:hover {
     color: #fff;
     background-color: var(--accentColor);
+    transition: background-color 0.8s;
   }
 }
 
