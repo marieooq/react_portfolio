@@ -26,28 +26,47 @@ p.work-subTitle {
   margin: 0 0 10px;
 }
 
-.work_skills > .tags {
-  margin: 0;
-  padding: 0;
-}
-.work_skills > .tags > li {
-  font-size: 12px;
-  color: var(--subAccentColor);
-  list-style: none;
-  display: inline-block;
-  border: 2px solid var(--subAccentColor);
-  /* background-color: var(--subAccentColor); */
-  border-radius: 8px;
-  margin: 0 10px 30px 0;
-  padding: 0.5em 1em;
-}
-
 p.work-description {
   color: var(--subFontColor);
   font-weight: 400;
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 30px;
+}
+
+.work_skills {
+  .tags {
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: 12px;
+      color: var(--subAccentColor);
+      list-style: none;
+      display: inline-block;
+      border: 2px solid var(--subAccentColor);
+      /* background-color: var(--subAccentColor); */
+      border-radius: 8px;
+      margin: 0 10px 45px 0;
+      padding: 0.5em 1em;
+    }
+  }
+}
+
+h2.headline {
+  font-size: 33px;
+  line-height: 1.1;
+  color: var(--fontColor);
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+p.headline-content {
+  font-size: 20px;
+  line-height: 1.27;
+  color: var(--subFontColor);
+  padding: 0;
+  margin: 0 0 30px;
 }
 
 @media screen and (max-width: 768px) {
