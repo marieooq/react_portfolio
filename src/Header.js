@@ -1,6 +1,6 @@
 import React from "react";
 import Background from "./img/header.jpg";
-import "./Header.css";
+import "./Header.scss";
 
 const Header = props => {
   if (props.section === "header") {
@@ -23,6 +23,12 @@ const Header = props => {
     return (
       <header className="about-header">
         <img src={props.imgSrc} alt="about" id="about_photo" />
+      </header>
+    );
+  } else if (props.section === "work") {
+    return (
+      <header className="work-header">
+        <img src={props.imgSrc} alt="about" id="work-photo" />
       </header>
     );
   }

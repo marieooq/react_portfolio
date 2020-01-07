@@ -10,13 +10,11 @@ const tagList = tags.map(elm => {
   return <li>{elm}</li>;
 });
 
-const linkIcon = <ion-icon name="open"></ion-icon>;
-
 class Work1 extends React.Component {
   render() {
     return (
       <div>
-        <Header section="about" imgSrc={Content_image1} />
+        <Header section="work" imgSrc={Content_image1} />
         <WorkTemplate
           img={Content_image1}
           title="React based To-Do List"

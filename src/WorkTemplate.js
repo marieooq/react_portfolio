@@ -5,12 +5,9 @@ import "./WorkTemplate.css";
 class WorkTemplate extends React.Component {
   render() {
     return (
-      <div>
-        <div className="mainImage">
-          <img src={this.props.img} alt="main"></img>
-        </div>
-        <div className="work_description">
-          <h2 className="work_title">{this.props.title}</h2>
+      <div className="work-template">
+        <div className="work-inner">
+          <h1 className="work_title">{this.props.title}</h1>
           <p className="work_detail">{this.props.description}</p>
           <div className="work_links">
             <a href={this.props.url} target="_blank" rel="noopener noreferrer">

@@ -12,6 +12,29 @@ header.about-header {
   margin-left: 23%;
   position: relative;
   /* background-color: aqua; */
+  img#about_photo {
+    display: block;
+    height: 500px;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    border-radius: 8px;
+  }
+}
+
+header.work-header {
+  width: 10%;
+  // height: 450px;
+  margin-left: 20%;
+  position: relative;
+  img#work-photo {
+    display: block;
+    height: 450px;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    border-radius: 8px;
+  }
 }
 
 .main-img {
@@ -51,15 +74,6 @@ header .introduction > .introduction-inner h1 span#name {
 header .introduction > .introduction-inner h1 span#job-title {
   /* font-weight: 700; */
   color: var(--accentColor);
-}
-
-img#about_photo {
-  display: block;
-  height: 500px;
-  position: absolute;
-  top: 5%;
-  left: 15%;
-  border-radius: 8px;
 }
 
 @media screen and (max-width: 1179px) {
