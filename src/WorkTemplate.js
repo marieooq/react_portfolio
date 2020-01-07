@@ -28,11 +28,8 @@ class WorkTemplate extends React.Component {
             {this.props.problemSolvingDescription}
           </p>
 
-          <div className="work_links">
-            <a href={this.props.url} target="_blank" rel="noopener noreferrer">
-              {this.props.url_title}
-            </a>
-          </div>
+          <h2 className="headline">Links</h2>
+          <ul className="work_links">{this.props.relatedWebsitesLists}</ul>
         </div>
       </div>
     );

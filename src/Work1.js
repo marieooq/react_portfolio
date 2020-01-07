@@ -10,6 +10,26 @@ const tagList = tags.map(elm => {
   return <li>{elm}</li>;
 });
 
+const relatedWebsites = {
+  "Visit the website": "https://reactnote-93fb1.web.app/",
+  Medium:
+    "https://medium.com/@marieotaki/i-dont-know-what-react-exactly-is-although-i-ve-created-an-app-using-it-e0aaf7dcabc5"
+};
+
+const relatedWebsitesLists = Object.keys(relatedWebsites).map(keyName => {
+  return (
+    <li>
+      <a
+        href={relatedWebsites[keyName]}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {keyName}
+      </a>
+    </li>
+  );
+});
+
 const workObj = {
   img: { Content_image1 },
   title: "React based To-Do List",
@@ -42,6 +62,7 @@ class Work1 extends React.Component {
           howItWorksDescription={workObj.howItWorks}
           difficultPartDescription={workObj.difficultPart}
           problemSolvingDescription={workObj.problemSolving}
+          relatedWebsitesLists={relatedWebsitesLists}
         />
       </div>
     );
