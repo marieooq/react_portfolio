@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./Header";
 import WorkTemplate from "./WorkTemplate";
-import Content_image1 from "./img/work1.png";
+import Content_image1 from "./img/reactToDo_demo.gif";
 
 const tags = ["HTML", "CSS", "JavaScript", "React.js"];
 
@@ -18,6 +18,7 @@ class Work1 extends React.Component {
         <WorkTemplate
           img={Content_image1}
           title="React based To-Do List"
+          subTitle="A simple to Do List using React.js and Firebase"
           description="This is a simple to Do List using React.js and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved if they refresh it. It’s very intuitive design and easy to manipulate. I posted an article on Medium about what I struggled creating this app. Please check it out if you’d like to know more about it."
           url="https://medium.com/@marie_woq/i-dont-know-what-react-exactly-is-although-i-ve-created-an-app-using-it-e0aaf7dcabc5"
           url_title="Medium"

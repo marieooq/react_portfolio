@@ -14,32 +14,26 @@
 h1.work_title {
   font-weight: 800;
   font-size: 48px;
-  line-height: 1.3;
+  /* line-height: 1.14; */
   margin: 0;
   padding: 0;
 }
-.work_detail {
+p.work-subTitle {
+  color: var(--subFontColor);
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 1.14;
+  margin: 0 0 30px;
+}
+
+p.work-description {
+  color: var(--subFontColor);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.14;
   margin-bottom: 10px;
 }
 
-.work_links {
-  margin-bottom: 30px;
-}
-
-.work_links a {
-  color: var(--baseColor);
-  text-decoration: none;
-}
-
-.work_links a ion-icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-.work_links a:hover {
-  opacity: 0.6;
-}
 .work_skills > .tags {
   margin: 0;
   padding: 0;
