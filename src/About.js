@@ -32,7 +32,9 @@ class About extends React.Component {
     const snsLinks = Object.keys(links).map(keyName => {
       return (
         <li>
-          <a href={links[keyName]}>{keyName}</a>
+          <a href={links[keyName]} target="_blank" rel="noopener noreferrer">
+            {keyName}
+          </a>
         </li>
       );
     });
