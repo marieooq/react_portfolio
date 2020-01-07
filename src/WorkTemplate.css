@@ -23,15 +23,7 @@ p.work-subTitle {
   font-weight: 400;
   font-size: 33px;
   line-height: 1.14;
-  margin: 0 0 30px;
-}
-
-p.work-description {
-  color: var(--subFontColor);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.14;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
 .work_skills > .tags {
@@ -40,13 +32,22 @@ p.work-description {
 }
 .work_skills > .tags > li {
   font-size: 12px;
-  color: #fff;
+  color: var(--subAccentColor);
   list-style: none;
   display: inline-block;
-  background-color: var(--baseColor);
-  border-radius: 10px;
-  margin: 0 15px 0 0;
+  border: 2px solid var(--subAccentColor);
+  /* background-color: var(--subAccentColor); */
+  border-radius: 8px;
+  margin: 0 10px 30px 0;
   padding: 0.5em 1em;
+}
+
+p.work-description {
+  color: var(--subFontColor);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
