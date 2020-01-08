@@ -8,7 +8,6 @@ class WorkTemplate extends React.Component {
       <div className="work-template">
         <div className="work-inner">
           <h1 className="work_title">{this.props.title}</h1>
-          <p className="work-subTitle">{this.props.subTitle}</p>
           <p className="work-description">{this.props.description}</p>
 
           <div className="work_skills">

@@ -4,7 +4,7 @@ import Header from "./Header";
 import WorkTemplate from "./WorkTemplate";
 import Content_image1 from "./img/reactToDo_demo.gif";
 
-const tags = ["HTML", "CSS", "JavaScript", "React.js"];
+const tags = ["HTML5", "CSS3", "JavaScript", "React.js", "Firebase"];
 
 const tagList = tags.map(elm => {
   return <li>{elm}</li>;
@@ -33,7 +33,6 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(keyName => {
 const workObj = {
   img: { Content_image1 },
   title: "React based To-Do List",
-  subTitle: "A simple to Do List using React.js and Firebase",
   description:
     "This is a simple to Do List using React.js and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved if they refresh it. It’s very intuitive design and easy to manipulate. I posted an article on Medium about what I struggled creating this app. Please check it out if you’d like to know more about it.",
   tags: { tagList },
