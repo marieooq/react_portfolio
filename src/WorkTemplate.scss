@@ -71,11 +71,22 @@ p.headline-content {
 
 ul.work_links {
   padding: 0;
+  li {
+    list-style: none;
+  }
 
   li a {
+    display: inline-block;
     text-decoration: none;
     font-size: 20px;
     color: var(--accentColor);
+    line-height: 1.14;
+    margin-bottom: 5px;
+  }
+
+  li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
 }
 
