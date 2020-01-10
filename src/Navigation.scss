@@ -115,24 +115,21 @@ nav ul#global-nav {
   }
 
   nav ul#global-nav {
-    display: none;
-  }
-
-  nav ul#global-nav.open {
-    display: block;
-    opacity: 1;
     text-align: center;
     background-color: var(--greyColor);
     padding: 75px 0 45px;
-    margin-top: -20px;
+    margin-top: -1000px;
+    transition: all 0.8s ease-out;
     li:last-child {
       margin-bottom: 0;
     }
   }
+
+  nav ul#global-nav.open {
+    margin-top: -20px;
+    transition: all 0.5s ease-out;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-  #nav-inner {
-    // width: 60%;
-  }
 }
