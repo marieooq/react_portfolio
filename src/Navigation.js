@@ -1,10 +1,19 @@
 import React from "react";
 import "./App.css";
-import "./Navigation.css";
+import "./Navigation.scss";
 import { Link } from "react-router-dom";
 import logo from "./img/logo.png";
 
 class Navigation extends React.Component {
+  clickHandle = () => {
+    const grobalNav = document.getElementById("global-nav");
+    const navInner = document.getElementById("nav-inner");
+    const nav = document.querySelector("nav");
+    console.log(nav);
+    grobalNav.classList.toggle("open");
+    navInner.classList.toggle("open");
+    nav.classList.toggle("open");
+  };
   render() {
     const sections = {
       Home: "/",
@@ -20,6 +29,7 @@ class Navigation extends React.Component {
         </li>
       );
     });
+
     return (
       <nav>
         <div id="nav-inner">
@@ -28,7 +38,14 @@ class Navigation extends React.Component {
               <img className="logo-icon" src={logo} alt="logo"></img>
             </Link>
           </h2>
-          <ul>{navLinks}</ul>
+          <div id="nav-toggle" onClick={this.clickHandle}>
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul id="global-nav">{navLinks}</ul>
         </div>
       </nav>
     );

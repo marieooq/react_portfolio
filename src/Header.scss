@@ -24,7 +24,7 @@ header.about-header {
 
 header.work-header {
   width: 10%;
-  // height: 450px;
+  height: 450px;
   margin-left: 20%;
   position: relative;
   img#work-photo {
@@ -40,15 +40,14 @@ header.work-header {
 .main-img {
   margin: 0;
   padding: 0;
-}
-
-.main-img img {
-  display: block;
-  height: 500px;
-  position: absolute;
-  top: 5%;
-  right: 0;
-  border-radius: 8px;
+  img {
+    display: block;
+    height: 500px;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    border-radius: 8px;
+  }
 }
 
 .introduction {
@@ -76,81 +75,35 @@ header .introduction > .introduction-inner h1 span#job-title {
   color: var(--accentColor);
 }
 
-@media screen and (max-width: 1179px) {
-  header {
-    height: 700px;
-  }
-
-  .introduction {
-    top: 18%;
-  }
-  header .introduction > .introduction-inner p {
-    font-size: 2.2rem;
-    margin: 13% 0 5% 0;
-  }
-  header .introduction > .introduction-inner span {
-    font-size: 0.8rem;
-  }
-
-  header .introduction > .introduction-inner a {
-    font-size: 0.5rem;
+@media screen and (min-width: 480px) {
+  .main-img {
+    img {
+      height: 350px;
+      position: absolute;
+      top: 5%;
+      right: 0;
+    }
   }
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    height: 400px;
-  }
-
-  .main-img img {
-    right: 3%;
-  }
-  .introduction {
-    top: 23%;
-    left: 3%;
-  }
-  header .introduction > .introduction-inner p {
-    font-size: 1.4rem;
-    margin: 13% 0 5% 0;
-  }
-
-  header .introduction > .introduction-inner a {
-    font-size: 0.5rem;
-    padding: 1em 2em;
-    border-radius: 5em;
-    letter-spacing: 0em;
-    line-height: 1.5em;
-    margin-top: 7%;
+@media screen and (min-width: 768px) {
+  .main-img {
+    img {
+      height: 400px;
+      position: absolute;
+      top: 5%;
+      right: 0;
+    }
   }
 }
 
-@media screen and (max-width: 375px) {
-  .main-img img {
-    display: block;
-    width: 75%;
-    right: 7%;
-  }
-
-  header {
-    height: 380px;
-  }
-
-  .introduction {
-    width: 70%;
-    left: 7%;
-    top: 30%;
-  }
-  header .introduction > .introduction-inner p {
-    /* font-size: 1.rem; */
-    margin: 13% 0 5% 0;
-  }
-
-  header .introduction > .introduction-inner span {
-    font-size: 0.5rem;
-  }
-
-  header .introduction > .introduction-inner a {
-    font-size: 0.3rem;
-    padding: 0.5em 1em;
+@media screen and (min-width: 1024px) {
+  .main-img {
+    img {
+      height: 450px;
+      position: absolute;
+      top: 5%;
+      right: 0;
+    }
   }
 }
