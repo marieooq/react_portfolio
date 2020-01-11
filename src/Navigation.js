@@ -6,12 +6,7 @@ import logo from "./img/logo.png";
 
 class Navigation extends React.Component {
   clickHandle = () => {
-    const grobalNav = document.getElementById("global-nav");
-    const navInner = document.getElementById("nav-inner");
     const nav = document.querySelector("nav");
-    console.log(nav);
-    grobalNav.classList.toggle("open");
-    navInner.classList.toggle("open");
     nav.classList.toggle("open");
   };
   render() {
