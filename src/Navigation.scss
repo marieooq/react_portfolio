@@ -62,6 +62,7 @@ nav ul#global-nav {
     background-color: var(--greyColor);
 
     #nav-inner {
+      position: relative;
       width: 100%;
       height: 50%;
 
@@ -70,6 +71,7 @@ nav ul#global-nav {
         position: fixed;
         left: 18px;
         top: 23px;
+        z-index: 4;
         &.logo img.logo-icon {
           width: 30px;
           margin-bottom: 0px;
@@ -87,7 +89,7 @@ nav ul#global-nav {
     height: 30px;
     cursor: pointer;
     padding: 10px 11px;
-    z-index: 1001;
+    z-index: 4;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     div {
       position: relative;
@@ -115,19 +117,25 @@ nav ul#global-nav {
   }
 
   nav ul#global-nav {
+    position: absolute;
+    top: -300px;
+    width: 100%;
     text-align: center;
     background-color: var(--greyColor);
     padding: 75px 0 45px;
-    margin-top: -1000px;
-    transition: all 0.8s ease-out;
+    // margin-top: -1000px;
+    transition: all 0.3s ease-out;
     li:last-child {
       margin-bottom: 0;
     }
   }
 
   nav ul#global-nav.open {
-    margin-top: -20px;
-    transition: all 0.5s ease-out;
+    // margin-top: -20px;
+    // transition: all 0.5s ease-out;
+    -moz-transform: translateY(300px);
+    -webkit-transform: translateY(300px);
+    transform: translateY(300px);
   }
 }
 
