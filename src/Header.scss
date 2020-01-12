@@ -1,9 +1,8 @@
 header {
-  width: 56%;
+  width: 100%;
   height: 450px;
-  margin-left: 23%;
+  margin-left: 0%;
   position: relative;
-  /* background-color: aqua; */
 }
 
 header.about-header {
@@ -11,7 +10,6 @@ header.about-header {
   height: 450px;
   margin-left: 23%;
   position: relative;
-  /* background-color: aqua; */
   img#about_photo {
     display: block;
     height: 500px;
@@ -38,69 +36,168 @@ header.work-header {
 }
 
 .main-img {
-  margin: 0;
-  padding: 0;
   img {
     display: block;
-    height: 500px;
-    position: absolute;
-    top: 5%;
-    right: 0;
-    border-radius: 8px;
+    height: 100vh;
+    margin: 0 auto;
+    position: static;
   }
 }
 
 .introduction {
-  width: 500px;
-  position: absolute;
-  top: 38%;
-  left: 4%;
-}
+  width: 380px;
+  margin: 0 auto;
+  position: static;
 
-header .introduction > .introduction-inner h1 {
-  font-size: 3rem;
-  font-family: var(--mainFont);
-  font-weight: 400;
-  line-height: 1.14;
-  color: var(--subFontColor);
-}
+  .introduction-inner {
+    h1 {
+      font-size: 2.75rem;
+      font-family: var(--mainFont);
+      font-weight: 400;
+      line-height: 1.14;
+      color: var(--subFontColor);
 
-header .introduction > .introduction-inner h1 span#name {
-  font-weight: 700;
-  color: var(--fontColor);
-}
+      span#name {
+        font-weight: 700;
+        color: var(--fontColor);
+      }
 
-header .introduction > .introduction-inner h1 span#job-title {
-  /* font-weight: 700; */
-  color: var(--accentColor);
+      span#job-title {
+        color: var(--accentColor);
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 480px) {
+  header {
+    width: 100%;
+    height: 450px;
+    margin-left: 0%;
+    position: relative;
+  }
   .main-img {
     img {
-      height: 350px;
+      height: 100vh;
+      margin: 0 auto;
+      position: static;
+    }
+  }
+
+  .introduction {
+    width: 380px;
+    margin: 0 auto;
+    position: static;
+
+    .introduction-inner {
+      h1 {
+        font-size: 2.75rem;
+        font-family: var(--mainFont);
+        font-weight: 400;
+        line-height: 1.14;
+        color: var(--subFontColor);
+
+        span#name {
+          font-weight: 700;
+          color: var(--fontColor);
+        }
+
+        span#job-title {
+          color: var(--accentColor);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    width: 65%;
+    height: 450px;
+    margin-left: 23%;
+    position: relative;
+  }
+  .main-img {
+    img {
+      height: 450px;
+      margin: 0;
       position: absolute;
       top: 5%;
       right: 0;
     }
   }
-}
 
-@media screen and (min-width: 768px) {
-  .main-img {
-    img {
-      height: 400px;
-      position: absolute;
-      top: 5%;
-      right: 0;
+  .introduction {
+    width: 450px;
+    padding: 0px;
+    background-color: transparent;
+    position: absolute;
+    top: 38%;
+    left: 4%;
+    .introduction-inner {
+      h1 {
+        font-size: 2.75rem;
+        font-family: var(--mainFont);
+        font-weight: 400;
+        line-height: 1.14;
+        color: var(--subFontColor);
+
+        span#name {
+          font-weight: 700;
+          color: var(--fontColor);
+        }
+
+        span#job-title {
+          color: var(--accentColor);
+        }
+      }
     }
   }
 }
 
 @media screen and (min-width: 1024px) {
+  header {
+    width: 65%;
+    height: 450px;
+    margin-left: 23%;
+    position: relative;
+  }
   .main-img {
     img {
       height: 450px;
+      margin: 0;
+      position: absolute;
+      top: 5%;
+      right: 0;
+    }
+  }
+
+  .introduction {
+    width: 450px;
+    padding: 0px;
+    background-color: transparent;
+    position: absolute;
+    top: 38%;
+    left: 4%;
+    .introduction-inner {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    width: 56%;
+    height: 450px;
+    margin-left: 23%;
+    position: relative;
+  }
+  .main-img {
+    img {
+      height: 500px;
+      margin: 0;
       position: absolute;
       top: 5%;
       right: 0;
