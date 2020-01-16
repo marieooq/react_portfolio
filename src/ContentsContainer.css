@@ -50,8 +50,4 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .contents-inner {
-    width: 58%;
-    margin-left: 23%;
-  }
 }
