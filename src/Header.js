@@ -28,7 +28,7 @@ const Header = props => {
   } else if (props.section === "work") {
     return (
       <header className="work-header">
-        <img src={props.imgSrc} alt="about" id="work-photo" />
+        <img src={props.imgSrc} alt="work" id="work-photo" />
       </header>
     );
   }
