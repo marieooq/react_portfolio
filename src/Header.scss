@@ -3,6 +3,7 @@ header {
   height: 450px;
   margin-left: 0%;
   position: relative;
+  // background-color: aquamarine;
 }
 
 header.about-header {
@@ -41,6 +42,7 @@ header.work-header {
     height: 100vh;
     margin: 0 auto;
     position: static;
+    border-radius: 8px;
   }
 }
 
@@ -51,7 +53,7 @@ header.work-header {
 
   .introduction-inner {
     h1 {
-      font-size: 2.75rem;
+      font-size: 48px;
       font-family: var(--mainFont);
       font-weight: 400;
       line-height: 1.14;
@@ -157,8 +159,7 @@ header.work-header {
 
 @media screen and (min-width: 1024px) {
   header {
-    width: 65%;
-    height: 450px;
+    width: 56%;
     margin-left: 23%;
     position: relative;
   }
@@ -190,7 +191,6 @@ header.work-header {
 @media screen and (min-width: 1440px) {
   header {
     width: 56%;
-    height: 450px;
     margin-left: 23%;
     position: relative;
   }
