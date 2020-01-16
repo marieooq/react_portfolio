@@ -1,25 +1,12 @@
-// .contents {
-//   width: 100%;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   margin-bottom: 5%;
-//   padding: 0;
-// }
-
-// .contents_image img {
-//   display: block;
-//   border-radius: 8px;
-//   width: 320px;
-// }
-
 .contents {
   width: 100%;
   display: block;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
+  // background-color: aquamarine;
 
   .contents_image {
     img {
+      display: block;
       width: 100%;
       margin: 0 auto;
       border-radius: 8px;
@@ -44,7 +31,7 @@
     color: var(--subFontColor);
   }
   a.contents-detail {
-    font-size: 1rem;
+    font-size: 1em;
     text-decoration: none;
     display: inline-block;
     color: var(--accentColor);
@@ -53,7 +40,7 @@
     border-radius: 8px;
     letter-spacing: 0em;
     line-height: 1.1em;
-    margin-top: 1.2rem;
+    margin-top: 1.2em;
     transition: background-color 0.5s;
   }
 
@@ -68,12 +55,12 @@
   .contents {
     width: 100%;
     display: block;
-    margin-bottom: 5%;
 
     .contents_image {
       img {
         width: 100%;
         margin: 0 auto;
+        margin-bottom: 36px;
       }
     }
   }
@@ -84,14 +71,27 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5%;
+    align-items: flex-start;
     padding: 0;
 
     .contents_image {
       img {
-        width: 300px;
+        width: 250px;
       }
+    }
+
+    .contents_description {
+      h3 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    a.contents-detail {
+      font-size: 14px;
     }
   }
 }
@@ -101,8 +101,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5%;
+    align-items: flex-start;
     padding: 0;
 
     .contents_image {
@@ -115,13 +114,6 @@
 
 @media screen and (min-width: 1440px) {
   .contents {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5%;
-    padding: 0;
-
     .contents_image {
       img {
         width: 320px;
