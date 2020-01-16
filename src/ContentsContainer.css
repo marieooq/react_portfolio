@@ -1,5 +1,5 @@
 .contents_wrapper {
-  padding: 420px 0 100px;
+  padding: 600px 0 100px;
   margin: 0 3%;
   border-radius: 8px;
   background-color: var(--lightBlueColor);
@@ -7,16 +7,12 @@
 
 .contents-inner {
   width: 320px;
-  margin: 0 auto;
-  /* background-color: aqua; */
+  margin: auto;
 }
 
 @media screen and (min-width: 480px) {
   .contents_wrapper {
-    padding: 820px 0 100px;
-    margin: 0 3%;
-    border-radius: 8px;
-    background-color: var(--lightBlueColor);
+    padding: 470px 0 100px;
   }
 
   .contents-inner {

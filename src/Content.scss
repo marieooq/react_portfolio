@@ -1,14 +1,13 @@
 .contents {
   width: 100%;
   display: block;
-  margin-bottom: 10%;
-  // background-color: aquamarine;
+  margin-bottom: 60px;
 
   .contents_image {
     img {
       display: block;
       width: 100%;
-      margin: 0 auto;
+      margin: 0 auto 30px;
       border-radius: 8px;
     }
   }
@@ -40,7 +39,7 @@
     border-radius: 8px;
     letter-spacing: 0em;
     line-height: 1.1em;
-    margin-top: 1.2em;
+    margin-top: 0;
     transition: background-color 0.5s;
   }
 
