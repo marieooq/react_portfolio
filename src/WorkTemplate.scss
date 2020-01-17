@@ -4,91 +4,158 @@
   margin: 0 3%;
   border-radius: 8px;
   background-color: var(--lightBlueColor);
-}
+  .work-inner {
+    width: 320px;
+    margin: 0 auto;
 
-.work-inner {
-  width: 56%;
-  margin-left: 24%;
-}
+    h1.work_title {
+      font-weight: 800;
+      font-size: 48px;
+      /* line-height: 1.14; */
+      margin: 0;
+      padding: 0;
+    }
 
-h1.work_title {
-  font-weight: 800;
-  font-size: 48px;
-  /* line-height: 1.14; */
-  margin: 0;
-  padding: 0;
-}
+    p.work-description {
+      color: var(--subFontColor);
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.4;
+      margin-bottom: 30px;
+    }
 
-p.work-description {
-  color: var(--subFontColor);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
-  margin-bottom: 30px;
-}
+    .work_skills {
+      .tags {
+        margin: 0;
+        padding: 0;
 
-.work_skills {
-  .tags {
-    margin: 0;
-    padding: 0;
+        li {
+          font-size: 12px;
+          color: var(--subAccentColor);
+          list-style: none;
+          display: inline-block;
+          border: 2px solid var(--subAccentColor);
+          border-radius: 8px;
+          margin: 0 10px 45px 0;
+          padding: 0.5em 1em;
+        }
+      }
+    }
 
-    li {
-      font-size: 12px;
-      color: var(--subAccentColor);
-      list-style: none;
-      display: inline-block;
-      border: 2px solid var(--subAccentColor);
-      /* background-color: var(--subAccentColor); */
-      border-radius: 8px;
-      margin: 0 10px 45px 0;
-      padding: 0.5em 1em;
+    h2.headline {
+      font-size: 33px;
+      line-height: 1.1;
+      color: var(--fontColor);
+      padding: 0;
+      margin: 0 0 10px;
+    }
+
+    p.headline-content {
+      font-size: 20px;
+      line-height: 1.27;
+      color: var(--subFontColor);
+      padding: 0;
+      margin: 0 0 30px;
+    }
+
+    ul.work_links {
+      padding: 0;
+      li {
+        list-style: none;
+      }
+
+      li a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 20px;
+        color: var(--accentColor);
+        line-height: 1.14;
+        margin-bottom: 5px;
+      }
+
+      li a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
   }
 }
 
-h2.headline {
-  font-size: 33px;
-  line-height: 1.1;
-  color: var(--fontColor);
-  padding: 0;
-  margin: 0 0 10px;
-}
+@media screen and (min-width: 480px) {
+  .work-template {
+    .work-inner {
+      width: 400px;
+      h1.work_title {
+        font-size: 44px;
+      }
+      p.work-description {
+        font-size: 18px;
+      }
 
-p.headline-content {
-  font-size: 20px;
-  line-height: 1.27;
-  color: var(--subFontColor);
-  padding: 0;
-  margin: 0 0 30px;
-}
+      h2.headline {
+        font-size: 33px;
+      }
 
-ul.work_links {
-  padding: 0;
-  li {
-    list-style: none;
-  }
+      p.headline-content {
+        font-size: 18px;
+      }
 
-  li a {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 20px;
-    color: var(--accentColor);
-    line-height: 1.14;
-    margin-bottom: 5px;
-  }
-
-  li a:hover {
-    cursor: pointer;
-    text-decoration: underline;
+      ul.work_links {
+        li a {
+          font-size: 18px;
+        }
+      }
+    }
   }
 }
 
-@media screen and (max-width: 768px) {
-  .work_title {
-    font-size: 2rem;
-  }
-
-  .work_description {
-    font-size: 0.9rem;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .work-template {
+    .work-inner {
+      width: 70%;
+      margin-left: 20%;
+    }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .work-template {
+    .work-inner {
+      width: 56%;
+      margin-left: 24%;
+      h1.work_title {
+        font-size: 48px;
+      }
+      p.work-description {
+        font-size: 20px;
+      }
+
+      h2.headline {
+        font-size: 33px;
+      }
+
+      p.headline-content {
+        font-size: 20px;
+      }
+
+      ul.work_links {
+        li a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+// @media screen and (max-width: 768px) {
+//   .work_title {
+//     font-size: 2rem;
+//   }
+
+//   .work_description {
+//     font-size: 0.9rem;
+//   }
+// }

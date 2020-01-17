@@ -93,8 +93,6 @@ class About extends React.Component {
       );
     });
 
-    console.log(topicsLinks);
-
     return (
       <div>
         <div className="about-wrapper">
