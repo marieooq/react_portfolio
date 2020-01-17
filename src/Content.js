@@ -12,7 +12,9 @@ class Content extends React.Component {
           </Link>
         </div>
         <div className="contents_description">
-          <h3>{this.props.myTitle}</h3>
+          <h3>
+            <Link to={this.props.myURL}>{this.props.myTitle}</Link>
+          </h3>
           <p>{this.props.myDescription}</p>
           <Link to={this.props.myURL} className="contents-detail">
             Find Out More
