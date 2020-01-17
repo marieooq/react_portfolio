@@ -1,13 +1,13 @@
 .about {
   margin-top: 450px;
-  padding: 100px 0;
+  padding: 600px 0 100px;
   margin: 0 3%;
   border-radius: 8px;
   background-color: var(--lightBlueColor);
 
   .about-inner {
-    width: 56%;
-    margin-left: 24%;
+    width: 320px;
+    margin: auto;
 
     .about-introduction {
       margin-bottom: 40px;
@@ -58,7 +58,10 @@
 
 @media screen and (min-width: 480px) {
   .about {
+    padding: 470px 0 100px;
     .about-inner {
+      width: 400px;
+      margin: 0 auto;
       .about-introduction {
         ul#sns-links {
           text-align: left;
@@ -84,11 +87,21 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    padding: 120px 0 100px;
+    .about-inner {
+      width: 70%;
+      margin-left: 20%;
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .about {
+    padding: 150px 0 100px;
     .about-inner {
+      width: 56%;
+      margin-left: 24%;
       .about-introduction {
         display: flex;
 
