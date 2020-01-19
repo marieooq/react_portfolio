@@ -59,10 +59,6 @@
       .blog-inner {
         .blog-image {
           flex: 1;
-          a {
-            img {
-            }
-          }
         }
       }
     }
@@ -71,7 +67,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .blog {
-    padding: 120px 0 100px;
+    padding: 100px 0;
     .blog-wrapper {
       width: 70%;
       margin-left: 20%;
