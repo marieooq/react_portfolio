@@ -1,14 +1,22 @@
 header {
-  width: 100%;
-  height: 450px;
+  max-width: 100%;
+  // height: 100vh;
   margin-left: 0%;
   position: relative;
   // background-color: aquamarine;
+
+  //TEST
+  // background-image: url("./img/header.jpg");
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-size: cover;
+  // background-color: #464646;
 }
 
 header.about-header,
 header.work-header {
-  width: 100%;
+  max-width: 100%;
   height: 350px;
   margin-bottom: -480px;
   position: relative;
@@ -34,7 +42,9 @@ header.work-header {
 .main-img {
   img {
     display: block;
-    height: 100vh;
+    // display: none;
+    max-width: 100%;
+    // height: 100vh;
     margin: 0 auto;
     position: static;
     border-radius: 8px;
@@ -68,9 +78,9 @@ header.work-header {
 
 @media screen and (min-width: 480px) {
   header {
-    width: 100%;
+    max-width: 100%;
     height: 450px;
-    margin-left: 0%;
+    // margin-left: 0%;
     position: relative;
   }
   .main-img {
@@ -108,7 +118,7 @@ header.work-header {
 
   header.about-header,
   header.work-header {
-    width: 100%;
+    max-width: 100%;
     height: 400px;
     margin-left: 0;
     margin-bottom: -360px;
@@ -137,6 +147,7 @@ header.work-header {
   }
   .main-img {
     img {
+      display: block;
       height: 450px;
       margin: 0;
       position: absolute;
@@ -205,6 +216,7 @@ header.work-header {
   }
   .main-img {
     img {
+      display: block;
       height: 450px;
       margin: 0;
       position: absolute;
