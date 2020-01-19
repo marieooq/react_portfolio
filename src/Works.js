@@ -28,7 +28,7 @@ class Works extends React.Component {
 
     return (
       <div className="works-wrapper">
-        <Header section="work" imgSrc={worksImage} />
+        <Header section="about" imgSrc={worksImage} />
         <ContentsContainer obj={contentsObj} />
       </div>
     );
