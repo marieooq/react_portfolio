@@ -21,7 +21,7 @@ class App extends React.Component {
       <Router>
         <ScrollToTop>
           <div id="wrapper">
-            <Navigation logoTitle="Marie Otaki" />
+            <Navigation />
 
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
