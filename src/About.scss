@@ -22,7 +22,9 @@
       ul#sns-links {
         list-style: none;
         font-family: var(--subFont);
-        text-align: right;
+        text-align: left;
+        display: flex;
+        padding: 0;
 
         a {
           display: block;
@@ -30,7 +32,7 @@
           color: var(--accentColor);
           font-size: 17px;
           line-height: 1.14;
-          margin-bottom: 8px;
+          margin-right: 17px;
         }
 
         a:hover {
@@ -60,26 +62,6 @@
   .about {
     .about-inner {
       width: 400px;
-      .about-introduction {
-        ul#sns-links {
-          text-align: left;
-          display: flex;
-          padding: 0;
-
-          a {
-            display: block;
-            text-decoration: none;
-            color: var(--accentColor);
-            font-size: 17px;
-            line-height: 1.14;
-            margin-right: 17px;
-          }
-
-          a:hover {
-            text-decoration: underline;
-          }
-        }
-      }
     }
   }
 }
