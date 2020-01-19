@@ -1,6 +1,6 @@
 .blog {
   margin-top: 450px;
-  padding: 600px 0 100px;
+  padding: 60px 0;
   margin: 0 3%;
   border-radius: 8px;
   background-color: var(--lightBlueColor);
@@ -52,7 +52,6 @@
 
 @media screen and (min-width: 480px) {
   .blog {
-    padding: 470px 0 100px;
     .blog-wrapper {
       width: 400px;
       margin: auto;
