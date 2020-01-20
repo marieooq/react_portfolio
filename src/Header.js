@@ -1,4 +1,5 @@
 import React from "react";
+import SpeechBubble from "./img/speech_bubble.gif";
 import Background from "./img/header.jpg";
 import "./Header.scss";
 
@@ -7,7 +8,8 @@ const Header = props => {
     return (
       <header>
         <div className="main-img">
-          <img src={Background} alt="main"></img>
+          <img src={SpeechBubble} alt="speech-bubble" id="speech-bubble"></img>
+          <img src={Background} alt="main" id="profile-photo"></img>
         </div>
         <div className="introduction">
           <div className="introduction-inner">

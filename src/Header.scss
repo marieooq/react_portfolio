@@ -2,6 +2,7 @@ header {
   max-width: 100%;
   margin-left: 0%;
   height: auto;
+  position: relative;
 }
 
 header.about-header,
@@ -29,12 +30,22 @@ header.work-header {
   margin-bottom: -100px;
 }
 .main-img {
-  img {
+  img#profile-photo {
     display: block;
     max-width: 100%;
     margin: 0 auto;
     position: static;
     border-radius: 8px;
+  }
+
+  img#speech-bubble {
+    width: 258px;
+    height: 152px;
+    position: absolute;
+    top: 12%;
+    right: 2%;
+    z-index: 3;
+    transform: scale(0.8);
   }
 }
 
@@ -65,9 +76,15 @@ header.work-header {
 
 @media screen and (min-width: 480px) {
   .main-img {
-    img {
+    img#profile-photo {
       margin: 0 auto;
       position: static;
+      z-index: 1;
+    }
+
+    img#speech-bubble {
+      transform: scale(0.85);
+      z-index: 3;
     }
   }
 
@@ -116,13 +133,21 @@ header.work-header {
     position: relative;
   }
   .main-img {
-    img {
+    img#profile-photo {
       display: block;
       height: 450px;
       margin: 0;
       position: absolute;
       top: 5%;
       right: 0;
+      z-index: 1;
+    }
+    img#speech-bubble {
+      position: absolute;
+      top: 5%;
+      right: -8%;
+      z-index: 3;
+      transform: scale(0.85);
     }
   }
 
@@ -133,6 +158,7 @@ header.work-header {
     position: absolute;
     top: 38%;
     left: 4%;
+    z-index: 2;
     .introduction-inner {
       h1 {
         font-size: 2.5rem;
@@ -186,13 +212,21 @@ header.work-header {
     position: relative;
   }
   .main-img {
-    img {
+    img#profile-photo {
       display: block;
       height: 450px;
       margin: 0;
       position: absolute;
       top: 5%;
       right: 0;
+      z-index: 1;
+    }
+    img#speech-bubble {
+      position: absolute;
+      top: 5%;
+      right: -8%;
+      z-index: 3;
+      transform: scale(0.9);
     }
   }
 
@@ -203,6 +237,7 @@ header.work-header {
     position: absolute;
     top: 38%;
     left: 4%;
+    z-index: 2;
     .introduction-inner {
       h1 {
         font-size: 3rem;
