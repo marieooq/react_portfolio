@@ -42,10 +42,10 @@ header.work-header {
     width: 258px;
     height: 152px;
     position: absolute;
-    top: 12%;
-    right: 2%;
+    top: 8%;
+    right: -9%;
     z-index: 3;
-    transform: scale(0.8);
+    transform: scale(0.65);
   }
 }
 
@@ -84,6 +84,8 @@ header.work-header {
 
     img#speech-bubble {
       transform: scale(0.85);
+      top: 12%;
+      right: 2%;
       z-index: 3;
     }
   }
