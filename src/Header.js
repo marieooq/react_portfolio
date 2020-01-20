@@ -8,7 +8,13 @@ const Header = props => {
     return (
       <header>
         <div className="main-img">
-          <img src={SpeechBubble} alt="speech-bubble" id="speech-bubble"></img>
+          <a href="/MarieOtaki-resume.pdf" target="_blank">
+            <img
+              src={SpeechBubble}
+              alt="speech-bubble"
+              id="speech-bubble"
+            ></img>
+          </a>
           <img src={Background} alt="main" id="profile-photo"></img>
         </div>
         <div className="introduction">
