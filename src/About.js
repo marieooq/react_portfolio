@@ -23,8 +23,8 @@ class About extends React.Component {
 
   render() {
     const links = {
-      Resume: "#",
-      Email: "#",
+      Resume: "/MarieOtaki-resume.pdf",
+      Email: "mailto:otakimarie@gmail.com",
       LinkedIn: "https://www.linkedin.com/in/marie-otaki-a67773186/",
       GitHub: "https://github.com/marieooq"
     };
