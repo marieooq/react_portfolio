@@ -104,8 +104,8 @@
   .blog {
     padding: 150px 0 100px;
     .blog-wrapper {
-      width: 56%;
-      margin-left: 24%;
+      width: 700px;
+      margin-left: 26%;
 
       .blog-inner {
         display: flex;
@@ -135,6 +135,7 @@
 @media screen and (min-width: 1440px) {
   .blog {
     .blog-wrapper {
+      width: 800px;
       .blog-inner {
         .blog-image {
           a {

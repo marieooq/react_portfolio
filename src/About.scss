@@ -80,8 +80,8 @@
   .about {
     padding: 150px 0 100px;
     .about-inner {
-      width: 56%;
-      margin-left: 24%;
+      width: 700px;
+      margin-left: 26%;
       .about-introduction {
         display: flex;
 
@@ -110,4 +110,8 @@
 }
 
 @media screen and (min-width: 1440px) {
+  about-inner {
+    width: 800px;
+    margin-left: 26%;
+  }
 }
