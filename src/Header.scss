@@ -190,7 +190,7 @@ header.work-header {
 
 @media screen and (min-width: 1024px) {
   header {
-    width: 800px;
+    width: 700px;
     height: 450px;
     margin-left: 26%;
     position: relative;
@@ -231,7 +231,7 @@ header.work-header {
 
   header.about-header,
   header.work-header {
-    width: 800px;
+    width: 700px;
     height: 450px;
     margin-left: 26%;
     margin-bottom: 0;
@@ -255,18 +255,27 @@ header.work-header {
 }
 
 @media screen and (min-width: 1440px) {
+  header {
+    width: 800px;
+    height: 500px;
+    margin-left: 26%;
+  }
+
   .main-img {
     img {
-      height: 500px;
+      height: 800px;
       margin: 0;
       position: absolute;
       top: 5%;
       right: 0;
     }
   }
-
   header.about-header,
   header.work-header {
+    width: 800px;
+    height: 500px;
+    margin-left: 26%;
+
     img#about_photo,
     img#work-photo {
       height: 500px;

@@ -41,10 +41,14 @@
   }
 
   .contents-inner {
-    width: 800px;
+    width: 700px;
     margin-left: 26%;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .contents-inner {
+    width: 800px;
+    margin-left: 26%;
+  }
 }
