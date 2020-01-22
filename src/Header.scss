@@ -9,24 +9,22 @@ header.about-header,
 header.work-header {
   max-width: 100%;
   height: auto;
-  position: relative;
+  padding-top: 60px;
+  // position: relative;
   img#about_photo,
   img#work-photo,
   img#work-photo {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
     // margin-top: 81px;
-    position: absolute;
+    // position: absolute;
     top: 81px;
-    margin-bottom: 300px;
+    // margin-bottom: 300px;
   }
 }
 
-header.work-header {
-  margin-bottom: -100px;
-}
 .main-img {
   img#profile-photo {
     display: block;
@@ -98,8 +96,19 @@ header.work-header {
   header.about-header,
   header.work-header {
     max-width: 100%;
-    margin-left: 0;
-    position: relative;
+    height: 300px;
+    margin: 0 0 60px;
+    padding-top: 60px;
+    img#about_photo,
+    img#work-photo,
+    img#work-photo {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      // position: absolute;
+      // margin-bottom: 300px;
+    }
   }
 
   header.work-header {
@@ -167,12 +176,14 @@ header.work-header {
     height: 450px;
     margin-left: 20%;
     margin-bottom: 0;
+    padding-top: 0;
     position: relative;
     img#about_photo,
     img#work-photo,
     img#work-photo {
-      height: 300px;
-      top: 38%;
+      position: absolute;
+      height: 350px;
+      top: 28%;
     }
   }
 }
@@ -224,12 +235,15 @@ header.work-header {
     height: 450px;
     margin-left: 26%;
     margin-bottom: 0;
+    padding-top: 0;
     position: relative;
     img#about_photo,
     img#work-photo,
     img#work-photo {
+      position: absolute;
       height: 400px;
       top: 18%;
+      left: 5%;
     }
   }
 }
