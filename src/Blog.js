@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import BlogImage from "./img/blog.png";
-// import worksImage from "./img/about_photo.jpg";
+// import worksImage from "./img/about_photo.png";
 import "./App.css";
 import "./Blog.scss";
 import axios from "axios";
