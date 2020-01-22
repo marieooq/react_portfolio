@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
-import worksImage from "./img/about_photo.jpg";
+import BlogImage from "./img/blog.png";
+// import worksImage from "./img/about_photo.jpg";
 import "./App.css";
 import "./Blog.scss";
 import axios from "axios";
@@ -42,7 +43,7 @@ class Blog extends React.Component {
 
     return (
       <div className="works-wrapper">
-        <Header section="about" imgSrc={worksImage} />
+        <Header section="blog" imgSrc={BlogImage} />
         <div className="blog">
           <div className="blog-wrapper">{articleLists}</div>
         </div>

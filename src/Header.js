@@ -39,6 +39,12 @@ const Header = props => {
         <img src={props.imgSrc} alt="work" id="work-photo" />
       </header>
     );
+  } else if (props.section === "blog") {
+    return (
+      <header className="work-header">
+        <img src={props.imgSrc} alt="work" id="work-photo" />
+      </header>
+    );
   }
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import worksImage from "./img/about_photo.jpg";
+import worksImage from "./img/works.png";
 import "./App.css";
 import "./Works.css";
 import ContentsContainer from "./ContentsContainer";
