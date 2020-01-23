@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./Header";
 import WorkTemplate from "./WorkTemplate";
 import HeaderImage from "./img/msgif_header.png";
-import ContentImage from "./img/blog.png";
+import ContentImage from "./img/msgif_demo.gif";
 
 const tags = ["HTML5", "CSS3", "JavaScript", "React.js", "Redux"];
 

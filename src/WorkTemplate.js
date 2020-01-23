@@ -15,17 +15,20 @@ const WorkTemplate = props => {
         </div>
 
         <h2 className="headline">How it works</h2>
+
         <p className="headline-content">{props.howItWorksDescription}</p>
 
-        <h2 className="headline">The most deifficult part</h2>
-        <p className="headline-content">{props.difficultPartDescription}</p>
-
-        <h2 className="headline">How to solve the problems</h2>
         <img
           src={props.contentImage}
           alt="contentimg"
           className="content-img"
         />
+
+        <h2 className="headline">The most deifficult part</h2>
+        <p className="headline-content">{props.difficultPartDescription}</p>
+
+        <h2 className="headline">How to solve the problems</h2>
+
         <p className="headline-content">{props.problemSolvingDescription}</p>
 
         <h2 className="headline">Links</h2>
