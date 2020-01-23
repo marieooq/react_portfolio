@@ -16,28 +16,28 @@ class HomeContents extends React.Component {
         title: "Msgif",
         description:
           "A gif generator that converts your message into a GIF animation. Once you type your message and press a button your message turns into a GIF animation. ",
-        url: "/work1"
+        url: "/msgif"
       },
       {
         image: Photomap_image,
         title: "Photomap via twitter",
         description:
           "This app enables to locate the photos of my twitter timeline on the world map. It uses twitter API to get data like image, location and published time.",
-        url: "/work1"
+        url: "/photomap"
       },
       {
         image: VanstudentBlog_image,
         title: "React based blog",
         description:
           "A blog introducing life in Vancouver to Japanese visitors. It is using React.js and Contentful API. ",
-        url: "/work1"
+        url: "/react-blog"
       },
       {
         image: ReactNote_image,
         title: "React based To-Do List",
         description:
           "This is a simple to Do List using React.js and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved if they refresh it. It’s very intuitive design and easy to manipulate. ",
-        url: "/work1"
+        url: "/react-note"
       }
     ];
 
