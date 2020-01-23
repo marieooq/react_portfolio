@@ -10,7 +10,6 @@ header.work-header {
   max-width: 100%;
   height: auto;
   padding-top: 60px;
-  // position: relative;
   img#about_photo,
   img#work-photo,
   img#work-photo {
@@ -18,10 +17,8 @@ header.work-header {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    // margin-top: 81px;
-    // position: absolute;
     top: 81px;
-    // margin-bottom: 300px;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -106,8 +103,6 @@ header.work-header {
       max-width: 100%;
       height: auto;
       border-radius: 8px;
-      // position: absolute;
-      // margin-bottom: 300px;
     }
   }
 
@@ -244,7 +239,6 @@ header.work-header {
       height: 400px;
       top: 18%;
       left: 5%;
-      box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
     }
   }
 }

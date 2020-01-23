@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./Header";
 import WorkTemplate from "./WorkTemplate";
-import Content_image from "./img/msgif_header.png";
+import HeaderImage from "./img/msgif_header.png";
 
 const tags = ["HTML5", "CSS3", "JavaScript", "React.js", "Redux"];
 
@@ -31,7 +31,7 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(keyName => {
 });
 
 const workObj = {
-  img: { Content_image },
+  img: { HeaderImage },
   title: "React based To-Do List",
   description:
     "This is a simple to do list using React.js and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved  even if it is refleshed. It is intuitive design and easy to manipulate. I posted an article on Medium about what I struggled creating this app. Please check it out if you’d like to know this project in detail.(The link is on the bottom of this page.)",
@@ -51,11 +51,7 @@ class WorkMsgif extends React.Component {
   render() {
     return (
       <div>
-        <Header
-          section="work"
-          imgSrc={Content_image}
-          url="https://msgif.net/"
-        />
+        <Header section="work" imgSrc={HeaderImage} url="https://msgif.net/" />
         <WorkTemplate
           img={workObj.img}
           title={workObj.title}
@@ -63,6 +59,7 @@ class WorkMsgif extends React.Component {
           tags={tagList}
           description={workObj.description}
           howItWorksDescription={workObj.howItWorks}
+          contentImage={workObj.contentImage}
           difficultPartDescription={workObj.difficultPart}
           problemSolvingDescription={workObj.problemSolving}
           relatedWebsitesLists={relatedWebsitesLists}

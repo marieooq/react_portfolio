@@ -31,11 +31,11 @@
 
         li {
           font-size: 12px;
-          color: var(--FontColor);
+          color: var(--accentColor);
           list-style: none;
           display: inline-block;
-          border: 2px solid var(--mediumOrange);
-          background-color: var(--mediumOrange);
+          border: 2px solid var(--accentColor);
+          // background-color: var(--mediumOrange);
           border-radius: 4px;
           margin: 0 10px 45px 0;
           padding: 0.5em 1em;
