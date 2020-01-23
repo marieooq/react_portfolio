@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Header";
 import WorkTemplate from "./WorkTemplate";
 import HeaderImage from "./img/msgif_header.png";
+import ContentImage from "./img/blog.png";
 
 const tags = ["HTML5", "CSS3", "JavaScript", "React.js", "Redux"];
 
@@ -53,13 +54,12 @@ class WorkMsgif extends React.Component {
       <div>
         <Header section="work" imgSrc={HeaderImage} url="https://msgif.net/" />
         <WorkTemplate
-          img={workObj.img}
           title={workObj.title}
           subTitle={workObj.subTitle}
           tags={tagList}
           description={workObj.description}
           howItWorksDescription={workObj.howItWorks}
-          contentImage={workObj.contentImage}
+          contentImage={ContentImage}
           difficultPartDescription={workObj.difficultPart}
           problemSolvingDescription={workObj.problemSolving}
           relatedWebsitesLists={relatedWebsitesLists}

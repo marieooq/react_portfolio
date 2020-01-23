@@ -3,6 +3,7 @@ import "./App.css";
 import "./WorkTemplate.scss";
 
 const WorkTemplate = props => {
+  console.log(props.contentImage);
   return (
     <div className="work-template">
       <div className="work-inner">
@@ -20,7 +21,11 @@ const WorkTemplate = props => {
         <p className="headline-content">{props.difficultPartDescription}</p>
 
         <h2 className="headline">How to solve the problems</h2>
-        <img src={props.contentImage} alt="contentImg" />
+        <img
+          src={props.contentImage}
+          alt="contentimg"
+          className="content-img"
+        />
         <p className="headline-content">{props.problemSolvingDescription}</p>
 
         <h2 className="headline">Links</h2>
