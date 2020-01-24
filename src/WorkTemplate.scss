@@ -84,6 +84,7 @@
       display: block;
       width: 100%;
       height: auto;
+      margin-bottom: 30px;
     }
   }
 }
@@ -156,13 +157,3 @@
 
 @media screen and (min-width: 1440px) {
 }
-
-// @media screen and (max-width: 768px) {
-//   .work_title {
-//     font-size: 2rem;
-//   }
-
-//   .work_description {
-//     font-size: 0.9rem;
-//   }
-// }

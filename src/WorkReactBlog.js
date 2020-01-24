@@ -2,9 +2,10 @@ import React from "react";
 import "./App.css";
 import Header from "./Header";
 import WorkTemplate from "./WorkTemplate";
-import Content_image1 from "./img/reactToDo_demo.gif";
+import HeaderImage from "./img/msgif_header.png";
+import ContentImage from "./img/msgif_demo.gif";
 
-const tags = ["HTML5", "CSS3", "JavaScript", "React.js", "Firebase"];
+const tags = ["HTML5", "CSS3", "JavaScript", "React.js", "Redux"];
 
 const tagList = tags.map(elm => {
   return <li>{elm}</li>;
@@ -31,7 +32,7 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(keyName => {
 });
 
 const workObj = {
-  img: { Content_image1 },
+  img: { HeaderImage },
   title: "React based To-Do List",
   description:
     "This is a simple to do list using React.js and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved  even if it is refleshed. It is intuitive design and easy to manipulate. I posted an article on Medium about what I struggled creating this app. Please check it out if you’d like to know this project in detail.(The link is on the bottom of this page.)",
@@ -47,18 +48,18 @@ const workObj = {
   url_title: "Medium"
 };
 
-class Work1 extends React.Component {
+class WorkReactBlog extends React.Component {
   render() {
     return (
       <div>
-        <Header section="work" imgSrc={Content_image1} />
+        <Header section="work" imgSrc={HeaderImage} url="https://msgif.net/" />
         <WorkTemplate
-          img={workObj.img}
           title={workObj.title}
           subTitle={workObj.subTitle}
           tags={tagList}
           description={workObj.description}
           howItWorksDescription={workObj.howItWorks}
+          contentImage={ContentImage}
           difficultPartDescription={workObj.difficultPart}
           problemSolvingDescription={workObj.problemSolving}
           relatedWebsitesLists={relatedWebsitesLists}
@@ -68,4 +69,4 @@ class Work1 extends React.Component {
   }
 }
 
-export default Work1;
+export default WorkReactBlog;

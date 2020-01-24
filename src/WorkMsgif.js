@@ -7,8 +7,14 @@ import ContentImage from "./img/msgif_demo.gif";
 
 const tags = ["HTML5", "CSS3", "JavaScript", "React.js", "Redux"];
 
+const images = [ContentImage];
+
 const tagList = tags.map(elm => {
   return <li>{elm}</li>;
+});
+
+const imageList = images.map(elm => {
+  return <img src={elm} alt="contentImg" className="content-img" />;
 });
 
 const relatedWebsites = {
@@ -59,7 +65,7 @@ class WorkMsgif extends React.Component {
           tags={tagList}
           description={workObj.description}
           howItWorksDescription={workObj.howItWorks}
-          contentImage={ContentImage}
+          contentImage={imageList}
           difficultPartDescription={workObj.difficultPart}
           problemSolvingDescription={workObj.problemSolving}
           relatedWebsitesLists={relatedWebsitesLists}
