@@ -30,11 +30,11 @@ class App extends React.Component {
             <Route exact path="/about" component={About} />
             <Route exact path="/works" component={Works} />
             <Route exact path="/blog" component={Blog} />
-            <Route exact path="/msgif" component={WorkMsgif} />
-            <Route exact path="/photomap" component={WorkPhotomap} />
-            <Route exact path="/react-blog" component={WorkReactBlog} />
-            <Route exact path="/react-note" component={WorkReactNote} />
-            <Route exact path="/illustration" component={WorkIllustration} />
+            <Route exact path="/works/msgif" component={WorkMsgif} />
+            <Route exact path="/works/photomap" component={WorkPhotomap} />
+            <Route exact path="/works/react-blog" component={WorkReactBlog} />
+            <Route exact path="/works/react-note" component={WorkReactNote} />
+            {/* <Route exact path="/illustration" component={WorkIllustration} /> */}
           </div>
         </ScrollToTop>
       </Router>

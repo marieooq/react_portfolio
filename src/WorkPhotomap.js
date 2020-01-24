@@ -8,11 +8,11 @@ import ContentImage2 from "./img/photomap_demo2.png";
 
 const tags = ["HTML5", "CSS3", "JavaScript", "React.js"];
 
-const images = [ContentImage1, ContentImage2];
-
 const tagList = tags.map(elm => {
   return <li>{elm}</li>;
 });
+
+const images = [ContentImage1, ContentImage2];
 
 const imageList = images.map(elm => {
   return <img src={elm} alt="contentImg" className="content-img" />;

@@ -20,12 +20,6 @@ const WorkTemplate = props => {
 
         <div classList="content-images">{props.contentImage}</div>
 
-        {/* <img
-          src={props.contentImage}
-          alt="contentimg1"
-          className="content-img"
-        /> */}
-
         <h2 className="headline">The most deifficult part</h2>
         <p className="headline-content">{props.difficultPartDescription}</p>
 

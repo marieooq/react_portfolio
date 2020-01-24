@@ -2,13 +2,19 @@ import React from "react";
 import "./App.css";
 import Header from "./Header";
 import WorkTemplate from "./WorkTemplate";
-import HeaderImage from "./img/msgif_header.png";
-import ContentImage from "./img/msgif_demo.gif";
+import HeaderImage from "./img/vanstudents_header.png";
+import ContentImage1 from "./img/react_blog_demo1.png";
 
-const tags = ["HTML5", "CSS3", "JavaScript", "React.js", "Redux"];
+const tags = ["HTML5", "CSS3", "JavaScript", "React.js"];
 
 const tagList = tags.map(elm => {
   return <li>{elm}</li>;
+});
+
+const images = [ContentImage1];
+
+const imageList = images.map(elm => {
+  return <img src={elm} alt="contentImg" className="content-img" />;
 });
 
 const relatedWebsites = {
@@ -59,7 +65,7 @@ class WorkReactBlog extends React.Component {
           tags={tagList}
           description={workObj.description}
           howItWorksDescription={workObj.howItWorks}
-          contentImage={ContentImage}
+          contentImage={imageList}
           difficultPartDescription={workObj.difficultPart}
           problemSolvingDescription={workObj.problemSolving}
           relatedWebsitesLists={relatedWebsitesLists}
