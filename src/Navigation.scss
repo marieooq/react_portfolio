@@ -59,7 +59,8 @@ nav ul#global-nav {
   nav {
     width: 100%;
     height: 60px;
-    background-color: var(--greyColor);
+    background-color: #fff;
+    // background-color: var(--greyColor);
 
     #nav-inner {
       position: relative;
@@ -115,10 +116,11 @@ nav ul#global-nav {
 
       ul#global-nav {
         position: absolute;
-        top: -300px;
+        top: -400px;
         width: 100%;
         text-align: center;
-        background-color: var(--greyColor);
+        background-color: #fff;
+        // background-color: var(--greyColor);
         padding: 75px 0 45px;
         // margin-top: -1000px;
         transition: all 0.3s ease-out;
@@ -153,9 +155,9 @@ nav ul#global-nav {
       ul#global-nav {
         // margin-top: -20px;
         // transition: all 0.5s ease-out;
-        -moz-transform: translateY(300px);
-        -webkit-transform: translateY(300px);
-        transform: translateY(300px);
+        -moz-transform: translateY(375px);
+        -webkit-transform: translateY(375px);
+        transform: translateY(375px);
       }
     }
   }

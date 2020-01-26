@@ -20,7 +20,7 @@ const WorkTemplate = props => {
 
         <div classList="content-images">{props.contentImage}</div>
 
-        <h2 className="headline">The most deifficult part</h2>
+        <h2 className="headline">The most difficult part</h2>
         <p className="headline-content">{props.difficultPartDescription}</p>
 
         <h2 className="headline">How to solve the problems</h2>
