@@ -6,22 +6,20 @@ import HeaderImage from "./img/photomap_header.png";
 import ContentImage1 from "./img/photomap_demo1.png";
 import ContentImage2 from "./img/photomap_demo2.png";
 
-const tags = ["HTML5", "CSS3", "JavaScript", "React.js"];
+const tags = ["HTML5", "CSS3", "JavaScript", "React.js", "Node.js"];
+
+const images = [ContentImage1, ContentImage2];
 
 const tagList = tags.map(elm => {
   return <li>{elm}</li>;
 });
-
-const images = [ContentImage1, ContentImage2];
 
 const imageList = images.map(elm => {
   return <img src={elm} alt="contentImg" className="content-img" />;
 });
 
 const relatedWebsites = {
-  "Visit the website": "https://reactnote-93fb1.web.app/",
-  Medium:
-    "https://medium.com/@marieotaki/i-dont-know-what-react-exactly-is-although-i-ve-created-an-app-using-it-e0aaf7dcabc5"
+  "Visit the website": "https://photos-mapping.web.app/"
 };
 
 const relatedWebsitesLists = Object.keys(relatedWebsites).map(keyName => {
@@ -40,26 +38,24 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(keyName => {
 
 const workObj = {
   img: { HeaderImage },
-  title: "React based To-Do List",
+  url: "https://photos-mapping.web.app/",
+  title: "Photomap",
   description:
-    "This is a simple to do list using React.js and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved  even if it is refleshed. It is intuitive design and easy to manipulate. I posted an article on Medium about what I struggled creating this app. Please check it out if you’d like to know this project in detail.(The link is on the bottom of this page.)",
+    "This app enables to locate the photos of my twitter timeline on the world map. It uses twitter API to get data like image, location and published time, To show those data on the map it uses Mapbox API as well. Front-end side is used React.js and back-end side is used Node.js and Firebase. ",
   tags: { tagList },
   howItWorks:
-    "This a web app is using React.js for the frontend side, and Firebase for the backend side. When you type your task (anything you want) in the text box and press the add button it’ll show up as a to-do list. It is going to be registered in the database on Firebase as well. It is going to disappear when you press the “x” button on the upper right of each task, so does it on the Firebase as well. Since your tasks are preserved on the database in real-time they are going to be as they were, even if you refresh the browser.",
+    "Note: This app fetches the photos data from only my  own timeline for now. I’m planning to update it so that everyone can use it. Once I post a photo with location data on my twitter timeline, this app is going to fetch the data and display it on the map.If you tap the each photo, you can find detail information.",
   difficultPart:
-    "This is exactly my first project using React.js. Although I wrote codes looking at the tutorial, to be honest, I didn’t understand completely what React is after finishing the tutorial. So, I set my goal to that at least I figure the structure out.",
+    "At the beginning, I used search method in Twitter API that I can fetch the timeline data if it has a certain hashtag. However there is limitation that the API provides the data with hashtag if it was posted within 7 days. Another problem is when I hit the endpoint of Twitter API from client side, there was a CORS problem.",
   problemSolving:
-    "I worked on modifying visual design after completing the tutorial so that I could understand the structure. That was useful for me to grasp the structure, especially the concept of React components. I inspected the code by a developer tool and identified the component I’d like to modify, then modify each CSS file related to the component.",
-  url:
-    "https://medium.com/@marie_woq/i-dont-know-what-react-exactly-is-although-i-ve-created-an-app-using-it-e0aaf7dcabc5",
-  url_title: "Medium"
+    "I gave up the idea to filter the timeline data with a hash tag. I fetch the data if it has location data instead.To solve the CORS issue I used Express, the framework of Node,js. More specifically, I used api.use(cors())."
 };
 
 class WorkPhotomap extends React.Component {
   render() {
     return (
       <div>
-        <Header section="work" imgSrc={HeaderImage} url="https://msgif.net/" />
+        <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
         <WorkTemplate
           title={workObj.title}
           subTitle={workObj.subTitle}
