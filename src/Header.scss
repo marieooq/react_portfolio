@@ -43,7 +43,7 @@ header.work-header {
 }
 
 .introduction {
-  width: 320px;
+  width: 90%;
   margin: 0 auto;
   position: static;
 
@@ -55,7 +55,6 @@ header.work-header {
       line-height: 1.14;
       color: var(--subFontColor);
       padding: 0;
-      margin: 15px 0;
 
       span#name {
         font-weight: 700;
