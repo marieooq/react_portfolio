@@ -6,7 +6,7 @@
   background-color: var(--lightBlueColor);
 
   .about-inner {
-    width: 90%;
+    width: 320px;
     margin: 0 auto;
 
     .about-introduction {
@@ -24,28 +24,19 @@
         font-family: var(--subFont);
         text-align: left;
         display: flex;
-        flex-wrap: wrap;
         padding: 0;
 
-        li {
+        a {
+          display: block;
+          text-decoration: none;
+          color: var(--accentColor);
           font-size: 17px;
           line-height: 1.14;
           margin-right: 17px;
-
-          a {
-            display: block;
-            text-decoration: none;
-            color: var(--accentColor);
-            padding: 0;
-          }
-
-          a:hover {
-            text-decoration: underline;
-          }
         }
 
-        li:last-child {
-          margin-right: 0;
+        a:hover {
+          text-decoration: underline;
         }
       }
     }
@@ -102,36 +93,18 @@
           text-align: right;
           display: block;
 
-          li {
+          a {
+            display: block;
+            text-decoration: none;
+            color: var(--accentColor);
             font-size: 17px;
             line-height: 1.14;
-            margin-right: 0;
             margin-bottom: 8px;
-
-            a {
-              display: block;
-              text-decoration: none;
-              color: var(--accentColor);
-              padding: 0;
-            }
-
-            a:hover {
-              text-decoration: underline;
-            }
           }
 
-          // a {
-          //   display: block;
-          //   text-decoration: none;
-          //   color: var(--accentColor);
-          //   font-size: 17px;
-          //   line-height: 1.14;
-          //   margin-bottom: 8px;
-          // }
-
-          // a:hover {
-          //   text-decoration: underline;
-          // }
+          a:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -139,8 +112,10 @@
 }
 
 @media screen and (min-width: 1440px) {
-  about-inner {
-    width: 800px;
-    margin-left: 26%;
+  .about {
+    .about-inner {
+      width: 800px;
+      margin: 0 auto;
+    }
   }
 }

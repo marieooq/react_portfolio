@@ -246,7 +246,8 @@ header.work-header {
   header {
     width: 800px;
     height: 500px;
-    margin-left: 26%;
+    // margin-left: 26%;
+    margin: 0 auto;
   }
 
   .main-img {
@@ -261,8 +262,9 @@ header.work-header {
   header.about-header,
   header.work-header {
     width: 800px;
-    height: 500px;
-    margin-left: 26%;
+    // height: 500px;
+    // margin-left: 26%;
+    margin: 0 auto;
 
     img#about_photo,
     img#work-photo,

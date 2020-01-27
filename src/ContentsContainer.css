@@ -49,6 +49,7 @@
 @media screen and (min-width: 1440px) {
   .contents-inner {
     width: 800px;
-    margin-left: 26%;
+    /* margin-left: 26%; */
+    margin: 0 auto;
   }
 }
