@@ -21,7 +21,8 @@ const Header = props => {
           <div className="introduction-inner">
             <h1>
               <span id="name">Marie Otaki</span> is a{" "}
-              <span id="job-title">software developer</span> based in Vancouver.
+              <span id="job-title">Front-end developer</span> based in
+              Vancouver.
             </h1>
           </div>
         </div>
