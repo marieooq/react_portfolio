@@ -3,7 +3,6 @@ import "./App.css";
 import "./WorkTemplate.scss";
 
 const WorkTemplate = props => {
-  console.log(props.contentImage);
   return (
     <div className="work-template">
       <div className="work-inner">

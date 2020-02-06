@@ -54,7 +54,7 @@ class WorkMsgif extends React.Component {
   render() {
     return (
       <div>
-        <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
+        <Header section="work_ph" imgSrc={HeaderImage} url={workObj.url} />
         <WorkTemplate
           title={workObj.title}
           subTitle={workObj.subTitle}
