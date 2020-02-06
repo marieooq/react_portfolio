@@ -42,6 +42,30 @@ const Header = props => {
         </a>
       </header>
     );
+  } else if (props.section === "work_ph") {
+    return (
+      <header className="work-ph-header">
+        <a
+          href={props.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          id="link_msgif"
+        >
+          <a
+            href="https://www.producthunt.com/posts/msgif?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-msgif"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="productHunt_msgif"
+          >
+            <img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=183178&theme=light"
+              alt="Msgif - A GIF generator that converts your message into a GIF | Product Hunt Embed"
+            />
+          </a>
+          <img src={props.imgSrc} alt="work" id="work-ph-photo"></img>
+        </a>
+      </header>
+    );
   } else if (props.section === "blog") {
     return (
       <header className="work-header">
