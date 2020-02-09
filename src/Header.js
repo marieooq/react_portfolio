@@ -60,6 +60,7 @@ const Header = props => {
             <img
               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=183178&theme=light"
               alt="Msgif - A GIF generator that converts your message into a GIF | Product Hunt Embed"
+              style={{ width: "200px" }}
             />
           </a>
           <img src={props.imgSrc} alt="work" id="work-ph-photo"></img>
