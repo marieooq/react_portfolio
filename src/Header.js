@@ -1,10 +1,10 @@
-import React from "react";
-import SpeechBubble from "./img/speech_bubble.gif";
-import Background from "./img/header.jpg";
-import "./Header.scss";
+import React from 'react';
+import SpeechBubble from './img/speech_bubble.gif';
+import Background from './img/header.jpg';
+import './Header.scss';
 
 const Header = props => {
-  if (props.section === "header") {
+  if (props.section === 'header') {
     return (
       <header>
         <div className="main-img">
@@ -20,7 +20,7 @@ const Header = props => {
         <div className="introduction">
           <div className="introduction-inner">
             <h1>
-              <span id="name">Marie Otaki</span> is a{" "}
+              <span id="name">Marie Otaki</span> is a{' '}
               <span id="job-title">Front-end developer</span> based in
               Vancouver.
             </h1>
@@ -28,13 +28,13 @@ const Header = props => {
         </div>
       </header>
     );
-  } else if (props.section === "about") {
+  } else if (props.section === 'about') {
     return (
       <header className="about-header">
         <img src={props.imgSrc} alt="about" id="about_photo" />
       </header>
     );
-  } else if (props.section === "work") {
+  } else if (props.section === 'work') {
     return (
       <header className="work-header">
         <a href={props.url} target="_blank" rel="noopener noreferrer">
@@ -42,7 +42,7 @@ const Header = props => {
         </a>
       </header>
     );
-  } else if (props.section === "work_ph") {
+  } else if (props.section === 'work_ph') {
     return (
       <header className="work-ph-header">
         <a
@@ -60,14 +60,13 @@ const Header = props => {
             <img
               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=183178&theme=light"
               alt="Msgif - A GIF generator that converts your message into a GIF | Product Hunt Embed"
-              style={{ width: "200px" }}
             />
           </a>
           <img src={props.imgSrc} alt="work" id="work-ph-photo"></img>
         </a>
       </header>
     );
-  } else if (props.section === "blog") {
+  } else if (props.section === 'blog') {
     return (
       <header className="work-header">
         <a href={props.url} target="_blank" rel="noopener noreferrer">
