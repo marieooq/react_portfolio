@@ -1,6 +1,6 @@
 .work-template {
   margin-top: 450px;
-  padding: 100px 0;
+  padding: 30px 0;
   margin: 0 3%;
   border-radius: 8px;
   background-color: var(--lightBlueColor);
@@ -26,7 +26,7 @@
 
     .work_skills {
       .tags {
-        margin: 0;
+        margin: 0 0 45px 0;
         padding: 0;
 
         li {
@@ -37,7 +37,7 @@
           border: 2px solid var(--accentColor);
           // background-color: var(--mediumOrange);
           border-radius: 4px;
-          margin: 0 10px 45px 0;
+          margin: 0 10px 10px 0;
           padding: 0.5em 1em;
         }
       }
@@ -91,6 +91,7 @@
 
 @media screen and (min-width: 480px) {
   .work-template {
+    padding: 100px 0;
     .work-inner {
       width: 400px;
       h1.work_title {
@@ -119,6 +120,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .work-template {
+    padding: 100px 0;
     .work-inner {
       width: 70%;
       margin-left: 20%;
@@ -128,6 +130,7 @@
 
 @media screen and (min-width: 1024px) {
   .work-template {
+    padding: 100px 0;
     .work-inner {
       width: 56%;
       margin-left: 24%;
