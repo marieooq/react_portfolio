@@ -1,11 +1,11 @@
-import React from "react";
-import "./App.css";
-import Header from "./Header";
-import WorkTemplate from "./WorkTemplate";
-import HeaderImage from "./img/vanstudents_header.png";
-import ContentImage1 from "./img/react_blog_demo1.png";
+import React from 'react';
+import './App.css';
+import Header from './Header';
+import WorkTemplate from './WorkTemplate';
+import HeaderImage from './img/vanstudents_header.png';
+import ContentImage1 from './img/react_blog_demo1.png';
 
-const tags = ["HTML5", "CSS3", "JavaScript", "React.js"];
+const tags = ['HTML5', 'CSS3', 'JavaScript', 'React.js'];
 
 const tagList = tags.map(elm => {
   return <li>{elm}</li>;
@@ -18,7 +18,8 @@ const imageList = images.map(elm => {
 });
 
 const relatedWebsites = {
-  "Visit the website": "https://vanstudents.com/"
+  'Visit the website': 'https://vanstudents.com/',
+  GitHub: 'https://github.com/marieooq/react_contentful_blog'
 };
 
 const relatedWebsitesLists = Object.keys(relatedWebsites).map(keyName => {
@@ -37,17 +38,17 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(keyName => {
 
 const workObj = {
   img: { HeaderImage },
-  url: "https://vanstudents.com/",
-  title: "React based blog",
+  url: 'https://vanstudents.com/',
+  title: 'React based blog',
   description:
-    "A blog introducing life in Vancouver to Japanese visitors. It is using React.js and Contentful API.",
+    'A blog introducing life in Vancouver to Japanese visitors. It is using React.js and Contentful API.',
   tags: { tagList },
   howItWorks:
-    "Since this blog is using Contentful API (headless CMS) it fetch the published data from the API and display them. If you tap the each article you can read more detail.",
+    'Since this blog is using Contentful API (headless CMS) it fetch the published data from the API and display them. If you tap the each article you can read more detail.',
   difficultPart:
-    "It is needed to jump to a page that displays an individual article when the user tap the article link on the home page. It was a bit challenging for me because I display a certain component when jumping to another link.",
+    'It is needed to jump to a page that displays an individual article when the user tap the article link on the home page. It was a bit challenging for me because I display a certain component when jumping to another link.',
   problemSolving:
-    "I used URL Parameters in React router to solve the problem. Like “/article/:slug”, providing a certain slug under the article it enables to direct to a specific article page."
+    'I used URL Parameters in React router to solve the problem. Like “/article/:slug”, providing a certain slug under the article it enables to direct to a specific article page.'
 };
 
 class WorkReactBlog extends React.Component {

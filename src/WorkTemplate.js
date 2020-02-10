@@ -3,6 +3,17 @@ import "./App.css";
 import "./WorkTemplate.scss";
 
 const WorkTemplate = props => {
+  const cnvertHtml = () => {
+    console.log(props.difficultPartDescription);
+    let div = document.createElement('div');
+div.innerHTML = props.difficultPartDescription; 
+console.log(typeof div);
+return div;
+
+  }
+
+cnvertHtml();
+
   return (
     <div className="work-template">
       <div className="work-inner">
