@@ -41,6 +41,11 @@
     font-size: 18px;
     line-height: 1.27;
     color: var(--subFontColor);
+    a{
+      text-decoration: underline;
+      color: var(--accentColor);
+      
+    }
   }
   a.contents-detail {
     font-size: 1em;
