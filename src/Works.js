@@ -16,9 +16,8 @@ class Works extends React.Component {
       {
         image: MessageGif_image,
         title: "Msgif",
-        description:
-          "A gif generator that converts your message into a GIF animation. Once you type your message and press a button your message turns into a GIF animation. ",
-        url: "/works/msgif"
+        description: <p>A gif generator that converts your message into a GIF animation. Once you type your message and press a button your message turns into a GIF animation.<br /><br />I’ve launched it  on  <a href='https://www.producthunt.com/posts/msgif' target='_blank'>ProductHunt</a> on February 7th, 2020. It got 291 votes as of February 9th, 2020.</p>, 
+        url: "/works/msgif" 
       },
       {
         image: Photomap_image,
