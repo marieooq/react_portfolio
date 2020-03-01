@@ -59,7 +59,11 @@ class WorkReactNote extends React.Component {
   render() {
     return (
       <div>
-        <Header section="work" imgSrc={HeaderImage} url="https://msgif.net/" />
+        <Header
+          section="work"
+          imgSrc={HeaderImage}
+          url="https://reactnote-93fb1.web.app/"
+        />
         <WorkTemplate
           title={workObj.title}
           subTitle={workObj.subTitle}
