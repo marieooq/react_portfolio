@@ -1,10 +1,10 @@
-import React from "react";
-import Header from "./Header";
-import BlogImage from "./img/blog.png";
+import React from 'react';
+import Header from './Header';
+import BlogImage from './img/blog.png';
 // import worksImage from "./img/about_photo.png";
-import "./App.css";
-import "./Blog.scss";
-import axios from "axios";
+import './App.css';
+import './Blog.scss';
+import axios from 'axios';
 
 class Blog extends React.Component {
   state = {
@@ -12,8 +12,8 @@ class Blog extends React.Component {
   };
 
   componentDidMount() {
-    const mediumRssFeed = "https://medium.com/feed/@marieotaki";
-    const rssToJsonApi = "https://api.rss2json.com/v1/api.json";
+    const mediumRssFeed = 'https://medium.com/feed/@marieotaki';
+    const rssToJsonApi = 'https://api.rss2json.com/v1/api.json';
     const data = { params: { rss_url: mediumRssFeed } };
     axios.get(rssToJsonApi, data).then(res => {
       this.setState({ articles: res.data.items });
@@ -21,9 +21,9 @@ class Blog extends React.Component {
   }
 
   render() {
-    const articleLists = this.state.articles.map(item => {
+    const articleLists = this.state.articles.map((item, index) => {
       return (
-        <div className="blog-inner">
+        <div className="blog-inner" key={index}>
           <div className="blog-image">
             <a href={item.link} target="_blank" rel="noopener noreferrer">
               <img src={item.thumbnail} alt="blog-thumbnail"></img>
