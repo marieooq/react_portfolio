@@ -8,7 +8,7 @@ import MessageGif_image from './img/messagif.gif';
 import Photomap_image from './img/photomap.png';
 import VanstudentBlog_image from './img/vanstudents_blog.png';
 import ReactNote_image from './img/react_note.png';
-import Illustration_image from './img/host_family.png';
+// import Illustration_image from './img/host_family.png';
 
 class Works extends React.Component {
   render() {

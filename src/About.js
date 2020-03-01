@@ -4,7 +4,6 @@ import aboutImage from './img/about_photo.png';
 import './App.css';
 import './About.scss';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 // import { isTSEnumDeclaration } from "@babel/types";
 
 class About extends React.Component {

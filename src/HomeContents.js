@@ -5,7 +5,7 @@ import MessageGif_image from './img/messagif.gif';
 import Photomap_image from './img/photomap.png';
 import VanstudentBlog_image from './img/vanstudents_blog.png';
 import ReactNote_image from './img/react_note.png';
-import Illustration_image from './img/host_family.png';
+// import Illustration_image from './img/host_family.png';
 import './ContentsContainer.css';
 
 class HomeContents extends React.Component {
@@ -15,18 +15,22 @@ class HomeContents extends React.Component {
         image: MessageGif_image,
         title: 'Msgif',
         description: (
-          <p>
+          <>
             A gif generator that converts your message into a GIF animation.
             Once you type your message and press a button your message turns
             into a GIF animation.
             <br />
             <br />
             I’ve launched it on{' '}
-            <a href="https://www.producthunt.com/posts/msgif" target="_blank">
+            <a
+              href="https://www.producthunt.com/posts/msgif"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               ProductHunt
             </a>{' '}
             . It got 303 votes as of February 15th, 2020.
-          </p>
+          </>
         ),
         url: '/works/msgif'
       },
