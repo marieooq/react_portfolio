@@ -1,18 +1,15 @@
-import React from "react";
-import "./App.css";
-import "./WorkTemplate.scss";
+import React from 'react';
+import './App.css';
+import './WorkTemplate.scss';
 
 const WorkTemplate = props => {
   const cnvertHtml = () => {
-    console.log(props.difficultPartDescription);
     let div = document.createElement('div');
-div.innerHTML = props.difficultPartDescription; 
-console.log(typeof div);
-return div;
+    div.innerHTML = props.difficultPartDescription;
+    return div;
+  };
 
-  }
-
-cnvertHtml();
+  cnvertHtml();
 
   return (
     <div className="work-template">
@@ -28,7 +25,7 @@ cnvertHtml();
 
         <p className="headline-content">{props.howItWorksDescription}</p>
 
-        <div classList="content-images">{props.contentImage}</div>
+        <div className="content-images">{props.contentImage}</div>
 
         <h2 className="headline">The most difficult part</h2>
         <p className="headline-content">{props.difficultPartDescription}</p>

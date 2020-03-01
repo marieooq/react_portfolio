@@ -9,12 +9,12 @@ const tags = ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Redux'];
 
 const images = [ContentImage];
 
-const tagList = tags.map(elm => {
-  return <li>{elm}</li>;
+const tagList = tags.map((elm, index) => {
+  return <li key={index}>{elm}</li>;
 });
 
-const imageList = images.map(elm => {
-  return <img src={elm} alt="contentImg" className="content-img" />;
+const imageList = images.map((elm, index) => {
+  return <img src={elm} alt="contentImg" className="content-img" key={index} />;
 });
 
 const relatedWebsites = {
@@ -23,26 +23,28 @@ const relatedWebsites = {
   'Product Hunt': 'https://www.producthunt.com/posts/msgif'
 };
 
-const relatedWebsitesLists = Object.keys(relatedWebsites).map(keyName => {
-  return (
-    <li>
-      <a
-        href={relatedWebsites[keyName]}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {keyName}
-      </a>
-    </li>
-  );
-});
+const relatedWebsitesLists = Object.keys(relatedWebsites).map(
+  (keyName, index) => {
+    return (
+      <li key={index}>
+        <a
+          href={relatedWebsites[keyName]}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {keyName}
+        </a>
+      </li>
+    );
+  }
+);
 
 const workObj = {
   img: { HeaderImage },
   url: 'https://msgif.net/',
   title: 'Msgif',
   description: (
-    <p>
+    <>
       {' '}
       Msgif is consists of two words, “message” and “gif”. As its name suggests
       this is a GIF generator that converts a message typed by user into a GIF
@@ -63,11 +65,11 @@ const workObj = {
       on February 7th, 2020. It ranked 9th and got 185 votes as of the day. The
       number of votes grew up to 303 as of February 15th, 2020. More than 1000
       people visited my website in one day and it was so thrilling to me!
-    </p>
+    </>
   ),
   tags: { tagList },
   howItWorks: (
-    <p>
+    <>
       Firstly you can choose the size of the text area and style of design. You
       can check if the style is what you expected by typing letters in the text
       area before pressing the record button. After pressing the record button
@@ -78,10 +80,10 @@ const workObj = {
       Every time you type a letter, html2canvas capture the text area, and it is
       pushed into an array. After pressing the createGIF button, jsgif converts
       the images in the array into a GIF animation.
-    </p>
+    </>
   ),
   difficultPart: (
-    <p>
+    <>
       There are several difficult parts for me. I’ll pick up three out of them.
       <br />
       <br />
@@ -102,10 +104,10 @@ const workObj = {
       screens on this app. One was the basic one in which users typed letters.
       The other was that displayed the letters the user has typed. It gave us
       the impression that the interface was not organized.
-    </p>
+    </>
   ),
   problemSolving: (
-    <p>
+    <>
       I followed the hands-on official Redux tutorial so that I could grasp the
       concept of Redux. I felt it was still hard to understand the relation to
       action and reducer so I asked my tutor to make the minimum model about it.
@@ -117,7 +119,7 @@ const workObj = {
       <br />I also fixed the dual-screen problem using HTML5 contentEditable
       attribute. That attribute enables users to type letters into a normal div
       element and to be applied CSS to the element.
-    </p>
+    </>
   )
 };
 
