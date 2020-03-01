@@ -53,7 +53,11 @@ const workObj = {
       <br />
       <br />
       I’ve launched it on{' '}
-      <a href="https://www.producthunt.com/posts/msgif" target="_blank">
+      <a
+        href="https://www.producthunt.com/posts/msgif"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         ProductHunt
       </a>{' '}
       on February 7th, 2020. It ranked 9th and got 185 votes as of the day. The
