@@ -24,7 +24,11 @@ class Works extends React.Component {
             <br />
             <br />
             I’ve launched it on{' '}
-            <a href="https://www.producthunt.com/posts/msgif" target="_blank">
+            <a
+              href="https://www.producthunt.com/posts/msgif"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               ProductHunt
             </a>{' '}
             . It got 303 votes as of February 15th, 2020.

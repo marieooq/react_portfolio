@@ -1,6 +1,6 @@
-import React from "react";
-import Content from "./Content";
-import "./ContentsContainer.css";
+import React from 'react';
+import Content from './Content';
+import './ContentsContainer.css';
 
 const ContentsContainer = props => {
   const contentLists = props.obj.map((obj, index) => {
@@ -10,6 +10,7 @@ const ContentsContainer = props => {
         myTitle={obj.title}
         myDescription={obj.description}
         myURL={obj.url}
+        key={index}
       />
     );
   });
