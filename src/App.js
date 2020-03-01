@@ -1,22 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import * as serviceWorker from "./serviceWorker";
-import Navigation from "./Navigation";
-import Home from "./Home";
-import About from "./About";
-import Works from "./Works";
-import Blog from "./Blog";
-import WorkMsgif from "./WorkMsgif";
-import WorkPhotomap from "./WorkPhotomap";
-import WorkReactBlog from "./WorkReactBlog";
-import WorkReactNote from "./WorkReactNote";
-import WorkIllustration from "./WorkIllustration";
+import React from 'react';
+import './index.css';
+import Navigation from './Navigation';
+import Home from './Home';
+import About from './About';
+import Works from './Works';
+import Blog from './Blog';
+import WorkMsgif from './WorkMsgif';
+import WorkPhotomap from './WorkPhotomap';
+import WorkReactBlog from './WorkReactBlog';
+import WorkReactNote from './WorkReactNote';
+// import WorkIllustration from "./WorkIllustration";
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import "font-awesome/css/font-awesome.min.css";
-import ScrollToTop from "./ScrollToTop";
-import "./App.css";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import 'font-awesome/css/font-awesome.min.css';
+import ScrollToTop from './ScrollToTop';
+import './App.css';
 
 class App extends React.Component {
   render() {

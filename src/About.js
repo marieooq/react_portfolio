@@ -25,13 +25,13 @@ class About extends React.Component {
     const links = {
       Resume: '/MarieOtaki_resume.pdf',
       Email: 'mailto:otakimarie@gmail.com',
-      LinkedIn: 'https://www.linkedin.com/in/marie-otaki-a67773186/',
+      LinkedIn: 'https://www.linkedin.com/in/marieotaki/',
       GitHub: 'https://github.com/marieooq'
     };
 
-    const snsLinks = Object.keys(links).map(keyName => {
+    const snsLinks = Object.keys(links).map((keyName, index) => {
       return (
-        <li>
+        <li key={index}>
           <a href={links[keyName]} target="_blank" rel="noopener noreferrer">
             {keyName}
           </a>
@@ -82,9 +82,9 @@ class About extends React.Component {
       }
     };
 
-    const topicsLinks = Object.keys(topicsObj).map(keyName => {
+    const topicsLinks = Object.keys(topicsObj).map((keyName, index) => {
       return (
-        <div className="topic">
+        <div className="topic" key={index}>
           <h2>
             {topicsObj[keyName].emoji} {topicsObj[keyName].headline}
           </h2>
