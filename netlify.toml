@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/www.marieotaki.com"
+  to = "http://marieotaki.com/"
+  status = 301
+  force = true
