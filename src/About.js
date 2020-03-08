@@ -47,7 +47,7 @@ class About extends React.Component {
         ),
         headline: 'Software development',
         text:
-          'I’m developing web apps using HTML5, CSS3, SCSS, JavaScript, React.js, and Redux. Especially I’ve been putting much effort into developing with React. I keep brushing up my developing skills.'
+          'I’m developing web apps using HTML5, CSS3, SCSS, JavaScript, React, and Redux. Especially I’ve been putting much effort into developing with React. I keep brushing up my developing skills.'
       },
       idea: {
         emoji: (

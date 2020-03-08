@@ -6,7 +6,7 @@ import HeaderImage from './img/photomap_header.png';
 import ContentImage1 from './img/photomap_demo1.png';
 import ContentImage2 from './img/photomap_demo2.png';
 
-const tags = ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Node.js'];
+const tags = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js', 'Firebase'];
 
 const images = [ContentImage1, ContentImage2];
 
@@ -20,7 +20,7 @@ const imageList = images.map(elm => {
 
 const relatedWebsites = {
   'Visit the website': 'https://photos-mapping.web.app/',
-  GitHub: 'https://github.com/marieooq/react-photomap'
+  GitHub: 'https://github.com/marieooq/react-photomap-public'
 };
 
 const relatedWebsitesLists = Object.keys(relatedWebsites).map(keyName => {
@@ -42,7 +42,7 @@ const workObj = {
   url: 'https://photos-mapping.web.app/',
   title: 'Photomap',
   description:
-    'This app enables to locate the photos of my twitter timeline on the world map. It uses twitter API to get data like image, location and published time, To show those data on the map it uses Mapbox API as well. Front-end side is used React.js and back-end side is used Node.js and Firebase. ',
+    'This app enables to locate the photos of my twitter timeline on the world map. It uses twitter API to get data like image, location and published time, To show those data on the map it uses Mapbox API as well. Front-end side is used React and back-end side is used Node.js and Firebase. ',
   tags: { tagList },
   howItWorks:
     'Note: This app fetches the photos data from only my  own timeline for now. I’m planning to update it so that everyone can use it. Once I post a photo with location data on my twitter timeline, this app is going to fetch the data and display it on the map.If you tap the each photo, you can find detail information.',

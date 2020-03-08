@@ -47,14 +47,14 @@ class Works extends React.Component {
         image: VanstudentBlog_image,
         title: 'React based blog',
         description:
-          'A blog introducing life in Vancouver to Japanese visitors. It is using React.js and Contentful API. ',
+          'A blog introducing life in Vancouver to Japanese visitors. It is using React and Contentful API. ',
         url: '/works/react-blog'
       },
       {
         image: ReactNote_image,
         title: 'React based To-Do List',
         description:
-          'This is a simple to Do List using React.js and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved if they refresh it. It’s very intuitive design and easy to manipulate. ',
+          'This is a simple to Do List using React and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved if they refresh it. It’s very intuitive design and easy to manipulate. ',
         url: '/works/react-note'
       }
       // {

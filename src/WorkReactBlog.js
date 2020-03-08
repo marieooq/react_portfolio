@@ -5,7 +5,7 @@ import WorkTemplate from './WorkTemplate';
 import HeaderImage from './img/vanstudents_header.png';
 import ContentImage1 from './img/react_blog_demo1.png';
 
-const tags = ['HTML5', 'CSS3', 'JavaScript', 'React.js'];
+const tags = ['HTML5', 'CSS3', 'JavaScript', 'React'];
 
 const tagList = tags.map(elm => {
   return <li>{elm}</li>;
@@ -41,7 +41,7 @@ const workObj = {
   url: 'https://vanstudents.com/',
   title: 'React based blog',
   description:
-    'A blog introducing life in Vancouver to Japanese visitors. It is using React.js and Contentful API.',
+    'A blog introducing life in Vancouver to Japanese visitors. It is using React and Contentful API.',
   tags: { tagList },
   howItWorks:
     'Since this blog is using Contentful API (headless CMS) it fetch the published data from the API and display them. If you tap the each article you can read more detail.',

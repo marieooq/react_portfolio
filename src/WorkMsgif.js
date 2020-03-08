@@ -5,7 +5,7 @@ import WorkTemplate from './WorkTemplate';
 import HeaderImage from './img/msgif_header.png';
 import ContentImage from './img/msgif_demo.gif';
 
-const tags = ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Redux'];
+const tags = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Redux'];
 
 const images = [ContentImage];
 
@@ -48,7 +48,7 @@ const workObj = {
       {' '}
       Msgif is consists of two words, “message” and “gif”. As its name suggests
       this is a GIF generator that converts a message typed by user into a GIF
-      animation. I use React.js and Redux to manage components. To capture the
+      animation. I use React and Redux to manage components. To capture the
       text area in which the message is typed I used a library, “html2canvas”.
       In order to convert the captured images into Gif animation I used another
       library,”jsgif”.
