@@ -1,6 +1,6 @@
 import React from 'react';
 // import Content from "./Content";
-import ContentsContainer from '../../ContentsContainer';
+import ContentsContainer from '../../components/ContentsContainer';
 import MessageGif_image from '../../img/pages/messagif.gif';
 import Photomap_image from '../../img/pages/photomap.png';
 import VanstudentBlog_image from '../../img/pages/vanstudents_blog.png';

@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../../Header';
+import Header from '../../components/Header';
 import worksImage from '../../img/pages/works.png';
 import './Works.css';
-import ContentsContainer from '../../ContentsContainer';
+import ContentsContainer from '../../components/ContentsContainer';
 import MessageGif_image from '../../img/pages/messagif.gif';
 import Photomap_image from '../../img/pages/photomap.png';
 import VanstudentBlog_image from '../../img/pages/vanstudents_blog.png';

@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from '../../Navigation';
+import Navigation from '../../components/Navigation';
 import Home from '../../pages/home/Home';
 import About from '../../pages/about/About';
 import Works from '../../pages/works/Works';
@@ -12,7 +12,7 @@ import WorkReactNote from '../../pages/works/WorkReactNote';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
-import ScrollToTop from '../../ScrollToTop';
+import ScrollToTop from '../util/ScrollToTop';
 
 class App extends React.Component {
   render() {

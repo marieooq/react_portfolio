@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../Header';
+import Header from '../../components/Header';
 import WorkTemplate from './WorkTemplate';
 import HeaderImage from '../../img/pages/photomap_header.png';
 import ContentImage1 from '../../img/pages/photomap_demo1.png';

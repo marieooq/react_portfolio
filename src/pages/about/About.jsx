@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../Header';
+import Header from '../../components/Header';
 import aboutImage from '../../img/pages/about_photo.png';
 import './About.scss';
 import axios from 'axios';

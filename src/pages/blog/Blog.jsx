@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../Header';
+import Header from '../../components/Header';
 import BlogImage from '../../img/pages/blog.png';
 // import worksImage from "./img/about_photo.png";
 import './Blog.scss';
