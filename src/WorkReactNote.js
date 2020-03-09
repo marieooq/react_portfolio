@@ -7,14 +7,14 @@ import ContentImage from './img/react_note_demo.gif';
 
 const tags = ['HTML5', 'CSS3', 'JavaScript', 'React'];
 
-const tagList = tags.map(elm => {
-  return <li>{elm}</li>;
+const tagList = tags.map((elm, index) => {
+  return <li key={index}>{elm}</li>;
 });
 
 const images = [ContentImage];
 
-const imageList = images.map(elm => {
-  return <img src={elm} alt="contentImg" className="content-img" />;
+const imageList = images.map((elm, index) => {
+  return <img src={elm} alt="contentImg" className="content-img" key={index} />;
 });
 
 const relatedWebsites = {
@@ -24,19 +24,21 @@ const relatedWebsites = {
     'https://medium.com/@marieotaki/i-dont-know-what-react-exactly-is-although-i-ve-created-an-app-using-it-e0aaf7dcabc5'
 };
 
-const relatedWebsitesLists = Object.keys(relatedWebsites).map(keyName => {
-  return (
-    <li>
-      <a
-        href={relatedWebsites[keyName]}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {keyName}
-      </a>
-    </li>
-  );
-});
+const relatedWebsitesLists = Object.keys(relatedWebsites).map(
+  (keyName, index) => {
+    return (
+      <li key={index}>
+        <a
+          href={relatedWebsites[keyName]}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {keyName}
+        </a>
+      </li>
+    );
+  }
+);
 
 const workObj = {
   img: { HeaderImage },
