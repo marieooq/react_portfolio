@@ -19,7 +19,7 @@ const imageList = images.map((elm, index) => {
 
 const relatedWebsites = {
   'Visit the website': 'https://vanstudents.com/',
-  GitHub: 'https://github.com/marieooq/react_contentful_blog'
+  GitHub: 'https://github.com/marieooq/react_contentful_blog_public'
 };
 
 const relatedWebsitesLists = Object.keys(relatedWebsites).map(
