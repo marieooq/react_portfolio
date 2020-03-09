@@ -1,7 +1,6 @@
 import React from 'react';
-import Header from './Header';
-import aboutImage from './img/about_photo.png';
-import './App.css';
+import Header from '../../Header';
+import aboutImage from '../../img/pages/about_photo.png';
 import './About.scss';
 import axios from 'axios';
 // import { isTSEnumDeclaration } from "@babel/types";

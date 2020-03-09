@@ -1,9 +1,8 @@
 import React from 'react';
-import './App.css';
 import Header from './Header';
 import WorkTemplate from './WorkTemplate';
-import HeaderImage from './img/vanstudents_header.png';
-import ContentImage1 from './img/react_blog_demo1.png';
+import HeaderImage from './img/pages/vanstudents_header.png';
+import ContentImage1 from './img/pages/react_blog_demo1.png';
 
 const tags = ['HTML5', 'CSS3', 'JavaScript', 'React'];
 

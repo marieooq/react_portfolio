@@ -1,7 +1,6 @@
-import React from "react";
-import "./App.css";
-import "./WorkContent.css";
-import Content_image1 from "./img/work1.jpg";
+import React from 'react';
+import './WorkContent.css';
+import Content_image1 from './img/work1.jpg';
 
 class WorkContent extends React.Component {
   render() {

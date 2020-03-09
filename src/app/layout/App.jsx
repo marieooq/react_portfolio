@@ -1,20 +1,18 @@
 import React from 'react';
-import './index.css';
-import Navigation from './Navigation';
-import Home from './Home';
-import About from './About';
-import Works from './Works';
-import Blog from './Blog';
-import WorkMsgif from './WorkMsgif';
-import WorkPhotomap from './WorkPhotomap';
-import WorkReactBlog from './WorkReactBlog';
-import WorkReactNote from './WorkReactNote';
+import Navigation from '../../Navigation';
+import Home from '../../pages/home/Home';
+import About from '../../pages/about/About';
+import Works from '../../pages/works/Works';
+import Blog from '../../pages/blog/Blog';
+import WorkMsgif from '../../WorkMsgif';
+import WorkPhotomap from '../../WorkPhotomap';
+import WorkReactBlog from '../../WorkReactBlog';
+import WorkReactNote from '../../WorkReactNote';
 // import WorkIllustration from "./WorkIllustration";
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
-import ScrollToTop from './ScrollToTop';
-import './App.css';
+import ScrollToTop from '../../ScrollToTop';
 
 class App extends React.Component {
   render() {

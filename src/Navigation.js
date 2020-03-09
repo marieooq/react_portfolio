@@ -1,8 +1,7 @@
 import React from 'react';
-import './App.css';
 import './Navigation.scss';
 import { Link } from 'react-router-dom';
-import logo from './img/logo.png';
+import logo from './img/pages/logo.png';
 
 const Navigation = () => {
   const clickHandle = () => {

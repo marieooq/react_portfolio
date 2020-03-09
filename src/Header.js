@@ -1,6 +1,6 @@
 import React from 'react';
-import SpeechBubble from './img/speech_bubble.gif';
-import Background from './img/header.jpg';
+import SpeechBubble from './img/pages/speech_bubble.gif';
+import Background from './img/pages/header.jpg';
 import './Header.scss';
 
 const Header = props => {

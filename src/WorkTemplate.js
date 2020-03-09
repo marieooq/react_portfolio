@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import './WorkTemplate.scss';
 
 const WorkTemplate = props => {

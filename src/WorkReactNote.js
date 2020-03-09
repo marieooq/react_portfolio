@@ -1,9 +1,8 @@
 import React from 'react';
-import './App.css';
 import Header from './Header';
 import WorkTemplate from './WorkTemplate';
-import HeaderImage from './img/react_note_header.png';
-import ContentImage from './img/react_note_demo.gif';
+import HeaderImage from './img/pages/react_note_header.png';
+import ContentImage from './img/pages/react_note_demo.gif';
 
 const tags = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Firebase'];
 

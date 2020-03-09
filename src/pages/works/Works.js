@@ -1,13 +1,12 @@
 import React from 'react';
-import Header from './Header';
-import worksImage from './img/works.png';
-import './App.css';
+import Header from '../../Header';
+import worksImage from '../../img/pages/works.png';
 import './Works.css';
-import ContentsContainer from './ContentsContainer';
-import MessageGif_image from './img/messagif.gif';
-import Photomap_image from './img/photomap.png';
-import VanstudentBlog_image from './img/vanstudents_blog.png';
-import ReactNote_image from './img/react_note.png';
+import ContentsContainer from '../../ContentsContainer';
+import MessageGif_image from '../../img/pages/messagif.gif';
+import Photomap_image from '../../img/pages/photomap.png';
+import VanstudentBlog_image from '../../img/pages/vanstudents_blog.png';
+import ReactNote_image from '../../img/pages/react_note.png';
 // import Illustration_image from './img/host_family.png';
 
 class Works extends React.Component {
