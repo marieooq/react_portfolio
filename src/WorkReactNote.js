@@ -5,7 +5,7 @@ import WorkTemplate from './WorkTemplate';
 import HeaderImage from './img/react_note_header.png';
 import ContentImage from './img/react_note_demo.gif';
 
-const tags = ['HTML5', 'CSS3', 'JavaScript', 'React'];
+const tags = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Firebase'];
 
 const tagList = tags.map((elm, index) => {
   return <li key={index}>{elm}</li>;
@@ -19,7 +19,7 @@ const imageList = images.map((elm, index) => {
 
 const relatedWebsites = {
   'Visit the website': 'https://reactnote-93fb1.web.app/',
-  GitHub: 'https://github.com/marieooq/react-firebase-notes-app',
+  GitHub: 'https://github.com/marieooq/react-firebase-notes-app-public',
   Medium:
     'https://medium.com/@marieotaki/i-dont-know-what-react-exactly-is-although-i-ve-created-an-app-using-it-e0aaf7dcabc5'
 };
