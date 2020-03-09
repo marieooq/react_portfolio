@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from '../../components/Header';
 import WorkTemplate from './WorkTemplate';
-import HeaderImage from '../../img/pages/photomap_header.png';
-import ContentImage1 from '../../img/pages/photomap_demo1.png';
-import ContentImage2 from '../../img/pages/photomap_demo2.png';
+import HeaderImage from '../../img/photomap_header.png';
+import ContentImage1 from '../../img/photomap_demo1.png';
+import ContentImage2 from '../../img/photomap_demo2.png';
 
 const tags = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js', 'Firebase'];
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header';
-import BlogImage from '../../img/pages/blog.png';
+import BlogImage from '../../img/blog.png';
 // import worksImage from "./img/about_photo.png";
 import './Blog.scss';
 import axios from 'axios';
