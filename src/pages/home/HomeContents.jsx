@@ -1,12 +1,12 @@
 import React from 'react';
 // import Content from "./Content";
-import ContentsContainer from './ContentsContainer';
-import MessageGif_image from './img/pages/messagif.gif';
-import Photomap_image from './img/pages/photomap.png';
-import VanstudentBlog_image from './img/pages/vanstudents_blog.png';
-import ReactNote_image from './img/pages/react_note.png';
+import ContentsContainer from '../../ContentsContainer';
+import MessageGif_image from '../../img/pages/messagif.gif';
+import Photomap_image from '../../img/pages/photomap.png';
+import VanstudentBlog_image from '../../img/pages/vanstudents_blog.png';
+import ReactNote_image from '../../img/pages/react_note.png';
 // import Illustration_image from './img/host_family.png';
-import './ContentsContainer.css';
+// import './ContentsContainer.css';
 
 class HomeContents extends React.Component {
   render() {

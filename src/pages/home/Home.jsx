@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Header from '../../Header';
-import HomeContents from '../../HomeContents';
+import HomeContents from './HomeContents';
 
 class Home extends React.Component {
   render() {
