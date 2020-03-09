@@ -1,34 +1,43 @@
 import React from 'react';
-import Header from './Header';
+import Header from '../../Header';
 import WorkTemplate from './WorkTemplate';
-import HeaderImage from './img/msgif_header.png';
-import ContentImage from './img/msgif_demo.gif';
+import HeaderImage from '../../img/pages/react_note_header.png';
+import ContentImage from '../../img/pages/react_note_demo.gif';
 
-const tags = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Redux'];
+const tags = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Firebase'];
 
-const tagList = tags.map(elm => {
-  return <li>{elm}</li>;
+const tagList = tags.map((elm, index) => {
+  return <li key={index}>{elm}</li>;
+});
+
+const images = [ContentImage];
+
+const imageList = images.map((elm, index) => {
+  return <img src={elm} alt="contentImg" className="content-img" key={index} />;
 });
 
 const relatedWebsites = {
   'Visit the website': 'https://reactnote-93fb1.web.app/',
+  GitHub: 'https://github.com/marieooq/react-firebase-notes-app-public',
   Medium:
     'https://medium.com/@marieotaki/i-dont-know-what-react-exactly-is-although-i-ve-created-an-app-using-it-e0aaf7dcabc5'
 };
 
-const relatedWebsitesLists = Object.keys(relatedWebsites).map(keyName => {
-  return (
-    <li>
-      <a
-        href={relatedWebsites[keyName]}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {keyName}
-      </a>
-    </li>
-  );
-});
+const relatedWebsitesLists = Object.keys(relatedWebsites).map(
+  (keyName, index) => {
+    return (
+      <li key={index}>
+        <a
+          href={relatedWebsites[keyName]}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {keyName}
+        </a>
+      </li>
+    );
+  }
+);
 
 const workObj = {
   img: { HeaderImage },
@@ -47,18 +56,22 @@ const workObj = {
   url_title: 'Medium'
 };
 
-class WorkIllustration extends React.Component {
+class WorkReactNote extends React.Component {
   render() {
     return (
       <div>
-        <Header section="work" imgSrc={HeaderImage} url="https://msgif.net/" />
+        <Header
+          section="work"
+          imgSrc={HeaderImage}
+          url="https://reactnote-93fb1.web.app/"
+        />
         <WorkTemplate
           title={workObj.title}
           subTitle={workObj.subTitle}
           tags={tagList}
           description={workObj.description}
           howItWorksDescription={workObj.howItWorks}
-          contentImage={ContentImage}
+          contentImage={imageList}
           difficultPartDescription={workObj.difficultPart}
           problemSolvingDescription={workObj.problemSolving}
           relatedWebsitesLists={relatedWebsitesLists}
@@ -68,4 +81,4 @@ class WorkIllustration extends React.Component {
   }
 }
 
-export default WorkIllustration;
+export default WorkReactNote;

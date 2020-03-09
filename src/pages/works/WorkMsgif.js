@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header';
+import Header from '../../Header';
 import WorkTemplate from './WorkTemplate';
-import HeaderImage from './img/pages/msgif_header.png';
-import ContentImage from './img/pages/msgif_demo.gif';
+import HeaderImage from '../../img/pages/msgif_header.png';
+import ContentImage from '../../img/pages/msgif_demo.gif';
 
 const tags = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Redux'];
 

@@ -4,10 +4,10 @@ import Home from '../../pages/home/Home';
 import About from '../../pages/about/About';
 import Works from '../../pages/works/Works';
 import Blog from '../../pages/blog/Blog';
-import WorkMsgif from '../../WorkMsgif';
-import WorkPhotomap from '../../WorkPhotomap';
-import WorkReactBlog from '../../WorkReactBlog';
-import WorkReactNote from '../../WorkReactNote';
+import WorkMsgif from '../../pages/works/WorkMsgif';
+import WorkPhotomap from '../../pages/works/WorkPhotomap';
+import WorkReactBlog from '../../pages/works/WorkReactBlog';
+import WorkReactNote from '../../pages/works/WorkReactNote';
 // import WorkIllustration from "./WorkIllustration";
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
