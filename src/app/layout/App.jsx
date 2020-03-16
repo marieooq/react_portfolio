@@ -10,30 +10,31 @@ import WorkReactBlog from '../../pages/works/WorkReactBlog';
 import WorkReactNote from '../../pages/works/WorkReactNote';
 // import WorkIllustration from "./WorkIllustration";
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import ScrollToTop from '../util/ScrollToTop';
 
 class App extends React.Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <ScrollToTop>
           <div id="wrapper">
             <Navigation />
-
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/works" component={Works} />
-            <Route exact path="/blog" component={Blog} />
-            <Route exact path="/works/msgif" component={WorkMsgif} />
-            <Route exact path="/works/photomap" component={WorkPhotomap} />
-            <Route exact path="/works/react-blog" component={WorkReactBlog} />
-            <Route exact path="/works/react-note" component={WorkReactNote} />
-            {/* <Route exact path="/illustration" component={WorkIllustration} /> */}
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/works" component={Works} />
+              <Route exact path="/blog" component={Blog} />
+              <Route exact path="/works/msgif" component={WorkMsgif} />
+              <Route exact path="/works/photomap" component={WorkPhotomap} />
+              <Route exact path="/works/react-blog" component={WorkReactBlog} />
+              <Route exact path="/works/react-note" component={WorkReactNote} />
+              {/* <Route exact path="/illustration" component={WorkIllustration} /> */}
+            </Switch>
           </div>
         </ScrollToTop>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
