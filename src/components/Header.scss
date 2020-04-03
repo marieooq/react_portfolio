@@ -94,11 +94,12 @@ header.work-ph-header a#productHunt_msgif {
         padding: 0;
         a {
           font-size: 24px;
+          color: var(--subFontColor);
           text-decoration: none;
           display: block;
-          // background-color: aqua;
-          padding: 10px;
+          padding: 10px 10px 10px 0;
           margin: 5px;
+          // background-color: aqua;
         }
         a:hover {
           cursor: pointer;

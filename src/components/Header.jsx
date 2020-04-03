@@ -65,7 +65,16 @@ const Header = props => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fas fa-envelope"></i>
+                  <i className="far fa-file-pdf"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/marieooq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="far fa-envelope"></i>
                 </a>
               </li>
             </ul>
