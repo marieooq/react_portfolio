@@ -66,12 +66,14 @@ header.work-ph-header a#productHunt_msgif {
 
   .introduction-inner {
     h1 {
+      width: 500px;
       font-size: 44px;
       font-family: var(--mainFont);
       font-weight: 400;
       line-height: 1.14;
       color: var(--subFontColor);
       padding: 0;
+      margin: 0;
 
       span#name {
         font-weight: 700;
@@ -81,6 +83,13 @@ header.work-ph-header a#productHunt_msgif {
       span#job-title {
         color: var(--accentColor);
       }
+    }
+
+    p {
+      width: 400px;
+      font-size: 14px;
+      color: var(--subFontColor);
+      line-height: 1.4;
     }
 
     ul {
@@ -97,13 +106,17 @@ header.work-ph-header a#productHunt_msgif {
           color: var(--subFontColor);
           text-decoration: none;
           display: block;
-          padding: 10px 10px 10px 0;
-          margin: 5px;
+          padding: 18px 18px 18px 0;
+          // margin: 5px;
           // background-color: aqua;
         }
         a:hover {
+          color: var(--accentColor);
           cursor: pointer;
           text-decoration: underline;
+        }
+        .fa-envelope {
+          padding-top: 6px;
         }
       }
     }

@@ -36,11 +36,16 @@ const Header = props => {
         <div className="introduction">
           <div className="introduction-inner">
             <h1>
-              <span id="name">Marie Otaki</span> is a{' '}
-              <span id="job-title">Front-end developer</span> based in
-              Vancouver.
+              Hi! I'm <span id="name">Marie Otaki,</span>
+              <br />
+              <span id="job-title">a front-end developer.</span>
             </h1>
-            {/* <ul>
+            <p>
+              I am a front-end developer who is passionate about building in
+              JavaScript (including React) and also hands-on User Experience
+              design. Ping me if you are interested!
+            </p>
+            <ul>
               <li>
                 <a
                   href="https://github.com/marieooq"
@@ -52,7 +57,7 @@ const Header = props => {
               </li>
               <li>
                 <a
-                  href="https://github.com/marieooq"
+                  href="https://www.linkedin.com/in/marieotaki/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -61,7 +66,7 @@ const Header = props => {
               </li>
               <li>
                 <a
-                  href="https://github.com/marieooq"
+                  href="/MarieOtaki_resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -70,14 +75,14 @@ const Header = props => {
               </li>
               <li>
                 <a
-                  href="https://github.com/marieooq"
+                  href="mailto:otakimarie@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="far fa-envelope"></i>
                 </a>
               </li>
-            </ul> */}
+            </ul>
           </div>
         </div>
       </header>
