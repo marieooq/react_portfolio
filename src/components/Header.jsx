@@ -40,7 +40,7 @@ const Header = props => {
               <span id="job-title">Front-end developer</span> based in
               Vancouver.
             </h1>
-            <ul>
+            {/* <ul>
               <li>
                 <a
                   href="https://github.com/marieooq"
@@ -77,7 +77,7 @@ const Header = props => {
                   <i className="far fa-envelope"></i>
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </header>

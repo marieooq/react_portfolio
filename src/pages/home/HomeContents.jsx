@@ -36,7 +36,7 @@ class HomeContents extends React.Component {
       {
         image: Photomap_image,
         title: 'Photomap via twitter',
-        stack: ['React', 'Node.js', 'Firebase', 'Twitter API'],
+        stack: ['React', 'Node.js', 'Firebase'],
         gitHub: 'https://github.com/marieooq/react-photomap-public',
         description:
           'This app enables to locate the photos of my twitter timeline on the world map. It uses twitter API to get data like image, location and published time.',
