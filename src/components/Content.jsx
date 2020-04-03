@@ -3,12 +3,15 @@ import './Content.scss';
 import { Link } from 'react-router-dom';
 
 const arr = ['React', 'Redux', 'Sass'];
-const stackLink = arr.map((val, index) => {
-  return <li key={index}>{val}</li>;
-});
+// const stackLink = arr.map((val, index) => {
+//   return <li key={index}>{val}</li>;
+// });
 
 class Content extends React.Component {
   render() {
+    const stackLink = this.props.myStack.map((val, index) => {
+      return <li key={index}>{val}</li>;
+    });
     return (
       <div className="contents">
         <div className="contents_image">

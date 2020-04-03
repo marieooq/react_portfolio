@@ -8,6 +8,7 @@ const ContentsContainer = props => {
       <Content
         imageSrc={obj.image}
         myTitle={obj.title}
+        myStack={obj.stack}
         myDescription={obj.description}
         myURL={obj.url}
         key={index}

@@ -14,6 +14,7 @@ class HomeContents extends React.Component {
       {
         image: MessageGif_image,
         title: 'Msgif',
+        stack: ['React', 'Redux', 'Sass'],
         description: (
           <>
             A gif generator that converts your message into a GIF animation.
@@ -37,6 +38,7 @@ class HomeContents extends React.Component {
       {
         image: Photomap_image,
         title: 'Photomap via twitter',
+        stack: ['React', 'Redux', 'Sass'],
         description:
           'This app enables to locate the photos of my twitter timeline on the world map. It uses twitter API to get data like image, location and published time.',
         url: '/works/photomap'
@@ -44,6 +46,7 @@ class HomeContents extends React.Component {
       {
         image: VanstudentBlog_image,
         title: 'React based blog',
+        stack: ['React', 'Redux', 'Sass'],
         description:
           'A blog introducing life in Vancouver to Japanese visitors. It is using React and Contentful API. ',
         url: '/works/react-blog'
@@ -51,6 +54,7 @@ class HomeContents extends React.Component {
       {
         image: ReactNote_image,
         title: 'React based To-Do List',
+        stack: ['React', 'Redux', 'Sass'],
         description:
           'This is a simple to Do List using React and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved if they refresh it. It’s very intuitive design and easy to manipulate. ',
         url: '/works/react-note'
