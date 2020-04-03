@@ -20,10 +20,7 @@ class HomeContents extends React.Component {
           <>
             A gif generator that converts your message into a GIF animation.
             Once you type your message and press a button your message turns
-            into a GIF animation.
-            <br />
-            <br />
-            I’ve launched it on{' '}
+            into a GIF animation. <br />I launched it on{' '}
             <a
               href="https://www.producthunt.com/posts/msgif"
               target="_blank"
