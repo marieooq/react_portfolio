@@ -5,7 +5,11 @@ import { Link } from 'react-router-dom';
 class Content extends React.Component {
   render() {
     const stackLink = this.props.myStack.map((val, index) => {
-      return <li key={index}>{`${val} /`}</li>;
+      if (index < this.props.myStack.length - 1) {
+        return <li key={index}>{`${val} /`}</li>;
+      } else {
+        return <li key={index}>{`${val}`}</li>;
+      }
     });
     return (
       <div className="contents">
@@ -26,7 +30,7 @@ class Content extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-github"></i> GitHub
+              <i className="fab fa-github"></i> GitHub
             </a>
           </div>
           <p>{this.props.myDescription}</p>
