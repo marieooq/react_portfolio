@@ -9,6 +9,7 @@ const ContentsContainer = props => {
         imageSrc={obj.image}
         myTitle={obj.title}
         myStack={obj.stack}
+        myGitHub={obj.gitHub}
         myDescription={obj.description}
         myURL={obj.url}
         key={index}
