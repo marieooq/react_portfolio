@@ -5,6 +5,22 @@ import './Header.scss';
 
 const Header = props => {
   if (props.section === 'header') {
+    // const links = {
+    //   Resume: '/MarieOtaki_resume.pdf',
+    //   Email: 'mailto:otakimarie@gmail.com',
+    //   LinkedIn: 'https://www.linkedin.com/in/marieotaki/',
+    //   GitHub: 'https://github.com/marieooq'
+    // };
+
+    // const snsLinks = Object.keys(links).map((keyName, index) => {
+    //   return (
+    //     <li key={index}>
+    //       <a href={links[keyName]} target="_blank" rel="noopener noreferrer">
+    //         <i className="fab fa-github"></i>
+    //       </a>
+    //     </li>
+    //   );
+    // });
     return (
       <header>
         <div className="main-img">
@@ -24,6 +40,35 @@ const Header = props => {
               <span id="job-title">Front-end developer</span> based in
               Vancouver.
             </h1>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/marieooq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/marieooq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/marieooq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fas fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </header>

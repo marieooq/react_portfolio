@@ -82,6 +82,30 @@ header.work-ph-header a#productHunt_msgif {
         color: var(--accentColor);
       }
     }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        margin: 0;
+        padding: 0;
+        a {
+          font-size: 24px;
+          text-decoration: none;
+          display: block;
+          // background-color: aqua;
+          padding: 10px;
+          margin: 5px;
+        }
+        a:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
 
