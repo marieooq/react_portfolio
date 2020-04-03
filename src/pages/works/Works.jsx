@@ -15,6 +15,8 @@ class Works extends React.Component {
       {
         image: MessageGif_image,
         title: 'Msgif',
+        stack: ['React', 'Redux', 'Sass'],
+        gitHub: 'https://github.com/marieooq/react-msgif',
         description: (
           <>
             A gif generator that converts your message into a GIF animation.
@@ -38,6 +40,8 @@ class Works extends React.Component {
       {
         image: Photomap_image,
         title: 'Photomap via twitter',
+        stack: ['React', 'Node.js', 'Firebase', 'Twitter API'],
+        gitHub: 'https://github.com/marieooq/react-photomap-public',
         description:
           'This app enables to locate the photos of my twitter timeline on the world map. It uses twitter API to get data like image, location and published time.',
         url: '/works/photomap'
@@ -45,6 +49,8 @@ class Works extends React.Component {
       {
         image: VanstudentBlog_image,
         title: 'React based blog',
+        stack: ['React', 'Contentful API'],
+        gitHub: 'https://github.com/marieooq/react_contentful_blog_public',
         description:
           'A blog introducing life in Vancouver to Japanese visitors. It is using React and Contentful API. ',
         url: '/works/react-blog'
@@ -52,17 +58,12 @@ class Works extends React.Component {
       {
         image: ReactNote_image,
         title: 'React based To-Do List',
+        stack: ['React', 'Firebase'],
+        gitHub: 'https://github.com/marieooq/react-firebase-notes-app-public',
         description:
           'This is a simple to Do List using React and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved if they refresh it. It’s very intuitive design and easy to manipulate. ',
         url: '/works/react-note'
       }
-      // {
-      //   image: Illustration_image,
-      //   title: "Illustration",
-      //   description:
-      //     "The illustration is drawn using illustrator. I drew it to express my gratitude.  I traced a picture of the family that host father keep it affectionately. Using the same tone of colors enables it looks organized. The yellow used in background color expresses the brightness they have.",
-      //   url: "/illustration"
-      // }
     ];
 
     return (
