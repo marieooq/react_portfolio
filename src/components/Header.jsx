@@ -5,22 +5,6 @@ import './Header.scss';
 
 const Header = props => {
   if (props.section === 'header') {
-    // const links = {
-    //   Resume: '/MarieOtaki_resume.pdf',
-    //   Email: 'mailto:otakimarie@gmail.com',
-    //   LinkedIn: 'https://www.linkedin.com/in/marieotaki/',
-    //   GitHub: 'https://github.com/marieooq'
-    // };
-
-    // const snsLinks = Object.keys(links).map((keyName, index) => {
-    //   return (
-    //     <li key={index}>
-    //       <a href={links[keyName]} target="_blank" rel="noopener noreferrer">
-    //         <i className="fab fa-github"></i>
-    //       </a>
-    //     </li>
-    //   );
-    // });
     return (
       <header>
         <div className="main-img">
@@ -41,8 +25,11 @@ const Header = props => {
               <span id="job-title">a front-end developer.</span>
             </h1>
             <p>
-              I am a front-end developer who is passionate about building in
-              JavaScript (including React) and also hands-on User Experience
+              Skilled in JavaScript, React, Redux, jQuery, TypeScript, Node.js,
+              Java, HTML5, CSS3, SaSS.
+              <br />
+              <br />I am a front-end developer who is passionate about building
+              in JavaScript (including React) and also hands-on User Experience
               design. Ping me if you are interested!
             </p>
             <ul>
