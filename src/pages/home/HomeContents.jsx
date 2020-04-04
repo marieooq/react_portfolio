@@ -40,7 +40,7 @@ class HomeContents extends React.Component {
         gitHub: 'https://github.com/marieooq/stock-price-list',
         description:
           'A simple SPA application that enables to display the stock symbol, the latest price and the desctiption. Once you type in the symbol and hit the enter or press the search button, these information show up.',
-        url: '/works/msgif'
+        url: '/works/stock-price'
       },
       {
         image: Photomap_image,
