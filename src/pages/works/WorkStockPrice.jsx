@@ -47,9 +47,9 @@ const workObj = {
   howItWorks:
     "This application uses the IEX Cloud API, which provides financial data like stock price and its description. Also, it uses React Hooks to manage a state. Since I'd like to make this app production-level quality, I decided to use TypeScript.",
   difficultPart:
-    'At the beginning, I used search method in Twitter API that I can fetch the timeline data if it has a certain hashtag. However there is limitation that the API provides the data with hashtag if it was posted within 7 days. Another problem is when I hit the endpoint of Twitter API from client side, there was a CORS problem.',
+    "When I hit the API's endpoint, it returned more than 8,000 data, which means it was too much to fetch all of them at once. I was wondering I would restrict the number of data to fetch. However, it would cause a bad user experience, so I needed an alternative idea.",
   problemSolving:
-    'I gave up the idea to filter the timeline data with a hash tag. I fetch the data if it has location data instead.To solve the CORS issue I used Express, the framework of Node,js. More specifically, I used api.use(cors()).'
+    'Since it was impossible to display all of the data from API when I hit the endpoint, I created a search function. When users type the symbol name and press the enter key, it shows the data matches that symbol. With Ant design, I could create this app without caring for the visual design too much.'
 };
 
 class WorkStockPrice extends React.Component {
