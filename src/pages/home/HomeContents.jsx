@@ -3,6 +3,7 @@ import React from 'react';
 import ContentsContainer from '../../components/ContentsContainer';
 import MessageGif_image from '../../img/messagif.gif';
 import StockPrice_image from '../../img/stock_price_list.png';
+import CrudBlog_image from '../../img/crud_blog.png';
 import Photomap_image from '../../img/photomap.png';
 import VanstudentBlog_image from '../../img/vanstudents_blog.png';
 import ReactNote_image from '../../img/react_note.png';
@@ -42,6 +43,14 @@ class HomeContents extends React.Component {
         description:
           'A simple SPA application that enables to display the stock symbol, the latest price and the desctiption. Once you type in the symbol and hit the enter or press the search button, these information show up.',
         url: '/works/stock-price'
+      },
+      {
+        image: CrudBlog_image,
+        title: 'CRUD Blog Application',
+        stack: ['React', 'Node.js', 'MongoDB'],
+        gitHub: 'https://github.com/marieooq/final-node-blog',
+        description:
+          'A CRUD blog application using React, Node.js, and MongoDB. It enables users to create, read, update, and delete the post of the blog.'
       },
       {
         image: Photomap_image,

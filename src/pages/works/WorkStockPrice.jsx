@@ -2,8 +2,6 @@ import React from 'react';
 import Header from '../../components/Header';
 import WorkTemplate from './WorkTemplate';
 import HeaderImage from '../../img/stock_price_header.png';
-import ContentImage1 from '../../img/photomap_demo1.png';
-import ContentImage2 from '../../img/photomap_demo2.png';
 
 const tags = ['HTML5', 'CSS3', 'TypeScript', 'React', 'Ant Design'];
 
