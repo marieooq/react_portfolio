@@ -2,6 +2,7 @@ import React from 'react';
 // import Content from "./Content";
 import ContentsContainer from '../../components/ContentsContainer';
 import MessageGif_image from '../../img/messagif.gif';
+import StockPrice_image from '../../img/stock_price_list.png';
 import Photomap_image from '../../img/photomap.png';
 import VanstudentBlog_image from '../../img/vanstudents_blog.png';
 import ReactNote_image from '../../img/react_note.png';
@@ -34,7 +35,7 @@ class HomeContents extends React.Component {
         url: '/works/msgif'
       },
       {
-        image: MessageGif_image,
+        image: StockPrice_image,
         title: 'Stock Price List',
         stack: ['React', 'TypeScript', 'Ant Design'],
         gitHub: 'https://github.com/marieooq/stock-price-list',

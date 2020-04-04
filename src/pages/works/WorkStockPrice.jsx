@@ -1,13 +1,15 @@
 import React from 'react';
 import Header from '../../components/Header';
 import WorkTemplate from './WorkTemplate';
-import HeaderImage from '../../img/photomap_header.png';
+import HeaderImage from '../../img/stock_price_header.png';
 import ContentImage1 from '../../img/photomap_demo1.png';
 import ContentImage2 from '../../img/photomap_demo2.png';
 
 const tags = ['HTML5', 'CSS3', 'TypeScript', 'React', 'Ant Design'];
 
-const images = [ContentImage1, ContentImage2];
+const images = [
+  'https://user-images.githubusercontent.com/33252783/76643992-61558500-6513-11ea-9157-f2b8ceed148e.gif'
+];
 
 const tagList = tags.map((elm, index) => {
   return <li key={index}>{elm}</li>;
