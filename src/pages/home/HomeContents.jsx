@@ -34,6 +34,15 @@ class HomeContents extends React.Component {
         url: '/works/msgif'
       },
       {
+        image: MessageGif_image,
+        title: 'Stock Price List',
+        stack: ['React', 'TypeScript', 'Ant Design'],
+        gitHub: 'https://github.com/marieooq/stock-price-list',
+        description:
+          'A simple SPA application that enables to display the stock symbol, the latest price and the desctiption. Once you type in the symbol and hit the enter or press the search button, these information show up.',
+        url: '/works/msgif'
+      },
+      {
         image: Photomap_image,
         title: 'Photomap via twitter',
         stack: ['React', 'Node.js', 'Firebase'],
