@@ -45,7 +45,7 @@ const workObj = {
     'A simple SPA application that enables to display the stock symbol, the latest price and the desctiption. Once you type in the symbol and hit the enter or press the search button, these information show up.',
   tags: { tagList },
   howItWorks:
-    'Note: This app fetches the photos data from only my  own timeline for now. I’m planning to update it so that everyone can use it. Once I post a photo with location data on my twitter timeline, this app is going to fetch the data and display it on the map.If you tap the each photo, you can find detail information.',
+    "This application uses the IEX Cloud API, which provides financial data like stock price and its description. Also, it uses React Hooks to manage a state. Since I'd like to make this app production-level quality, I decided to use TypeScript.",
   difficultPart:
     'At the beginning, I used search method in Twitter API that I can fetch the timeline data if it has a certain hashtag. However there is limitation that the API provides the data with hashtag if it was posted within 7 days. Another problem is when I hit the endpoint of Twitter API from client side, there was a CORS problem.',
   problemSolving:
