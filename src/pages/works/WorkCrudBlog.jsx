@@ -56,7 +56,6 @@ const workObj = {
 
 class WorkCrudBlog extends React.Component {
   render() {
-    console.log(imageList);
     return (
       <div>
         <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
