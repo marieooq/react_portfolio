@@ -44,6 +44,7 @@ header.work-ph-header a#productHunt_msgif {
   img#profile-photo {
     display: block;
     max-width: 100%;
+    height: auto;
     margin: 0 auto;
     position: static;
     border-radius: 8px;
@@ -129,6 +130,7 @@ header.work-ph-header a#productHunt_msgif {
 @media screen and (min-width: 480px) {
   .main-img {
     img#profile-photo {
+      // height: 380px;
       margin: 0 auto;
       position: static;
       z-index: 1;
@@ -143,7 +145,7 @@ header.work-ph-header a#productHunt_msgif {
   }
 
   .introduction {
-    width: 300px;
+    width: 320px;
     position: static;
   }
 
@@ -209,7 +211,7 @@ header.work-ph-header a#productHunt_msgif {
     // left: 4%;
     // z-index: 2;
     .introduction-inner {
-      margin-top: 120px;
+      margin-top: 60px;
       h1 {
         font-size: 2.5rem;
         font-family: var(--mainFont);
