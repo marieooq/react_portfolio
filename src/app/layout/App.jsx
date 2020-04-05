@@ -14,6 +14,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import ScrollToTop from '../util/ScrollToTop';
 import WorkStockPrice from '../../pages/works/WorkStockPrice';
+import WorkCrudBlog from '../../pages/works/WorkCrudBlog';
 
 class App extends React.Component {
   render() {
@@ -33,6 +34,7 @@ class App extends React.Component {
                 path="/works/stock-price"
                 component={WorkStockPrice}
               />
+              <Route exact path="/works/crud-blog" component={WorkCrudBlog} />
               <Route exact path="/works/photomap" component={WorkPhotomap} />
               <Route exact path="/works/react-blog" component={WorkReactBlog} />
               <Route exact path="/works/react-note" component={WorkReactNote} />

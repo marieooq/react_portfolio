@@ -50,7 +50,8 @@ class HomeContents extends React.Component {
         stack: ['React', 'Node.js', 'MongoDB'],
         gitHub: 'https://github.com/marieooq/final-node-blog',
         description:
-          'A CRUD blog application using React, Node.js, and MongoDB. It enables users to create, read, update, and delete the post of the blog.'
+          'A CRUD blog application using React, Node.js, and MongoDB. It enables users to create, read, update, and delete the post of the blog.',
+        url: '/works/crud-blog'
       },
       {
         image: Photomap_image,
