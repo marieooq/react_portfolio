@@ -44,14 +44,14 @@ const workObj = {
   url: 'https://github.com/marieooq/final-node-blog',
   title: 'CRUD blog application',
   description:
-    'This app enables to locate the photos of my twitter timeline on the world map. It uses twitter API to get data like image, location and published time, To show those data on the map it uses Mapbox API as well. Front-end side is used React and back-end side is used Node.js and Firebase. ',
+    'A CRUD blog application using React, Node.js, and MongoDB. It enables users to create, read, update, and delete the post of the blog. This is a team project. My role is building UI design and router that uses express(Node.js framework).',
   tags: { tagList },
   howItWorks:
-    'Note: This app fetches the photos data from only my  own timeline for now. I’m planning to update it so that everyone can use it. Once I post a photo with location data on my twitter timeline, this app is going to fetch the data and display it on the map.If you tap the each photo, you can find detail information.',
+    "This is a blog web application. Even if users don't have an account nor log in, all of them can read the articles that already posted. If users create an account and log in to this app, they can write a new article and update or delete the posts belong to them.",
   difficultPart:
-    'At the beginning, I used search method in Twitter API that I can fetch the timeline data if it has a certain hashtag. However there is limitation that the API provides the data with hashtag if it was posted within 7 days. Another problem is when I hit the endpoint of Twitter API from client side, there was a CORS problem.',
+    'This app was useful for me to understand the whole flow of the data, for it connects front-end, back-end, and database. However, it was a bit hard to understand it for the first time. In particular, the part of the connection back-end and database was difficult. Although it was not my role I hoped to understand the whole flow.',
   problemSolving:
-    'I gave up the idea to filter the timeline data with a hash tag. I fetch the data if it has location data instead.To solve the CORS issue I used Express, the framework of Node,js. More specifically, I used api.use(cors()).'
+    'I did read almost all the codes to better understand the structure keeping the MVC model in mind. Reading the documentation of express.js and mongoose was also useful for me.'
 };
 
 class WorkCrudBlog extends React.Component {
