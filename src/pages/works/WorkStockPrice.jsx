@@ -18,7 +18,7 @@ const imageList = images.map((elm, index) => {
 });
 
 const relatedWebsites = {
-  GitHub: 'https://github.com/marieooq/final-node-blog'
+  GitHub: 'https://github.com/marieooq/stock-price-list'
 };
 
 const relatedWebsitesLists = Object.keys(relatedWebsites).map(
@@ -39,7 +39,7 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(
 
 const workObj = {
   img: { HeaderImage },
-  url: 'https://github.com/marieooq/final-node-blog',
+  url: 'https://github.com/marieooq/stock-price-list',
   title: 'Stock Price List',
   description:
     'A simple SPA application that enables to display the stock symbol, the latest price and the desctiption. Once you type in the symbol and hit the enter or press the search button, these information show up.',
