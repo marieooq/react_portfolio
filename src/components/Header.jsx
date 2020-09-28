@@ -22,13 +22,13 @@ const Header = props => {
             <h1>
               Hi! I'm <span id="name">Marie Otaki,</span>
               <br />
-              <span id="job-title">a front-end developer.</span>
+              <span id="job-title">a Software developer.</span>
             </h1>
             <p>
               Skilled in JavaScript, React, Redux, jQuery, TypeScript, Node.js,
               Java, HTML5, CSS3, SaSS.
               <br />
-              <br />I am a front-end developer who is passionate about building
+              <br />I am a Software developer who is passionate about building
               in JavaScript (including React) and also hands-on User Experience
               design. Ping me if you are interested!
             </p>
