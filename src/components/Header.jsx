@@ -8,7 +8,7 @@ const Header = props => {
     return (
       <header>
         <div className="main-img">
-          <a href="/MarieOtaki_resume.pdf" target="_blank">
+          <a href="/MarieOtaki_Resume.pdf" target="_blank">
             <img
               src={SpeechBubble}
               alt="speech-bubble"
@@ -22,13 +22,12 @@ const Header = props => {
             <h1>
               Hi! I'm <span id="name">Marie Otaki,</span>
               <br />
-              <span id="job-title">a Software developer.</span>
+              <span id="job-title">a Frontend / Full-stack developer.</span>
             </h1>
             <p>
-              Skilled in JavaScript, React, Redux, jQuery, TypeScript, Node.js,
-              Java, HTML5, CSS3, SaSS.
+              Skilled in JavaScript, React, Redux,  jQuery, TypeScript, Node.js, HTML5, CSS3, SaSS, Mongodb, MySQL.
               <br />
-              <br />I am a Software developer who is passionate about building
+              <br />I am a Frontend / Full stack developer who is passionate about building
               in JavaScript (including React) and also hands-on User Experience
               design. Ping me if you are interested!
             </p>
@@ -53,7 +52,7 @@ const Header = props => {
               </li>
               <li>
                 <a
-                  href="/MarieOtaki_resume.pdf"
+                  href="/MarieOtaki_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
