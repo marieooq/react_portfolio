@@ -1,6 +1,7 @@
 # 👋 Marie Otaki's Portfolio Website
 
-![marieotaki_portfolio_head](https://user-images.githubusercontent.com/33252783/75931878-f2996d00-5e2a-11ea-9307-f73631d8a4e7.png)
+![Screen Shot 2020-10-03 at 5 54 45 PM](https://user-images.githubusercontent.com/33252783/95004565-9144a280-05a1-11eb-93fb-ace0a0832e45.png)
+
 
 ## 💻 Stack
 
