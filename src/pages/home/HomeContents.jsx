@@ -16,6 +16,16 @@ class HomeContents extends React.Component {
     const contentsObj = [
       {
         image: GreenSpoon_image,
+        title: 'Web Development at COS Educational Consulting Inc.',
+        stack: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Adobe Illustrator'],
+        gitHub: 'https://hoikupedia.com/',
+        description: (
+         'COS Educational Consulting, Inc. is a study abroad agent, which provides recruitment and immigration services to local partners. I designed and coded new webpages using HTML, CSS, JavaScript, WordPress, Figma, and Adobe Illustrator for an owned media for people who want to nanny in Vancouver.'
+        ),
+        url: '/works/cos'
+      },
+      {
+        image: GreenSpoon_image,
         title: 'AYA Cancer Mobile App',
         stack: ['React Native'],
         gitHub: 'https://aya-cancer.com/',

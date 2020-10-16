@@ -4,6 +4,7 @@ import Home from '../../pages/home/Home';
 import About from '../../pages/about/About';
 import Works from '../../pages/works/Works';
 import Blog from '../../pages/blog/Blog';
+import WorkCOS from '../../pages/works/WorkCOS';
 import WorkAYACancer from '../../pages/works/WorkAYACancer';
 import WorkGreenSpoon from '../../pages/works/WorkGreenSpoon';
 import WorkMsgif from '../../pages/works/WorkMsgif';
@@ -31,6 +32,11 @@ class App extends React.Component {
               <Route exact path="/about" component={About} />
               <Route exact path="/works" component={Works} />
               <Route exact path="/blog" component={Blog} />
+              <Route
+                exact
+                path="/works/cos"
+                component={WorkCOS}
+              />
               <Route
                 exact
                 path="/works/aya-cancer"
