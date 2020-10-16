@@ -4,7 +4,10 @@ import Home from '../../pages/home/Home';
 import About from '../../pages/about/About';
 import Works from '../../pages/works/Works';
 import Blog from '../../pages/blog/Blog';
+import WorkGreenSpoon from '../../pages/works/WorkGreenSpoon';
 import WorkMsgif from '../../pages/works/WorkMsgif';
+import WorkStockPrice from '../../pages/works/WorkStockPrice';
+import WorkCrudBlog from '../../pages/works/WorkCrudBlog';
 import WorkPhotomap from '../../pages/works/WorkPhotomap';
 import WorkReactBlog from '../../pages/works/WorkReactBlog';
 import WorkReactNote from '../../pages/works/WorkReactNote';
@@ -13,8 +16,7 @@ import WorkReactNote from '../../pages/works/WorkReactNote';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import ScrollToTop from '../util/ScrollToTop';
-import WorkStockPrice from '../../pages/works/WorkStockPrice';
-import WorkCrudBlog from '../../pages/works/WorkCrudBlog';
+
 
 class App extends React.Component {
   render() {
@@ -28,6 +30,11 @@ class App extends React.Component {
               <Route exact path="/about" component={About} />
               <Route exact path="/works" component={Works} />
               <Route exact path="/blog" component={Blog} />
+              <Route
+                exact
+                path="/works/green-spoon"
+                component={WorkGreenSpoon}
+              />
               <Route exact path="/works/msgif" component={WorkMsgif} />
               <Route
                 exact

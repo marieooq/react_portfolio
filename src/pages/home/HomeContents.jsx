@@ -2,6 +2,7 @@ import React from 'react';
 // import Content from "./Content";
 import ContentsContainer from '../../components/ContentsContainer';
 import MessageGif_image from '../../img/messagif.gif';
+import GreenSpoon_image from '../../img/green_spoon.png';
 import StockPrice_image from '../../img/stock_price_list.png';
 import CrudBlog_image from '../../img/crud_blog.png';
 import Photomap_image from '../../img/photomap.png';
@@ -13,6 +14,16 @@ import ReactNote_image from '../../img/react_note.png';
 class HomeContents extends React.Component {
   render() {
     const contentsObj = [
+      {
+        image: GreenSpoon_image,
+        title: 'Green Spoon',
+        stack: ['PHP Laravel', 'HTML', 'CSS'],
+        gitHub: 'https://github.com/marieooq/react-msgif',
+        description: (
+         'Greenspoon Inc. is a Japanese startup company that offers high-quality fresh smoothies via e-commerce. I built a payment emailing system using PHP Laravel, HTML, and CSS'
+        ),
+        url: '/works/green-spoon'
+      },
       {
         image: MessageGif_image,
         title: 'Msgif',
