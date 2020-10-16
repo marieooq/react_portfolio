@@ -64,7 +64,7 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(
 );
 
 
-class WorkStockPrice extends React.Component {
+class WorkGreenSpoon extends React.Component {
   render() {
     return (
       <div>
@@ -84,4 +84,4 @@ class WorkStockPrice extends React.Component {
   }
 }
 
-export default WorkStockPrice;
+export default WorkGreenSpoon;
