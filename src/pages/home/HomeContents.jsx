@@ -16,6 +16,16 @@ class HomeContents extends React.Component {
     const contentsObj = [
       {
         image: GreenSpoon_image,
+        title: 'AYA Cancer Mobile App',
+        stack: ['React Native'],
+        gitHub: 'https://aya-cancer.com/',
+        description: (
+         'Built a Slack-like community service for people under the age of 39 with cancer (AYA: Adolescent and Young Adult) using Mattermost, an OSS. I was responsible for building a mobile app using React-native.'
+        ),
+        url: '/works/aya-cancer'
+      },
+      {
+        image: GreenSpoon_image,
         title: 'Green Spoon',
         stack: ['PHP Laravel', 'HTML', 'CSS'],
         gitHub: 'https://github.com/marieooq/react-msgif',
