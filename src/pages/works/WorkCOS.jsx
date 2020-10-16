@@ -1,15 +1,18 @@
 import React from 'react';
 import Header from '../../components/Header';
 import CompanyWorkTemplate from './CompanyWorkTemplate';
-import HeaderImage from '../../img/green_spoon_header.png';
-import GreenSpoonImage from '../../img/green_spoon_image.png'
+import HeaderImage from '../../img/hoikupedia_header.png';
+import HoikupediaImage1 from '../../img/hoikupedia_faq.gif'
+import HoikupediaImage2 from '../../img/hoikupedia_school_list.gif'
+import HoikupediaImage3 from '../../img/hoikupedia_thumbnails.png'
+
 
 //////////////////////////////////////
 // set values according to a project
 //////////////////////////////////////
 const workObj = {
   url: 'https://hoikupedia.com/',
-  title: 'Web Development at COS Educational Consulting Inc.',
+  title: 'Hoikupedia Web Design & Development',
   description:
     'COS Educational Consulting, Inc. is a study abroad agent, which provides recruitment and immigration services to local partners. I designed and coded new webpages using HTML, CSS, JavaScript, WordPress, Figma, and Adobe Illustrator for an owned media called "Hoikupedia" for people who want to nanny in Vancouver.',
   headline: 'What I worked on'
@@ -18,7 +21,9 @@ const workObj = {
 const tags = ['JavaScript', 'Figma', 'Adobe Illustrator'];
 
 const images = [
-  GreenSpoonImage
+  HoikupediaImage1,
+  HoikupediaImage2,
+  HoikupediaImage3
 ];
 
 const achievements = [
@@ -42,7 +47,7 @@ const tagList = tags.map((elm, index) => {
 });
 
 const imageList = images.map((elm, index) => {
-  return <img src={elm} alt="contentImg" className="content-img" key={index} />;
+  return <img src={elm} alt="contentImg" className="content-img" key={index}/>;
 });
 
 const achievementList = achievements.map((elm, index) => {

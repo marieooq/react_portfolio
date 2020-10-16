@@ -1,8 +1,10 @@
 import React from 'react';
 // import Content from "./Content";
 import ContentsContainer from '../../components/ContentsContainer';
-import MessageGif_image from '../../img/messagif.gif';
+import Hoikupedia from '../../img/hoikupedia.png';
+import AYACancdr_image from '../../img/aya_cancer.png';
 import GreenSpoon_image from '../../img/green_spoon.png';
+import MessageGif_image from '../../img/messagif.gif';
 import StockPrice_image from '../../img/stock_price_list.png';
 import CrudBlog_image from '../../img/crud_blog.png';
 import Photomap_image from '../../img/photomap.png';
@@ -15,8 +17,8 @@ class HomeContents extends React.Component {
   render() {
     const contentsObj = [
       {
-        image: GreenSpoon_image,
-        title: 'Web Development at COS Educational Consulting Inc.',
+        image: Hoikupedia,
+        title: 'Hoikupedia Web Design & Development',
         stack: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Adobe Illustrator'],
         gitHub: 'https://hoikupedia.com/',
         description: (
@@ -25,7 +27,7 @@ class HomeContents extends React.Component {
         url: '/works/cos'
       },
       {
-        image: GreenSpoon_image,
+        image: AYACancdr_image,
         title: 'AYA Cancer Mobile App',
         stack: ['React Native'],
         gitHub: 'https://aya-cancer.com/',

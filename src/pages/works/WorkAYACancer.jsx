@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../../components/Header';
 import CompanyWorkTemplate from './CompanyWorkTemplate';
-import HeaderImage from '../../img/green_spoon_header.png';
-import GreenSpoonImage from '../../img/green_spoon_image.png'
+import HeaderImage from '../../img/aya_cancer_header.png';
+import AYACancerImage from '../../img/aya_cancer_image.png'
 
 //////////////////////////////////////
 // set values according to a project
@@ -18,7 +18,7 @@ const workObj = {
 const tags = ['React Native'];
 
 const images = [
-  GreenSpoonImage
+  AYACancerImage
 ];
 
 const achievements = [

@@ -89,12 +89,18 @@
       }
     }
 
-    img.content-img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin-bottom: 30px;
+    .content-images{
+      width: 80%;
+      margin: 0 auto;
+
+      img.content-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 60px;
+      }
     }
+    
   }
 }
 
