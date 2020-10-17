@@ -14,7 +14,7 @@ const workObj = {
   url: 'https://hoikupedia.com/',
   title: 'Hoikupedia Web Design & Development',
   description:
-    'COS Educational Consulting, Inc. is a study abroad agent, which provides recruitment and immigration services to local partners. I designed and coded new webpages using HTML, CSS, JavaScript, WordPress, Figma, and Adobe Illustrator for an owned media called "Hoikupedia" for people who want to nanny in Vancouver.',
+    'COS Educational Consulting, Inc. is a study abroad agent, which provides recruitment and immigration services to local partners. I designed and coded new webpages using HTML, CSS, JavaScript, WordPress, Figma, and Adobe Illustrator for the owned media called "Hoikupedia" for those who want to be a nanny in Vancouver.',
   headline: 'What I worked on'
 };
 
