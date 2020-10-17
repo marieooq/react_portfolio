@@ -19,7 +19,7 @@ class HomeContents extends React.Component {
       {
         image: Hoikupedia,
         title: 'Hoikupedia Web Design & Development',
-        stack: ['JavaScript', 'HTML', 'CSS', 'Figma', 'Adobe Illustrator'],
+        stack: ['JavaScript', 'HTML', 'CSS', 'Figma'],
         description: (
          'Hoikupedia is an owned media for those who want to be a nanny in Vancouver managed by COS Educational Consulting, Inc. I designed and coded new webpages using HTML, CSS, JavaScript, WordPress, Figma, and Adobe Illustrator for it.'
         ),

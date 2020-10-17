@@ -18,7 +18,7 @@ const workObj = {
   headline: 'What I worked on'
 };
 
-const tags = ['JavaScript', 'Figma', 'Adobe Illustrator'];
+const tags = ['JavaScript', 'HTML', 'CSS', 'Figma', 'Adobe Illustrator'];
 
 const images = [
   HoikupediaImage1,
