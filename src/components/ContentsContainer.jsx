@@ -13,6 +13,7 @@ const ContentsContainer = props => {
         myDescription={obj.description}
         myURL={obj.url}
         key={index}
+        project={obj.project}
       />
     );
   });

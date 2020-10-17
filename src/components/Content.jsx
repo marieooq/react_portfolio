@@ -3,6 +3,21 @@ import './Content.scss';
 import { Link } from 'react-router-dom';
 
 class Content extends React.Component {
+  generateGitHubLabel = (project) => {
+    if(project === 'personal'){
+      return(
+        <a
+          href={this.props.myGitHub}
+          alt="github"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-github"></i> GitHub
+        </a>
+      );   
+    }
+  }
+
   render() {
     const stackLink = this.props.myStack.map((val, index) => {
       if (index < this.props.myStack.length - 1) {
@@ -24,14 +39,7 @@ class Content extends React.Component {
           </h3>
           <div className="contents_stack_wrapper">
             <ul className="contents_stack">{stackLink}</ul>
-            <a
-              href={this.props.myGitHub}
-              alt="github"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github"></i> GitHub
-            </a>
+            {this.generateGitHubLabel(this.props.project)}
           </div>
           <p>{this.props.myDescription}</p>
           <Link to={this.props.myURL} className="contents-detail">
