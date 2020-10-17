@@ -9,7 +9,7 @@ import StockPrice_image from '../../img/stock_price_list.png';
 import CrudBlog_image from '../../img/crud_blog.png';
 import Photomap_image from '../../img/photomap.png';
 import VanstudentBlog_image from '../../img/vanstudents_blog.png';
-import ReactNote_image from '../../img/react_note.png';
+// import ReactNote_image from '../../img/react_note.png';
 // import Illustration_image from './img/host_family.png';
 // import './ContentsContainer.css';
 
@@ -106,16 +106,6 @@ class HomeContents extends React.Component {
         description:
           'A blog introducing life in Vancouver to Japanese visitors. It is using React and Contentful API. ',
         url: '/works/react-blog',
-        project: 'personal'
-      },
-      {
-        image: ReactNote_image,
-        title: 'React based To-Do List',
-        stack: ['React', 'Firebase'],
-        gitHub: 'https://github.com/marieooq/react-firebase-notes-app-public',
-        description:
-          'This is a simple to Do List using React and Firebase, which enables users to add notes and remove those. Since it uses Firebase the data will be preserved if they refresh it. It’s very intuitive design and easy to manipulate. ',
-        url: '/works/react-note',
         project: 'personal'
       }
     ];
