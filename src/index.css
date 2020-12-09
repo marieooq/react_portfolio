@@ -1,3 +1,5 @@
+@import-normalize; /* bring in normalize.css styles */
+
 :root {
   --baseColor: rgb(119, 172, 185);
   --fontColor: #21242c;
