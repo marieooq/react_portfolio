@@ -3,7 +3,7 @@ import SpeechBubble from '../img/speech_bubble.gif';
 import Background from '../img/header.jpg';
 import './Header.scss';
 
-const Header = props => {
+const Header = (props) => {
   if (props.section === 'header') {
     return (
       <header>
@@ -22,12 +22,13 @@ const Header = props => {
             <h1>
               Hi! I'm <span id="name">Marie Otaki,</span>
               <br />
-              <span id="job-title">a Frontend / Full-stack developer.</span>
+              <span id="job-title">a Frontend developer.</span>
             </h1>
             <p>
-              Skilled in JavaScript, React, Redux,  jQuery, TypeScript, Node.js, HTML5, CSS3, SaSS, Mongodb, MySQL.
+              Skilled in JavaScript, React, Redux, jQuery, TypeScript, Node.js,
+              HTML5, CSS3, SaSS, Mongodb, MySQL.
               <br />
-              <br />I am a Frontend / Full stack developer who is passionate about building
+              <br />I am a Frontend developer who is passionate about building
               in JavaScript (including React) and also hands-on User Experience
               design. Ping me if you are interested!
             </p>
