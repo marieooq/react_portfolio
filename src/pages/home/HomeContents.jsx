@@ -18,6 +18,16 @@ class HomeContents extends React.Component {
     const contentsObj = [
       {
         image: Hoikupedia,
+        title: 'YouTube clone app',
+        stack: ['React', 'React Hooks', 'context API', 'Sass'],
+        gitHub: 'https://github.com/marieooq/react-youtube-clone-public',
+        description:
+          'A YouTube clone application using React. You can search videos by keywords and play the video that you choose on this platform.',
+        url: '/works/youtube-clone',
+        project: 'personal',
+      },
+      {
+        image: Hoikupedia,
         title: 'Hoikupedia Web Design & Development',
         stack: ['JavaScript', 'HTML', 'CSS', 'Figma'],
         description: (
