@@ -1,10 +1,8 @@
 import React from 'react';
 import Header from '../../components/Header';
 import CompanyWorkTemplate from './CompanyWorkTemplate';
-import HeaderImage from '../../img/hoikupedia_header.png';
-import HoikupediaImage1 from '../../img/hoikupedia_faq.gif';
-import HoikupediaImage2 from '../../img/hoikupedia_school_list.gif';
-import HoikupediaImage3 from '../../img/hoikupedia_thumbnails.png';
+import YouTubeImage from '../../img/youtube_clone_header.png';
+import YouTubeCloneImage1 from '../../img/youtube_clone.gif';
 
 //////////////////////////////////////
 // set values according to a project
@@ -17,18 +15,19 @@ const workObj = {
   headline: 'What I worked on',
 };
 
-const tags = ['React', 'React Hooks', 'context API', 'Sass'];
+const tags = ['React Hooks', 'context API', 'Jest', 'React testing library', 'Sass'];
 
-const images = [HoikupediaImage1, HoikupediaImage2, HoikupediaImage3];
+const images = [YouTubeCloneImage1];
 
 const achievements = [
   'Used YouTube API as if it worked like real YouTube',
   'Used styled components to avoid making style sheets complex',
   "Used context API to manage React state. It's easy to manage it rather than Redux.",
+  'Unit testing using Jest and Ract-testing-library. I test fetching data from mock APIs and displaying the data correctly in the DOM. I wrote a blog about this topic. You can check the link "Medium" at the bottom of this page. '
 ];
 
 const relatedWebsites = {
-  'React YouTube clone': 'https://react-youtube-clone-app.netlify.app/',
+  'React YouTube clone website': 'https://react-youtube-clone-app.netlify.app/',
   GitHub: 'https://github.com/marieooq/react-youtube-clone-public',
   Medium:
     'https://marieotaki.medium.com/things-i-got-stuck-with-when-unit-testing-rest-apis-using-jest-and-react-testing-library-6dbfdbe70cf9',
@@ -68,7 +67,7 @@ class WorkCOS extends React.Component {
   render() {
     return (
       <div>
-        <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
+        <Header section="work" imgSrc={YouTubeImage} url={workObj.url} />
         <CompanyWorkTemplate
           title={workObj.title}
           subTitle={workObj.subTitle}
