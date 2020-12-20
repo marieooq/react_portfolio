@@ -12,6 +12,7 @@ import CrudBlog_image from '../../img/crud_blog.png';
 import Photomap_image from '../../img/photomap.png';
 import VanstudentBlog_image from '../../img/vanstudents_blog.png';
 import ReactNote_image from '../../img/react_note.png';
+import WorksList from '../../setting/WorksList'
 // import Illustration_image from './img/host_family.png';
 
 class Works extends React.Component {
@@ -124,7 +125,7 @@ class Works extends React.Component {
     return (
       <div className="works-wrapper">
         <Header section="about" imgSrc={worksImage} />
-        <ContentsContainer obj={contentsObj} />
+        <ContentsContainer obj={WorksList} />
       </div>
     );
   }

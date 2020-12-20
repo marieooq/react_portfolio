@@ -10,6 +10,7 @@ import StockPrice_image from '../../img/stock_price_list.png';
 import CrudBlog_image from '../../img/crud_blog.png';
 import Photomap_image from '../../img/photomap.png';
 import VanstudentBlog_image from '../../img/vanstudents_blog.png';
+import WorksLsit from '../../setting/WorksList';
 // import ReactNote_image from '../../img/react_note.png';
 // import Illustration_image from './img/host_family.png';
 // import './ContentsContainer.css';
@@ -121,7 +122,7 @@ class HomeContents extends React.Component {
       }
     ];
 
-    return <ContentsContainer obj={contentsObj} />;
+    return <ContentsContainer obj={WorksLsit} />;
   }
 }
 
