@@ -2,6 +2,7 @@ import React from 'react';
 // import Content from "./Content";
 import ContentsContainer from '../../components/ContentsContainer';
 import Hoikupedia from '../../img/hoikupedia.png';
+import YouTubeClone from '../../img/youtube_clone.png';
 import AYACancdr_image from '../../img/aya_cancer.png';
 import GreenSpoon_image from '../../img/green_spoon.png';
 import MessageGif_image from '../../img/messagif.gif';
@@ -16,6 +17,16 @@ import VanstudentBlog_image from '../../img/vanstudents_blog.png';
 class HomeContents extends React.Component {
   render() {
     const contentsObj = [
+      {
+        image: YouTubeClone,
+        title: 'YouTube clone app',
+        stack: ['React Hooks', 'context API', 'Jest'],
+        gitHub: 'https://github.com/marieooq/react-youtube-clone-public',
+        description:
+          'A YouTube clone application using React. You can search videos by keywords and play the video that you choose on this platform.',
+        url: '/works/youtube-clone',
+        project: 'personal',
+      },
       {
         image: Hoikupedia,
         title: 'Hoikupedia Web Design & Development',

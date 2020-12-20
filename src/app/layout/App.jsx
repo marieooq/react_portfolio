@@ -4,6 +4,7 @@ import Home from '../../pages/home/Home';
 import About from '../../pages/about/About';
 import Works from '../../pages/works/Works';
 import Blog from '../../pages/blog/Blog';
+import WorkYouTubeClone from '../../pages/works/WorkYouTubeClone';
 import WorkCOS from '../../pages/works/WorkCOS';
 import WorkAYACancer from '../../pages/works/WorkAYACancer';
 import WorkGreenSpoon from '../../pages/works/WorkGreenSpoon';
@@ -19,7 +20,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import ScrollToTop from '../util/ScrollToTop';
 
-
 class App extends React.Component {
   render() {
     return (
@@ -32,6 +32,11 @@ class App extends React.Component {
               <Route exact path="/about" component={About} />
               <Route exact path="/works" component={Works} />
               <Route exact path="/blog" component={Blog} />
+              <Route
+                exact
+                path="/works/youtube-clone"
+                component={WorkYouTubeClone}
+              />
               <Route
                 exact
                 path="/works/cos"
