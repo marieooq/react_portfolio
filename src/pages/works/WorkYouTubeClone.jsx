@@ -23,7 +23,7 @@ const achievements = [
   'Used YouTube API as if it worked like real YouTube',
   'Used styled components to avoid making style sheets complex',
   "Used context API to manage React state. It's easy to manage it rather than Redux.",
-  'Unit testing using Jest and Ract-testing-library. I test fetching data from mock APIs and displaying the data correctly in the DOM. I wrote a blog about this topic. You can check the link "Medium" at the bottom of this page. '
+  'Unit testing using Jest and React-testing-library. I tested fetching data from mock APIs and displaying the data correctly in the DOM. Also, I wrote a blog about this topic. You can check the blog at the link "Medium" at the bottom of this page. '
 ];
 
 const relatedWebsites = {
