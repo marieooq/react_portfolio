@@ -9,7 +9,7 @@ import Photomap_image from '../img/photomap.png';
 import VanstudentBlog_image from '../img/vanstudents_blog.png';
 import ReactNote_image from '../img/react_note.png';
 
-const workList = [
+const worksList = [
   {
     image: YouTubeClone,
     title: 'YouTube clone app',
@@ -118,4 +118,4 @@ const workList = [
   },
 ];
 
-export default workList;
+export default worksList;
