@@ -2,12 +2,12 @@ import React from 'react';
 import './Content.scss';
 import { Link } from 'react-router-dom';
 
-class Content extends React.Component {
-  generateGitHubLabel = (project) => {
+ const Content = ({contentObj}) => {
+  const generateGitHubLabel = (project) => {
     if(project === 'personal'){
       return(
         <a
-          href={this.props.myGitHub}
+          href={contentObj.gitHub}
           alt="github"
           target="_blank"
           rel="noopener noreferrer"
@@ -18,37 +18,35 @@ class Content extends React.Component {
     }
   }
 
-  render() {
-    const stackLink = this.props.myStack.map((val, index) => {
-      if (index < this.props.myStack.length - 1) {
-        return <li key={index}>{`${val} /`}</li>;
-      } else {
-        return <li key={index}>{`${val}`}</li>;
-      }
-    });
-    return (
-      <div className="contents">
-        <div className="contents_image">
-          <Link to={this.props.myURL}>
-            <img src={this.props.imageSrc} alt="thumbnail" />
-          </Link>
-        </div>
-        <div className="contents_description">
-          <h3>
-            <Link to={this.props.myURL}>{this.props.myTitle}</Link>
-          </h3>
-          <div className="contents_stack_wrapper">
-            <ul className="contents_stack">{stackLink}</ul>
-            {this.generateGitHubLabel(this.props.project)}
-          </div>
-          <p>{this.props.myDescription}</p>
-          <Link to={this.props.myURL} className="contents-detail">
-            Find Out More
-          </Link>
-        </div>
+  const stackLink = contentObj.stack.map((val, index) => {
+    if (index < contentObj.stack.length - 1) {
+      return <li key={index}>{`${val} /`}</li>;
+    } else {
+      return <li key={index}>{`${val}`}</li>;
+    }
+  });
+  return (
+    <div className="contents">
+      <div className="contents_image">
+        <Link to={contentObj.url}>
+          <img src={contentObj.image} alt="thumbnail" />
+        </Link>
       </div>
-    );
-  }
+      <div className="contents_description">
+        <h3>
+          <Link to={contentObj.url}>{contentObj.title}</Link>
+        </h3>
+        <div className="contents_stack_wrapper">
+          <ul className="contents_stack">{stackLink}</ul>
+          {generateGitHubLabel(contentObj.project)}
+        </div>
+        <p>{contentObj.description}</p>
+        <Link to={contentObj.url} className="contents-detail">
+          Find Out More
+        </Link>
+      </div>
+    </div>
+  );
 }
 
 export default Content;

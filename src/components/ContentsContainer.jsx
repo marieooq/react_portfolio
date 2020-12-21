@@ -5,15 +5,9 @@ import './ContentsContainer.css';
 const ContentsContainer = props => {
   const contentLists = props.obj.map((obj, index) => {
     return (
-      <Content
-        imageSrc={obj.image}
-        myTitle={obj.title}
-        myStack={obj.stack}
-        myGitHub={obj.gitHub}
-        myDescription={obj.description}
-        myURL={obj.url}
-        key={index}
-        project={obj.project}
+      <Content 
+        contentObj = {obj}
+        key = {index}
       />
     );
   });
