@@ -2,23 +2,8 @@ import React from 'react';
 import Header from '../../components/Header';
 import aboutImage from '../../img/about_photo.png';
 import './About.scss';
-import axios from 'axios';
-// import { isTSEnumDeclaration } from "@babel/types";
 
 class About extends React.Component {
-  state = {
-    articles: [],
-  };
-
-  componentDidMount() {
-    const mediumRssFeed = 'https://medium.com/feed/@marieotaki';
-    const rssToJsonApi = 'https://api.rss2json.com/v1/api.json';
-    const data = { params: { rss_url: mediumRssFeed } };
-    axios.get(rssToJsonApi, data).then((res) => {
-      this.setState({ articles: res.data.items });
-    });
-  }
-
   render() {
     const links = {
       GitHub: 'https://github.com/marieooq',
