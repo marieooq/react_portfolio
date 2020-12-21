@@ -20,7 +20,7 @@ const imageList = images.map((elm, index) => {
 });
 
 const relatedWebsites = {
-  GitHub: 'https://github.com/marieooq/final-node-blog'
+  GitHub: 'https://github.com/marieooq/final-node-blog',
 };
 
 const relatedWebsitesLists = Object.keys(relatedWebsites).map(
@@ -51,28 +51,24 @@ const workObj = {
   difficultPart:
     'This app was useful for me to understand the whole flow of the data, for it connects front-end, back-end, and database. However, it was a bit hard to understand it for the first time. In particular, the part of the connection back-end and database was difficult. Although it was not my role I hoped to understand the whole flow.',
   problemSolving:
-    'I did read almost all the codes to better understand the structure keeping the MVC model in mind. Reading the documentation of express.js and mongoose was also useful for me.'
+    'I did read almost all the codes to better understand the structure keeping the MVC model in mind. Reading the documentation of express.js and mongoose was also useful for me.',
 };
 
-class WorkCrudBlog extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
-        <WorkTemplate
-          title={workObj.title}
-          subTitle={workObj.subTitle}
-          tags={tagList}
-          description={workObj.description}
-          howItWorksDescription={workObj.howItWorks}
-          contentImage={imageList}
-          difficultPartDescription={workObj.difficultPart}
-          problemSolvingDescription={workObj.problemSolving}
-          relatedWebsitesLists={relatedWebsitesLists}
-        />
-      </div>
-    );
-  }
-}
+const WorkCrudBlog = () => (
+  <div>
+    <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
+    <WorkTemplate
+      title={workObj.title}
+      subTitle={workObj.subTitle}
+      tags={tagList}
+      description={workObj.description}
+      howItWorksDescription={workObj.howItWorks}
+      contentImage={imageList}
+      difficultPartDescription={workObj.difficultPart}
+      problemSolvingDescription={workObj.problemSolving}
+      relatedWebsitesLists={relatedWebsitesLists}
+    />
+  </div>
+);
 
 export default WorkCrudBlog;
