@@ -1,11 +1,13 @@
 import React from 'react';
 import './Content.scss';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
- const Content = ({contentObj}) => {
+const Content = ({ contentObj }) => {
+  let location = useLocation();
+
   const generateGitHubLabel = (project) => {
-    if(project === 'personal'){
-      return(
+    if (project === 'personal') {
+      return (
         <a
           href={contentObj.gitHub}
           alt="github"
@@ -14,9 +16,9 @@ import { Link } from 'react-router-dom';
         >
           <i className="fab fa-github"></i> GitHub
         </a>
-      );   
+      );
     }
-  }
+  };
 
   const stackLink = contentObj.stack.map((val, index) => {
     if (index < contentObj.stack.length - 1) {
@@ -27,11 +29,21 @@ import { Link } from 'react-router-dom';
   });
   return (
     <div className="contents">
-      <div className="contents_image">
-        <Link to={contentObj.url}>
-          <img src={contentObj.image} alt="thumbnail" />
-        </Link>
-      </div>
+      {contentObj.featured && location.pathname === '/' ? (
+        <div className="contents_image">
+          <span className="feature_lalbel">Featured</span>
+          <Link to={contentObj.url}>
+            <img src={contentObj.image} alt="thumbnail" />
+          </Link>
+        </div>
+      ) : (
+        <div className="contents_image">
+          <Link to={contentObj.url}>
+            <img src={contentObj.image} alt="thumbnail" />
+          </Link>
+        </div>
+      )}
+
       <div className="contents_description">
         <h3>
           <Link to={contentObj.url}>{contentObj.title}</Link>
@@ -47,6 +59,6 @@ import { Link } from 'react-router-dom';
       </div>
     </div>
   );
-}
+};
 
 export default Content;
