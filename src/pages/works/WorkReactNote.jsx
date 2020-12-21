@@ -20,7 +20,7 @@ const relatedWebsites = {
   'Visit the website': 'https://reactnote-93fb1.web.app/',
   GitHub: 'https://github.com/marieooq/react-firebase-notes-app-public',
   Medium:
-    'https://medium.com/@marieotaki/i-dont-know-what-react-exactly-is-although-i-ve-created-an-app-using-it-e0aaf7dcabc5'
+    'https://medium.com/@marieotaki/i-dont-know-what-react-exactly-is-although-i-ve-created-an-app-using-it-e0aaf7dcabc5',
 };
 
 const relatedWebsitesLists = Object.keys(relatedWebsites).map(
@@ -53,32 +53,28 @@ const workObj = {
     'I worked on modifying visual design after completing the tutorial so that I could understand the structure. That was useful for me to grasp the structure, especially the concept of React components. I inspected the code by a developer tool and identified the component I’d like to modify, then modify each CSS file related to the component.',
   url:
     'https://medium.com/@marie_woq/i-dont-know-what-react-exactly-is-although-i-ve-created-an-app-using-it-e0aaf7dcabc5',
-  url_title: 'Medium'
+  url_title: 'Medium',
 };
 
-class WorkReactNote extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header
-          section="work"
-          imgSrc={HeaderImage}
-          url="https://reactnote-93fb1.web.app/"
-        />
-        <WorkTemplate
-          title={workObj.title}
-          subTitle={workObj.subTitle}
-          tags={tagList}
-          description={workObj.description}
-          howItWorksDescription={workObj.howItWorks}
-          contentImage={imageList}
-          difficultPartDescription={workObj.difficultPart}
-          problemSolvingDescription={workObj.problemSolving}
-          relatedWebsitesLists={relatedWebsitesLists}
-        />
-      </div>
-    );
-  }
-}
+const WorkReactNote = () => (
+  <div>
+    <Header
+      section="work"
+      imgSrc={HeaderImage}
+      url="https://reactnote-93fb1.web.app/"
+    />
+    <WorkTemplate
+      title={workObj.title}
+      subTitle={workObj.subTitle}
+      tags={tagList}
+      description={workObj.description}
+      howItWorksDescription={workObj.howItWorks}
+      contentImage={imageList}
+      difficultPartDescription={workObj.difficultPart}
+      problemSolvingDescription={workObj.problemSolving}
+      relatedWebsitesLists={relatedWebsitesLists}
+    />
+  </div>
+);
 
 export default WorkReactNote;
