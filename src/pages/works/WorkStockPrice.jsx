@@ -6,7 +6,7 @@ import HeaderImage from '../../img/stock_price_header.png';
 const tags = ['HTML5', 'CSS3', 'TypeScript', 'React', 'Ant Design'];
 
 const images = [
-  'https://user-images.githubusercontent.com/33252783/76643992-61558500-6513-11ea-9157-f2b8ceed148e.gif'
+  'https://user-images.githubusercontent.com/33252783/76643992-61558500-6513-11ea-9157-f2b8ceed148e.gif',
 ];
 
 const tagList = tags.map((elm, index) => {
@@ -18,7 +18,7 @@ const imageList = images.map((elm, index) => {
 });
 
 const relatedWebsites = {
-  GitHub: 'https://github.com/marieooq/stock-price-list'
+  GitHub: 'https://github.com/marieooq/stock-price-list',
 };
 
 const relatedWebsitesLists = Object.keys(relatedWebsites).map(
@@ -49,28 +49,24 @@ const workObj = {
   difficultPart:
     "When I hit the API's endpoint, it returned more than 8,000 data, which means it was too much to fetch all of them at once. I was wondering I would restrict the number of data to fetch. However, it would cause a bad user experience, so I needed an alternative idea.",
   problemSolving:
-    'Since it was impossible to display all of the data from API when I hit the endpoint, I created a search function. When users type the symbol name and press the enter key, it shows the data matches that symbol. With Ant design, I could create this app without caring for the visual design too much.'
+    'Since it was impossible to display all of the data from API when I hit the endpoint, I created a search function. When users type the symbol name and press the enter key, it shows the data matches that symbol. With Ant design, I could create this app without caring for the visual design too much.',
 };
 
-class WorkStockPrice extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
-        <WorkTemplate
-          title={workObj.title}
-          subTitle={workObj.subTitle}
-          tags={tagList}
-          description={workObj.description}
-          howItWorksDescription={workObj.howItWorks}
-          contentImage={imageList}
-          difficultPartDescription={workObj.difficultPart}
-          problemSolvingDescription={workObj.problemSolving}
-          relatedWebsitesLists={relatedWebsitesLists}
-        />
-      </div>
-    );
-  }
-}
+const WorkStockPrice = () => (
+  <div>
+    <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
+    <WorkTemplate
+      title={workObj.title}
+      subTitle={workObj.subTitle}
+      tags={tagList}
+      description={workObj.description}
+      howItWorksDescription={workObj.howItWorks}
+      contentImage={imageList}
+      difficultPartDescription={workObj.difficultPart}
+      problemSolvingDescription={workObj.problemSolving}
+      relatedWebsitesLists={relatedWebsitesLists}
+    />
+  </div>
+);
 
 export default WorkStockPrice;
