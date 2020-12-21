@@ -14,7 +14,6 @@ import WorkCrudBlog from '../../pages/works/WorkCrudBlog';
 import WorkPhotomap from '../../pages/works/WorkPhotomap';
 import WorkReactBlog from '../../pages/works/WorkReactBlog';
 import WorkReactNote from '../../pages/works/WorkReactNote';
-// import WorkIllustration from "./WorkIllustration";
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
