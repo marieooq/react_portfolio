@@ -20,55 +20,34 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import ScrollToTop from '../util/ScrollToTop';
 
-class App extends React.Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <ScrollToTop>
-          <div id="wrapper">
-            <Navigation />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/works" component={Works} />
-              <Route exact path="/blog" component={Blog} />
-              <Route
-                exact
-                path="/works/youtube-clone"
-                component={WorkYouTubeClone}
-              />
-              <Route
-                exact
-                path="/works/cos"
-                component={WorkCOS}
-              />
-              <Route
-                exact
-                path="/works/aya-cancer"
-                component={WorkAYACancer}
-              />
-              <Route
-                exact
-                path="/works/green-spoon"
-                component={WorkGreenSpoon}
-              />
-              <Route exact path="/works/msgif" component={WorkMsgif} />
-              <Route
-                exact
-                path="/works/stock-price"
-                component={WorkStockPrice}
-              />
-              <Route exact path="/works/crud-blog" component={WorkCrudBlog} />
-              <Route exact path="/works/photomap" component={WorkPhotomap} />
-              <Route exact path="/works/react-blog" component={WorkReactBlog} />
-              <Route exact path="/works/react-note" component={WorkReactNote} />
-              {/* <Route exact path="/illustration" component={WorkIllustration} /> */}
-            </Switch>
-          </div>
-        </ScrollToTop>
-      </BrowserRouter>
-    );
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <ScrollToTop>
+      <div id="wrapper">
+        <Navigation />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/works" component={Works} />
+          <Route exact path="/blog" component={Blog} />
+          <Route
+            exact
+            path="/works/youtube-clone"
+            component={WorkYouTubeClone}
+          />
+          <Route exact path="/works/cos" component={WorkCOS} />
+          <Route exact path="/works/aya-cancer" component={WorkAYACancer} />
+          <Route exact path="/works/green-spoon" component={WorkGreenSpoon} />
+          <Route exact path="/works/msgif" component={WorkMsgif} />
+          <Route exact path="/works/stock-price" component={WorkStockPrice} />
+          <Route exact path="/works/crud-blog" component={WorkCrudBlog} />
+          <Route exact path="/works/photomap" component={WorkPhotomap} />
+          <Route exact path="/works/react-blog" component={WorkReactBlog} />
+          <Route exact path="/works/react-note" component={WorkReactNote} />
+        </Switch>
+      </div>
+    </ScrollToTop>
+  </BrowserRouter>
+);
 
 export default App;
