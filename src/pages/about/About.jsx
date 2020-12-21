@@ -7,24 +7,26 @@ import axios from 'axios';
 
 class About extends React.Component {
   state = {
-    articles: []
+    articles: [],
   };
 
   componentDidMount() {
     const mediumRssFeed = 'https://medium.com/feed/@marieotaki';
     const rssToJsonApi = 'https://api.rss2json.com/v1/api.json';
     const data = { params: { rss_url: mediumRssFeed } };
-    axios.get(rssToJsonApi, data).then(res => {
+    axios.get(rssToJsonApi, data).then((res) => {
       this.setState({ articles: res.data.items });
     });
   }
 
   render() {
     const links = {
+      GitHub: 'https://github.com/marieooq',
+      LinkedIn: 'https://www.linkedin.com/in/marieotaki/',
+      Medium: 'https://marieotaki.medium.com/',
+      Twitter: 'https://twitter.com/marie_otaki',
       Resume: '/MarieOtaki_Resume.pdf',
       Email: 'mailto:otakimarie@gmail.com',
-      LinkedIn: 'https://www.linkedin.com/in/marieotaki/',
-      GitHub: 'https://github.com/marieooq'
     };
 
     const snsLinks = Object.keys(links).map((keyName, index) => {
@@ -46,7 +48,7 @@ class About extends React.Component {
         ),
         headline: 'Software development',
         text:
-          'I’m developing web apps using HTML5, CSS3, SCSS, JavaScript, React, and Redux. Especially I’ve been putting much effort into developing with React. I keep brushing up my developing skills.'
+          'I’m developing web apps using HTML5, CSS3, SCSS, JavaScript, React, and Redux. Especially I’ve been putting much effort into developing with React. I keep brushing up my developing skills.',
       },
       idea: {
         emoji: (
@@ -56,7 +58,7 @@ class About extends React.Component {
         ),
         headline: 'Thinking new ideas',
         text:
-          "I always take notes whatever grabs my attention, which make me come up with new idea for web apps. It also useful for solving problems even if it's a tiny one. Everything around me is hints for solving problems."
+          "I always take notes whatever grabs my attention, which make me come up with new idea for web apps. It also useful for solving problems even if it's a tiny one. Everything around me is hints for solving problems.",
       },
       cooking: {
         emoji: (
@@ -66,7 +68,7 @@ class About extends React.Component {
         ),
         headline: 'Cooking',
         text:
-          'I’m a good cooker. I can make a variety of food within limited ingredients. It’s like a puzzle. I love to try new taste so every time I face new meal I can get new hint to my recipe lists. The way of thinking helps me when I am coding as well.  '
+          'I’m a good cooker. I can make a variety of food within limited ingredients. It’s like a puzzle. I love to try new taste so every time I face new meal I can get new hint to my recipe lists. The way of thinking helps me when I am coding as well.  ',
       },
       traveling: {
         emoji: (
@@ -76,8 +78,8 @@ class About extends React.Component {
         ),
         headline: 'Traveling',
         text:
-          'Love to off to new world! Of all the countries I have visited, Laos and Vietnam are  my favorite! '
-      }
+          'Love to off to new world! Of all the countries I have visited, Laos and Vietnam are  my favorite! ',
+      },
     };
 
     const topicsLinks = Object.keys(topicsObj).map((keyName, index) => {
