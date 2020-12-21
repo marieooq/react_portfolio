@@ -3,15 +3,13 @@ import './Home.css';
 import Header from '../../components/Header';
 import HomeContents from './HomeContents';
 
-class Home extends React.Component {
-  render() {
-    return (
-      <div id="content-inner">
-        <Header section="header" />
-        <HomeContents />
-      </div>
-    );
-  }
-}
+const Home = () => {
+  return (
+    <div id="content-inner">
+      <Header section="header" />
+      <HomeContents />
+    </div>
+  );
+};
 
 export default Home;
