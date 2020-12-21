@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import CompanyWorkTemplate from './CompanyWorkTemplate';
 import HeaderImage from '../../img/green_spoon_header.png';
-import GreenSpoonImage from '../../img/green_spoon_image.png'
+import GreenSpoonImage from '../../img/green_spoon_image.png';
 
 //////////////////////////////////////
 // set values according to a project
@@ -12,28 +12,25 @@ const workObj = {
   title: 'Green Spoon',
   description:
     'Greenspoon Inc. is a Japanese startup company that offers high-quality fresh smoothies via e-commerce. My position was completely remote.',
-  headline: 'What I worked on'
+  headline: 'What I worked on',
 };
 
 const tags = ['PHP Laravel', 'HTML', 'CSS'];
 
-const images = [
-  GreenSpoonImage
-];
+const images = [GreenSpoonImage];
 
 const achievements = [
-  "Built a payment emailing system using PHP Laravel, HTML, and CSS",
+  'Built a payment emailing system using PHP Laravel, HTML, and CSS',
   "Coded a landing page according to Sketch's comprehensive layout",
-  "Communicated closely with teammates in Slack to get work done on time, despite the time difference from Japan",
-  "Managed tasks in asana like stock price and its description."
+  'Communicated closely with teammates in Slack to get work done on time, despite the time difference from Japan',
+  'Managed tasks in asana like stock price and its description.',
 ];
 
 const relatedWebsites = {
-  'Green Spoon': 'https://green-spoon.jp/'
+  'Green Spoon': 'https://green-spoon.jp/',
 };
 //////////////////////////////////////
 //////////////////////////////////////
-
 
 const tagList = tags.map((elm, index) => {
   return <li key={index}>{elm}</li>;
@@ -44,8 +41,8 @@ const imageList = images.map((elm, index) => {
 });
 
 const achievementList = achievements.map((elm, index) => {
-  return <li key={index}>{elm}</li>
-})
+  return <li key={index}>{elm}</li>;
+});
 
 const relatedWebsitesLists = Object.keys(relatedWebsites).map(
   (keyName, index) => {
@@ -63,25 +60,20 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(
   }
 );
 
-
-class WorkGreenSpoon extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
-        <CompanyWorkTemplate
-          title={workObj.title}
-          subTitle={workObj.subTitle}
-          tags={tagList}
-          description={workObj.description}
-          headline = {workObj.headline}
-          achievementDescription={achievementList}
-          contentImage={imageList}
-          relatedWebsitesLists={relatedWebsitesLists}
-        />
-      </div>
-    );
-  }
-}
+const WorkGreenSpoon = () => (
+  <div>
+    <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
+    <CompanyWorkTemplate
+      title={workObj.title}
+      subTitle={workObj.subTitle}
+      tags={tagList}
+      description={workObj.description}
+      headline={workObj.headline}
+      achievementDescription={achievementList}
+      contentImage={imageList}
+      relatedWebsitesLists={relatedWebsitesLists}
+    />
+  </div>
+);
 
 export default WorkGreenSpoon;

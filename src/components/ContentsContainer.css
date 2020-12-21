@@ -11,6 +11,18 @@
   margin: auto;
 }
 
+.view_more {
+  text-align: right;
+}
+
+.view_more a {
+  color: var(--subFontColor);
+}
+
+.view_more a:hover {
+  color: var(--accentColor);
+}
+
 @media screen and (min-width: 480px) {
   .contents-inner {
     width: 400px;

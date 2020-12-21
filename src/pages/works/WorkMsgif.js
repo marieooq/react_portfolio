@@ -19,7 +19,7 @@ const imageList = images.map((elm, index) => {
 const relatedWebsites = {
   'Visit the website': 'https://msgif.net/',
   GitHub: 'https://github.com/marieooq/react-msgif',
-  'Product Hunt': 'https://www.producthunt.com/posts/msgif'
+  'Product Hunt': 'https://www.producthunt.com/posts/msgif',
 };
 
 const relatedWebsitesLists = Object.keys(relatedWebsites).map(
@@ -119,28 +119,24 @@ const workObj = {
       attribute. That attribute enables users to type letters into a normal div
       element and to be applied CSS to the element.
     </>
-  )
+  ),
 };
 
-class WorkMsgif extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header section="work_ph" imgSrc={HeaderImage} url={workObj.url} />
-        <WorkTemplate
-          title={workObj.title}
-          subTitle={workObj.subTitle}
-          tags={tagList}
-          description={workObj.description}
-          howItWorksDescription={workObj.howItWorks}
-          contentImage={imageList}
-          difficultPartDescription={workObj.difficultPart}
-          problemSolvingDescription={workObj.problemSolving}
-          relatedWebsitesLists={relatedWebsitesLists}
-        />
-      </div>
-    );
-  }
-}
+const WorkMsgif = () => (
+  <div>
+    <Header section="work_ph" imgSrc={HeaderImage} url={workObj.url} />
+    <WorkTemplate
+      title={workObj.title}
+      subTitle={workObj.subTitle}
+      tags={tagList}
+      description={workObj.description}
+      howItWorksDescription={workObj.howItWorks}
+      contentImage={imageList}
+      difficultPartDescription={workObj.difficultPart}
+      problemSolvingDescription={workObj.problemSolving}
+      relatedWebsitesLists={relatedWebsitesLists}
+    />
+  </div>
+);
 
 export default WorkMsgif;

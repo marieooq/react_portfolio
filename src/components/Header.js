@@ -53,6 +53,24 @@ const Header = (props) => {
               </li>
               <li>
                 <a
+                  href="https://marieotaki.medium.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-medium-m"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/marie_otaki"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
                   href="/MarieOtaki_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"

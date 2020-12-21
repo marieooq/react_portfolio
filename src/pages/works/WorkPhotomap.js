@@ -19,7 +19,7 @@ const imageList = images.map((elm, index) => {
 
 const relatedWebsites = {
   'Visit the website': 'https://photos-mapping.web.app/',
-  GitHub: 'https://github.com/marieooq/react-photomap-public'
+  GitHub: 'https://github.com/marieooq/react-photomap-public',
 };
 
 const relatedWebsitesLists = Object.keys(relatedWebsites).map(
@@ -50,28 +50,24 @@ const workObj = {
   difficultPart:
     'At the beginning, I used search method in Twitter API that I can fetch the timeline data if it has a certain hashtag. However there is limitation that the API provides the data with hashtag if it was posted within 7 days. Another problem is when I hit the endpoint of Twitter API from client side, there was a CORS problem.',
   problemSolving:
-    'I gave up the idea to filter the timeline data with a hash tag. I fetch the data if it has location data instead.To solve the CORS issue I used Express, the framework of Node,js. More specifically, I used api.use(cors()).'
+    'I gave up the idea to filter the timeline data with a hash tag. I fetch the data if it has location data instead.To solve the CORS issue I used Express, the framework of Node,js. More specifically, I used api.use(cors()).',
 };
 
-class WorkPhotomap extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
-        <WorkTemplate
-          title={workObj.title}
-          subTitle={workObj.subTitle}
-          tags={tagList}
-          description={workObj.description}
-          howItWorksDescription={workObj.howItWorks}
-          contentImage={imageList}
-          difficultPartDescription={workObj.difficultPart}
-          problemSolvingDescription={workObj.problemSolving}
-          relatedWebsitesLists={relatedWebsitesLists}
-        />
-      </div>
-    );
-  }
-}
+const WorkPhotomap = () => (
+  <div>
+    <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
+    <WorkTemplate
+      title={workObj.title}
+      subTitle={workObj.subTitle}
+      tags={tagList}
+      description={workObj.description}
+      howItWorksDescription={workObj.howItWorks}
+      contentImage={imageList}
+      difficultPartDescription={workObj.difficultPart}
+      problemSolvingDescription={workObj.problemSolving}
+      relatedWebsitesLists={relatedWebsitesLists}
+    />
+  </div>
+);
 
 export default WorkPhotomap;

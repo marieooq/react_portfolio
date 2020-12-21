@@ -18,7 +18,7 @@ const imageList = images.map((elm, index) => {
 
 const relatedWebsites = {
   'Visit the website': 'https://vanstudents.com/',
-  GitHub: 'https://github.com/marieooq/react_contentful_blog_public'
+  GitHub: 'https://github.com/marieooq/react_contentful_blog_public',
 };
 
 const relatedWebsitesLists = Object.keys(relatedWebsites).map(
@@ -49,28 +49,24 @@ const workObj = {
   difficultPart:
     'It is needed to jump to a page that displays an individual article when the user tap the article link on the home page. It was a bit challenging for me because I display a certain component when jumping to another link.',
   problemSolving:
-    'I used URL Parameters in React router to solve the problem. Like “/article/:slug”, providing a certain slug under the article it enables to direct to a specific article page.'
+    'I used URL Parameters in React router to solve the problem. Like “/article/:slug”, providing a certain slug under the article it enables to direct to a specific article page.',
 };
 
-class WorkReactBlog extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
-        <WorkTemplate
-          title={workObj.title}
-          subTitle={workObj.subTitle}
-          tags={tagList}
-          description={workObj.description}
-          howItWorksDescription={workObj.howItWorks}
-          contentImage={imageList}
-          difficultPartDescription={workObj.difficultPart}
-          problemSolvingDescription={workObj.problemSolving}
-          relatedWebsitesLists={relatedWebsitesLists}
-        />
-      </div>
-    );
-  }
-}
+const WorkReactBlog = () => (
+  <div>
+    <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
+    <WorkTemplate
+      title={workObj.title}
+      subTitle={workObj.subTitle}
+      tags={tagList}
+      description={workObj.description}
+      howItWorksDescription={workObj.howItWorks}
+      contentImage={imageList}
+      difficultPartDescription={workObj.difficultPart}
+      problemSolvingDescription={workObj.problemSolving}
+      relatedWebsitesLists={relatedWebsitesLists}
+    />
+  </div>
+);
 
 export default WorkReactBlog;

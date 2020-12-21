@@ -15,7 +15,13 @@ const workObj = {
   headline: 'What I worked on',
 };
 
-const tags = ['React Hooks', 'context API', 'Jest', 'React testing library', 'Sass'];
+const tags = [
+  'React Hooks',
+  'context API',
+  'Jest',
+  'React testing library',
+  'Sass',
+];
 
 const images = [YouTubeCloneImage1];
 
@@ -23,7 +29,7 @@ const achievements = [
   'Used YouTube API as if it worked like real YouTube',
   'Used styled components to avoid making style sheets complex',
   "Used context API to manage React state. It's easy to manage it rather than Redux.",
-  'Unit testing using Jest and React-testing-library. I tested fetching data from mock APIs and displaying the data correctly in the DOM. Also, I wrote a blog about this topic. You can check the blog at the link "Medium" at the bottom of this page. '
+  'Unit testing using Jest and React-testing-library. I tested fetching data from mock APIs and displaying the data correctly in the DOM. Also, I wrote a blog about this topic. You can check the blog at the link "Medium" at the bottom of this page. ',
 ];
 
 const relatedWebsites = {
@@ -63,24 +69,20 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(
   }
 );
 
-class WorkCOS extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header section="work" imgSrc={YouTubeImage} url={workObj.url} />
-        <CompanyWorkTemplate
-          title={workObj.title}
-          subTitle={workObj.subTitle}
-          tags={tagList}
-          description={workObj.description}
-          headline={workObj.headline}
-          achievementDescription={achievementList}
-          contentImage={imageList}
-          relatedWebsitesLists={relatedWebsitesLists}
-        />
-      </div>
-    );
-  }
-}
+const WorkYouTubeClone = () => (
+  <div>
+    <Header section="work" imgSrc={YouTubeImage} url={workObj.url} />
+    <CompanyWorkTemplate
+      title={workObj.title}
+      subTitle={workObj.subTitle}
+      tags={tagList}
+      description={workObj.description}
+      headline={workObj.headline}
+      achievementDescription={achievementList}
+      contentImage={imageList}
+      relatedWebsitesLists={relatedWebsitesLists}
+    />
+  </div>
+);
 
-export default WorkCOS;
+export default WorkYouTubeClone;
