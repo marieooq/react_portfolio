@@ -5,15 +5,11 @@ import './Works.css';
 import ContentsContainer from '../../components/ContentsContainer';
 import worksList from '../../setting/worksList';
 
-class Works extends React.Component {
-  render() {
-    return (
-      <div className="works-wrapper">
-        <Header section="about" imgSrc={worksImage} />
-        <ContentsContainer obj={worksList} />
-      </div>
-    );
-  }
-}
+const Works = () => (
+  <div className="works-wrapper">
+    <Header section="about" imgSrc={worksImage} />
+    <ContentsContainer obj={worksList} />
+  </div>
+);
 
 export default Works;
