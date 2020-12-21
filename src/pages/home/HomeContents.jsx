@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentsContainer from '../../components/ContentsContainer';
-import worksList from '../../setting/worksList.js';
+import worksList from '../../setting/worksList';
 
 const HomeContents = () => {
   //take out an object if its featured property's value equals true
