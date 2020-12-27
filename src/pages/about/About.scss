@@ -24,6 +24,7 @@
         font-family: var(--subFont);
         text-align: left;
         display: flex;
+        flex-wrap: wrap;
         padding: 0;
 
         a {
@@ -33,6 +34,7 @@
           font-size: 17px;
           line-height: 1.14;
           margin-right: 17px;
+          margin-bottom: 8px;
         }
 
         a:hover {
