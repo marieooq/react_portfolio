@@ -2,15 +2,31 @@ import React from 'react';
 import Content from './Content';
 import { Link, useLocation } from 'react-router-dom';
 import './ContentsContainer.css';
+import Filter from './Filter';
 
 const ContentsContainer = (props) => {
   let location = useLocation();
-  const contentLists = props.obj.map((obj, index) => {
+
+  const returnFilteredObject = (filteringWord, projectArray) => {
+    if (filteringWord === 'all') {
+      return projectArray;
+    } else {
+      const filteredObj = projectArray.filter(
+        (val) => val.project === filteringWord
+      );
+      return filteredObj;
+    }
+  };
+
+  const filteredObj = returnFilteredObject(props.project, props.obj);
+
+  const contentLists = filteredObj.map((obj, index) => {
     return <Content contentObj={obj} key={index} />;
   });
   return (
     <div className="contents_wrapper">
       <div className="contents-inner">
+        <Filter project={props.project} handleChange={props.handleChange} />
         {contentLists}
         {location.pathname === '/' ? (
           <div className="view_more">
