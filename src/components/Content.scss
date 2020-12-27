@@ -55,6 +55,17 @@
     a:hover {
       text-decoration: underline;
     }
+
+    span.project-label {
+      font-size: 0.4em;
+      font-weight: 100;
+      padding: 0.3em 0.6em;
+      border-radius: 0.5em;
+      color: var(--fontColor);
+      background-color: #b5bdc4;
+      margin-left: 1em;
+      vertical-align: middle;
+    }
   }
 
   .contents_stack_wrapper {
