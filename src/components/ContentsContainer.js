@@ -2,7 +2,7 @@ import React from 'react';
 import Content from './Content';
 import { Link, useLocation } from 'react-router-dom';
 import './ContentsContainer.css';
-import Filter from './Filter';
+import SimpleSelect from './SimpleSelect';
 
 const ContentsContainer = (props) => {
   let location = useLocation();
@@ -26,7 +26,10 @@ const ContentsContainer = (props) => {
   return (
     <div className="contents_wrapper">
       <div className="contents-inner">
-        <Filter project={props.project} handleChange={props.handleChange} />
+        <SimpleSelect
+          project={props.project}
+          handleChange={props.handleChange}
+        />
         {contentLists}
         {location.pathname === '/' ? (
           <div className="view_more">
