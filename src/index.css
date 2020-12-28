@@ -10,8 +10,8 @@
   --greyColor: #c1c2c6;
   /* --lightBlueColor: #63bfe8; */
   --lightBlueColor: #ecf4f8;
-  --mainFont: "PT Sans", sans-serif;
-  --subFont: "PT Mono", monospace;
+  --mainFont: 'PT Sans', sans-serif;
+  --subFont: 'PT Mono', monospace;
 }
 body {
   margin: 0;
@@ -22,4 +22,20 @@ body {
   font-family: "Open Sans", sans-serif; */
   font-size: 16px;
   box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clearfix:before {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clearfix {
+  display: block;
 }

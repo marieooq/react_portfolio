@@ -5,6 +5,10 @@ import { Link, useLocation } from 'react-router-dom';
 const Content = ({ contentObj }) => {
   let location = useLocation();
 
+  const generateProjectLabel = (project) => {
+    return <span className="project-label">{`#${project}`}</span>;
+  };
+
   const generateGitHubLabel = (project) => {
     if (project === 'personal') {
       return (
@@ -46,8 +50,12 @@ const Content = ({ contentObj }) => {
 
       <div className="contents_description">
         <h3>
-          <Link to={contentObj.url}>{contentObj.title}</Link>
+          <Link to={contentObj.url}>
+            {contentObj.title}
+            {generateProjectLabel(contentObj.project)}
+          </Link>
         </h3>
+
         <div className="contents_stack_wrapper">
           <ul className="contents_stack">{stackLink}</ul>
           {generateGitHubLabel(contentObj.project)}
