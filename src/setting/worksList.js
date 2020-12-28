@@ -92,6 +92,7 @@ const worksList = [
     description:
       'This app enables to locate the photos of my twitter timeline on the world map. It uses twitter API to get data like image, location and published time.',
     url: '/works/photomap',
+    project: 'personal',
     featured: false,
   },
   {
