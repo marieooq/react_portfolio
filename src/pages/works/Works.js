@@ -14,7 +14,7 @@ const Works = () => {
 
   return (
     //className="works-wrapper"
-    <Layout section="about" imgSrc={worksImage}>
+    <Layout section="works" imgSrc={worksImage}>
       <ContentsContainer
         project={project}
         handleChange={handleChange}
