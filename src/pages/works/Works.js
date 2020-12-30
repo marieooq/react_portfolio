@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Header from '../../components/Header';
+import Layout from '../../components/Layout';
+// import Header from '../../components/Header';
 import worksImage from '../../img/works.png';
 import './Works.css';
 import ContentsContainer from '../../components/ContentsContainer';
@@ -12,14 +13,14 @@ const Works = () => {
   };
 
   return (
-    <div className="works-wrapper">
-      <Header section="about" imgSrc={worksImage} />
+    //className="works-wrapper"
+    <Layout section="about" imgSrc={worksImage}>
       <ContentsContainer
         project={project}
         handleChange={handleChange}
         obj={worksList}
       />
-    </div>
+    </Layout>
   );
 };
 

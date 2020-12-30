@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../../components/Header';
+import Layout from '../../components/Layout';
 import BlogImage from '../../img/blog.png';
-// import worksImage from "./img/about_photo.png";
 import './Blog.scss';
 import axios from 'axios';
 
@@ -36,12 +35,11 @@ const Blog = () => {
   });
 
   return (
-    <div className="works-wrapper">
-      <Header section="blog" imgSrc={BlogImage} />
+    <Layout section="blog" imgSrc={BlogImage}>
       <div className="blog">
         <div className="blog-wrapper">{articleLists}</div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
