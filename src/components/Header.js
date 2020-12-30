@@ -92,6 +92,14 @@ const Header = (props) => {
         </div>
       </header>
     );
+  } else if (props.section === 'work') {
+    return (
+      <header className="work-header">
+        <a href={props.url} target="_blank" rel="noopener noreferrer">
+          <img src={props.imgSrc} alt="work" id="work-photo" />
+        </a>
+      </header>
+    );
   } else if (props.section === 'work_ph') {
     return (
       <header className="work-ph-header">
