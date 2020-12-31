@@ -1,14 +1,14 @@
 import React from 'react';
 import './Home.css';
-import Header from '../../components/Header';
+import Layout from '../../components/Layout';
+// import Header from '../../components/Header';
 import HomeContents from './HomeContents';
 
 const Home = () => {
   return (
-    <div id="content-inner">
-      <Header section="header" />
+    <Layout section="header">
       <HomeContents />
-    </div>
+    </Layout>
   );
 };
 

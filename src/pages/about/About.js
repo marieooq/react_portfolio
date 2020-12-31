@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header';
+import Layout from '../../components/Layout';
 import aboutImage from '../../img/about_photo.png';
 import './About.scss';
 
@@ -78,28 +78,24 @@ const About = () => {
   });
 
   return (
-    <div>
-      <div className="about-wrapper">
-        <Header section="about" imgSrc={aboutImage} />
+    <Layout section="about" imgSrc={aboutImage}>
+      <div className="about">
+        <div className="about-inner">
+          <section className="about-introduction">
+            <h1>
+              <span role="img" aria-label="wave">
+                👋🏼{' '}
+              </span>
+              I love to think about new ideas and solve problems. Let's talk
+              about topics like...
+            </h1>
+            <ul id="sns-links">{snsLinks}</ul>
+          </section>
 
-        <div className="about">
-          <div className="about-inner">
-            <section className="about-introduction">
-              <h1>
-                <span role="img" aria-label="wave">
-                  👋🏼{' '}
-                </span>
-                I love to think about new ideas and solve problems. Let's talk
-                about topics like...
-              </h1>
-              <ul id="sns-links">{snsLinks}</ul>
-            </section>
-
-            <section className="about-topics">{topicsLinks}</section>
-          </div>
+          <section className="about-topics">{topicsLinks}</section>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
