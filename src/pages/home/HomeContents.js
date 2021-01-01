@@ -8,7 +8,7 @@ const HomeContents = () => {
     setProject(e.target.value);
   };
 
-  //take out an object if its featured property's value equals true
+  //take out the object if its featured property's value equals true
   const featuredWorkList = worksList.filter((val) => val.featured);
 
   return (
