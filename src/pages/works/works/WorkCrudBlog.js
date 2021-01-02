@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
-import WorkTemplate from '../../components/WorkTemplate/WorkTemplate';
-import HeaderImage from '../../img/crud_blog_header.png';
-import ContentImage1 from '../../img/crud_blog_demo1.png';
-import ContentImage2 from '../../img/crud_blog_demo2.png';
-import ContentImage3 from '../../img/crud_blog_demo3.png';
-import ContentImage4 from '../../img/crud_blog_demo4.png';
+import Header from '../../../components/Header/Header';
+import WorkTemplate from '../../../components/WorkTemplate/WorkTemplate';
+import HeaderImage from '../../../img/crud_blog_header.png';
+import ContentImage1 from '../../../img/crud_blog_demo1.png';
+import ContentImage2 from '../../../img/crud_blog_demo2.png';
+import ContentImage3 from '../../../img/crud_blog_demo3.png';
+import ContentImage4 from '../../../img/crud_blog_demo4.png';
 
 const tags = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js', 'MongoDB'];
 

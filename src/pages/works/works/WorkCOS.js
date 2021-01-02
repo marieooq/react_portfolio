@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
-import CompanyWorkTemplate from '../../components/WorkTemplate/CompanyWorkTemplate';
-import HeaderImage from '../../img/hoikupedia_header.png';
-import HoikupediaImage1 from '../../img/hoikupedia_faq.gif';
-import HoikupediaImage2 from '../../img/hoikupedia_school_list.gif';
-import HoikupediaImage3 from '../../img/hoikupedia_thumbnails.png';
+import Header from '../../../components/Header/Header';
+import CompanyWorkTemplate from '../../../components/WorkTemplate/CompanyWorkTemplate';
+import HeaderImage from '../../../img/hoikupedia_header.png';
+import HoikupediaImage1 from '../../../img/hoikupedia_faq.gif';
+import HoikupediaImage2 from '../../../img/hoikupedia_school_list.gif';
+import HoikupediaImage3 from '../../../img/hoikupedia_thumbnails.png';
 
 //////////////////////////////////////
 // set values according to a project
