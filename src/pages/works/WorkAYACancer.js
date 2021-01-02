@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header';
+import Header from '../../components/Header/Header';
 import CompanyWorkTemplate from './CompanyWorkTemplate';
 import HeaderImage from '../../img/aya_cancer_header.png';
 import AYACancerImage from '../../img/aya_cancer_image.png';

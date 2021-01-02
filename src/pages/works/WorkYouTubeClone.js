@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header';
+import Header from '../../components/Header/Header';
 import CompanyWorkTemplate from './CompanyWorkTemplate';
 import YouTubeImage from '../../img/youtube_clone_header.png';
 import YouTubeCloneImage1 from '../../img/youtube_clone.gif';

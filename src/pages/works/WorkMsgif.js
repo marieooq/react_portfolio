@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header';
+import Header from '../../components/Header/Header';
 import WorkTemplate from './WorkTemplate';
 import HeaderImage from '../../img/msgif_header.png';
 import ContentImage from '../../img/msgif_demo.gif';

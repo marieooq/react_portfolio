@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header';
+import Header from '../../components/Header/Header';
 import WorkTemplate from './WorkTemplate';
 import HeaderImage from '../../img/crud_blog_header.png';
 import ContentImage1 from '../../img/crud_blog_demo1.png';

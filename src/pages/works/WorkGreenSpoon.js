@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header';
+import Header from '../../components/Header/Header';
 import CompanyWorkTemplate from './CompanyWorkTemplate';
 import HeaderImage from '../../img/green_spoon_header.png';
 import GreenSpoonImage from '../../img/green_spoon_image.png';

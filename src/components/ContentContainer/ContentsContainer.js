@@ -1,8 +1,8 @@
 import React from 'react';
-import Content from './Content';
+import Content from '../Content/Content';
 import { Link, useLocation } from 'react-router-dom';
 import './ContentsContainer.css';
-import SimpleSelect from './SimpleSelect';
+import SimpleSelect from '../../components/Select/SimpleSelect';
 
 const ContentsContainer = (props) => {
   let location = useLocation();

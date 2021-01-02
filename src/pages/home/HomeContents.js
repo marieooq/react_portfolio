@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ContentsContainer from '../../components/ContentsContainer';
 import worksList from '../../setting/worksList';
+import ContentsContainer from '../../components/ContentContainer/ContentsContainer';
 
 const HomeContents = () => {
   const [project, setProject] = useState('all');

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navigation.scss';
 import { Link } from 'react-router-dom';
-import logo from '../img/logo.png';
+import logo from '../../img/logo.png';
 
 const Navigation = () => {
   const clickHandle = () => {
@@ -12,7 +12,7 @@ const Navigation = () => {
     Home: '/',
     Works: '/works',
     About: '/about',
-    Blog: '/blog'
+    Blog: '/blog',
   };
 
   const navLinks = Object.keys(sections).map((keyName, index) => {

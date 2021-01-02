@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import Layout from '../../components/Layout';
-// import Header from '../../components/Header';
+import Layout from '../../components/Layout/Layout';
 import worksImage from '../../img/works.png';
 import './Works.css';
-import ContentsContainer from '../../components/ContentsContainer';
+import ContentsContainer from '../../components/ContentContainer/ContentsContainer';
 import worksList from '../../setting/worksList';
 
 const Works = () => {
@@ -13,7 +12,6 @@ const Works = () => {
   };
 
   return (
-    //className="works-wrapper"
     <Layout section="works" imgSrc={worksImage}>
       <ContentsContainer
         project={project}

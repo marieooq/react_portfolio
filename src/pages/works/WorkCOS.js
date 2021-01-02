@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header';
+import Header from '../../components/Header/Header';
 import CompanyWorkTemplate from './CompanyWorkTemplate';
 import HeaderImage from '../../img/hoikupedia_header.png';
 import HoikupediaImage1 from '../../img/hoikupedia_faq.gif';

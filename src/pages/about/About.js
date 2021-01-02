@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../../components/Layout';
+import Layout from '../../components/Layout/Layout';
 import aboutImage from '../../img/about_photo.png';
 import './About.scss';
 
