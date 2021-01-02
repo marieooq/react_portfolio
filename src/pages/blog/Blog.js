@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Layout from '../../components/Layout';
+import Layout from '../../components/Layout/Layout';
 import BlogImage from '../../img/blog.png';
 import './Blog.scss';
 import axios from 'axios';
