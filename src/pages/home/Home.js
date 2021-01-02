@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Layout from '../../components/Layout/Layout';
-import HomeContents from './HomeContents';
+import HomeContents from '../../components/HomeContents/HomeContents';
 
 const Home = () => {
   return (
