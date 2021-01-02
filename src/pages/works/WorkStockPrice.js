@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import WorkTemplate from './WorkTemplate';
+import WorkTemplate from '../../components/WorkTemplate/WorkTemplate';
 import HeaderImage from '../../img/stock_price_header.png';
 
 const tags = ['HTML5', 'CSS3', 'TypeScript', 'React', 'Ant Design'];

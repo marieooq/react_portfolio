@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import CompanyWorkTemplate from './CompanyWorkTemplate';
+import CompanyWorkTemplate from '../../components/WorkTemplate/WorkTemplate';
 import HeaderImage from '../../img/aya_cancer_header.png';
 import AYACancerImage from '../../img/aya_cancer_image.png';
 

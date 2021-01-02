@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import WorkTemplate from './WorkTemplate';
+import WorkTemplate from '../../components/WorkTemplate/WorkTemplate';
 import HeaderImage from '../../img/vanstudents_header.png';
 import ContentImage1 from '../../img/react_blog_demo1.png';
 
