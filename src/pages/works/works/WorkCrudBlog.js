@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../../components/Header/Header';
+import Layout from '../../../components/Layout/Layout';
 import WorkTemplate from '../../../components/WorkTemplate/WorkTemplate';
 import HeaderImage from '../../../img/crud_blog_header.png';
 import ContentImage1 from '../../../img/crud_blog_demo1.png';
@@ -56,18 +56,19 @@ const workObj = {
 
 const WorkCrudBlog = () => (
   <div>
-    <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
-    <WorkTemplate
-      title={workObj.title}
-      subTitle={workObj.subTitle}
-      tags={tagList}
-      description={workObj.description}
-      howItWorksDescription={workObj.howItWorks}
-      contentImage={imageList}
-      difficultPartDescription={workObj.difficultPart}
-      problemSolvingDescription={workObj.problemSolving}
-      relatedWebsitesLists={relatedWebsitesLists}
-    />
+    <Layout section="work" imgSrc={HeaderImage} url={workObj.url}>
+      <WorkTemplate
+        title={workObj.title}
+        subTitle={workObj.subTitle}
+        tags={tagList}
+        description={workObj.description}
+        howItWorksDescription={workObj.howItWorks}
+        contentImage={imageList}
+        difficultPartDescription={workObj.difficultPart}
+        problemSolvingDescription={workObj.problemSolving}
+        relatedWebsitesLists={relatedWebsitesLists}
+      />
+    </Layout>
   </div>
 );
 

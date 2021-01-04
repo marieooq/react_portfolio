@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../../components/Header/Header';
+import Layout from '../../../components/Layout/Layout';
 import CompanyWorkTemplate from '../../../components/WorkTemplate/CompanyWorkTemplate';
 import HeaderImage from '../../../img/green_spoon_header.png';
 import GreenSpoonImage from '../../../img/green_spoon_image.png';
@@ -61,8 +61,7 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(
 );
 
 const WorkGreenSpoon = () => (
-  <div>
-    <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
+  <Layout section="work" imgSrc={HeaderImage} url={workObj.url}>
     <CompanyWorkTemplate
       title={workObj.title}
       subTitle={workObj.subTitle}
@@ -73,7 +72,7 @@ const WorkGreenSpoon = () => (
       contentImage={imageList}
       relatedWebsitesLists={relatedWebsitesLists}
     />
-  </div>
+  </Layout>
 );
 
 export default WorkGreenSpoon;

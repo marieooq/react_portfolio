@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../../components/Header/Header';
+import Layout from '../../../components/Layout/Layout';
 import CompanyWorkTemplate from '../../../components/WorkTemplate/CompanyWorkTemplate';
 import YouTubeImage from '../../../img/youtube_clone_header.png';
 import YouTubeCloneImage1 from '../../../img/youtube_clone.gif';
@@ -70,8 +70,7 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(
 );
 
 const WorkYouTubeClone = () => (
-  <div>
-    <Header section="work" imgSrc={YouTubeImage} url={workObj.url} />
+  <Layout section="work" imgSrc={YouTubeImage} url={workObj.url}>
     <CompanyWorkTemplate
       title={workObj.title}
       subTitle={workObj.subTitle}
@@ -82,7 +81,7 @@ const WorkYouTubeClone = () => (
       contentImage={imageList}
       relatedWebsitesLists={relatedWebsitesLists}
     />
-  </div>
+  </Layout>
 );
 
 export default WorkYouTubeClone;

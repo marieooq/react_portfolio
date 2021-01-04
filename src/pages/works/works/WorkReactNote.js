@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../../components/Header/Header';
+import Layout from '../../../components/Layout/Layout';
 import WorkTemplate from '../../../components/WorkTemplate/WorkTemplate';
 import HeaderImage from '../../../img/react_note_header.png';
 import ContentImage from '../../../img/react_note_demo.gif';
@@ -57,12 +57,11 @@ const workObj = {
 };
 
 const WorkReactNote = () => (
-  <div>
-    <Header
-      section="work"
-      imgSrc={HeaderImage}
-      url="https://reactnote-93fb1.web.app/"
-    />
+  <Layout
+    section="work"
+    imgSrc={HeaderImage}
+    url="https://reactnote-93fb1.web.app/"
+  >
     <WorkTemplate
       title={workObj.title}
       subTitle={workObj.subTitle}
@@ -74,7 +73,7 @@ const WorkReactNote = () => (
       problemSolvingDescription={workObj.problemSolving}
       relatedWebsitesLists={relatedWebsitesLists}
     />
-  </div>
+  </Layout>
 );
 
 export default WorkReactNote;

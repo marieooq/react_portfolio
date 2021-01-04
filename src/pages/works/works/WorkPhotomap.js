@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../../components/Header/Header';
+import Layout from '../../../components/Layout/Layout';
 import WorkTemplate from '../../../components/WorkTemplate/WorkTemplate';
 import HeaderImage from '../../../img/photomap_header.png';
 import ContentImage1 from '../../../img/photomap_demo1.png';
@@ -54,8 +54,7 @@ const workObj = {
 };
 
 const WorkPhotomap = () => (
-  <div>
-    <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
+  <Layout section="work" imgSrc={HeaderImage} url={workObj.url}>
     <WorkTemplate
       title={workObj.title}
       subTitle={workObj.subTitle}
@@ -67,7 +66,7 @@ const WorkPhotomap = () => (
       problemSolvingDescription={workObj.problemSolving}
       relatedWebsitesLists={relatedWebsitesLists}
     />
-  </div>
+  </Layout>
 );
 
 export default WorkPhotomap;
