@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../../components/Header/Header';
+import Layout from '../../../components/Layout/Layout';
 import WorkTemplate from '../../../components/WorkTemplate/WorkTemplate';
 import HeaderImage from '../../../img/stock_price_header.png';
 
@@ -53,8 +53,7 @@ const workObj = {
 };
 
 const WorkStockPrice = () => (
-  <div>
-    <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
+  <Layout section="work" imgSrc={HeaderImage} url={workObj.url}>
     <WorkTemplate
       title={workObj.title}
       subTitle={workObj.subTitle}
@@ -66,7 +65,7 @@ const WorkStockPrice = () => (
       problemSolvingDescription={workObj.problemSolving}
       relatedWebsitesLists={relatedWebsitesLists}
     />
-  </div>
+  </Layout>
 );
 
 export default WorkStockPrice;

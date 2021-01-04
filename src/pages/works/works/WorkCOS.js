@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../../components/Header/Header';
+import Layout from '../../../components/Layout/Layout';
 import CompanyWorkTemplate from '../../../components/WorkTemplate/CompanyWorkTemplate';
 import HeaderImage from '../../../img/hoikupedia_header.png';
 import HoikupediaImage1 from '../../../img/hoikupedia_faq.gif';
@@ -65,8 +65,7 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(
 );
 
 const WorkCOS = () => (
-  <div>
-    <Header section="work" imgSrc={HeaderImage} url={workObj.url} />
+  <Layout section="work" imgSrc={HeaderImage} url={workObj.url}>
     <CompanyWorkTemplate
       title={workObj.title}
       subTitle={workObj.subTitle}
@@ -77,7 +76,7 @@ const WorkCOS = () => (
       contentImage={imageList}
       relatedWebsitesLists={relatedWebsitesLists}
     />
-  </div>
+  </Layout>
 );
 
 export default WorkCOS;
