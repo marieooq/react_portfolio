@@ -1,10 +1,10 @@
-import React from 'react';
-import SpeechBubble from '../../img/speech_bubble.gif';
-import Background from '../../img/header.jpg';
-import './Header.scss';
+import React from "react";
+import SpeechBubble from "../../img/speech_bubble.gif";
+import Background from "../../img/header.jpg";
+import "./Header.scss";
 
 const Header = (props) => {
-  if (props.section === 'header') {
+  if (props.section === "header") {
     return (
       <header>
         <div className="main-img">
@@ -25,8 +25,7 @@ const Header = (props) => {
               <span id="job-title">a Frontend developer.</span>
             </h1>
             <p>
-              Skilled in JavaScript, React, Redux, jQuery, TypeScript, Node.js,
-              HTML5, CSS3, SaSS, Mongodb, MySQL.
+              Skilled in JavaScript, React, Redux, HTML5, CSS3, and SASS
               <br />
               <br />I am a Frontend developer who is passionate about building
               in JavaScript (including React) and also hands-on User Experience
@@ -92,7 +91,7 @@ const Header = (props) => {
         </div>
       </header>
     );
-  } else if (props.section === 'work') {
+  } else if (props.section === "work") {
     return (
       <header className="work-header">
         <a href={props.url} target="_blank" rel="noopener noreferrer">
@@ -100,7 +99,7 @@ const Header = (props) => {
         </a>
       </header>
     );
-  } else if (props.section === 'work_ph') {
+  } else if (props.section === "work_ph") {
     return (
       <header className="work-ph-header">
         <a

@@ -63,9 +63,11 @@ header.work-ph-header a#productHunt_msgif {
 
 .introduction {
   width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
   .introduction-inner {
     // width: 90%;
-    margin: 0 auto;
+    // margin: 0 auto;
     h1 {
       // width: 500px;
       font-size: 44px;
@@ -290,6 +292,8 @@ header.work-ph-header a#productHunt_msgif {
     // top: 38%;
     // left: 4%;
     // z-index: 2;
+    margin: 40px 0 0;
+
     .introduction-inner {
       margin-top: 90px;
       h1 {
