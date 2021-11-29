@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./features/home/Home";
+import Home from "./features/home";
 import About from "./features/about/About";
 import Works from "./features/works/Works";
 import Blog from "./features/blog/Blog";
