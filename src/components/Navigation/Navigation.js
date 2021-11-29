@@ -1,18 +1,18 @@
-import React from 'react';
-import './Navigation.scss';
-import { Link } from 'react-router-dom';
-import logo from '../../img/logo.png';
+import React from "react";
+import "./Navigation.scss";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 const Navigation = () => {
   const clickHandle = () => {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('open');
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("open");
   };
   const sections = {
-    Home: '/',
-    Works: '/works',
-    About: '/about',
-    Blog: '/blog',
+    Home: "/",
+    Works: "/works",
+    About: "/about",
+    Blog: "/blog",
   };
 
   const navLinks = Object.keys(sections).map((keyName, index) => {

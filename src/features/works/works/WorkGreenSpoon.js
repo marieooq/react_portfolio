@@ -1,33 +1,33 @@
-import React from 'react';
-import Layout from '../../../components/Layout/Layout';
-import CompanyWorkTemplate from '../../../components/WorkTemplate/CompanyWorkTemplate';
-import HeaderImage from '../../../img/green_spoon_header.png';
-import GreenSpoonImage from '../../../img/green_spoon_image.png';
+import React from "react";
+import Layout from "../../../components/Layout/Layout";
+import CompanyWorkTemplate from "../../../components/WorkTemplate/CompanyWorkTemplate";
+import HeaderImage from "../../../assets/green_spoon_header.png";
+import GreenSpoonImage from "../../../assets/green_spoon_image.png";
 
 //////////////////////////////////////
 // set values according to a project
 //////////////////////////////////////
 const workObj = {
-  url: 'https://green-spoon.jp/',
-  title: 'Green Spoon',
+  url: "https://green-spoon.jp/",
+  title: "Green Spoon",
   description:
-    'Greenspoon Inc. is a Japanese startup company that offers high-quality fresh smoothies via e-commerce. My position was completely remote.',
-  headline: 'What I worked on',
+    "Greenspoon Inc. is a Japanese startup company that offers high-quality fresh smoothies via e-commerce. My position was completely remote.",
+  headline: "What I worked on",
 };
 
-const tags = ['PHP Laravel', 'HTML', 'CSS'];
+const tags = ["PHP Laravel", "HTML", "CSS"];
 
 const images = [GreenSpoonImage];
 
 const achievements = [
-  'Built a payment emailing system using PHP Laravel, HTML, and CSS',
+  "Built a payment emailing system using PHP Laravel, HTML, and CSS",
   "Coded a landing page according to Sketch's comprehensive layout",
-  'Communicated closely with teammates in Slack to get work done on time, despite the time difference from Japan',
-  'Managed tasks in asana like stock price and its description.',
+  "Communicated closely with teammates in Slack to get work done on time, despite the time difference from Japan",
+  "Managed tasks in asana like stock price and its description.",
 ];
 
 const relatedWebsites = {
-  'Green Spoon': 'https://green-spoon.jp/',
+  "Green Spoon": "https://green-spoon.jp/",
 };
 //////////////////////////////////////
 //////////////////////////////////////

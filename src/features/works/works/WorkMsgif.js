@@ -1,10 +1,10 @@
-import React from 'react';
-import Layout from '../../../components/Layout/Layout';
-import WorkTemplate from '../../../components/WorkTemplate/WorkTemplate';
-import HeaderImage from '../../../img/msgif_header.png';
-import ContentImage from '../../../img/msgif_demo.gif';
+import React from "react";
+import Layout from "../../../components/Layout/Layout";
+import WorkTemplate from "../../../components/WorkTemplate/WorkTemplate";
+import HeaderImage from "../../../assets/msgif_header.png";
+import ContentImage from "../../../assets/msgif_demo.gif";
 
-const tags = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Redux'];
+const tags = ["HTML5", "CSS3", "JavaScript", "React", "Redux"];
 
 const images = [ContentImage];
 
@@ -17,9 +17,9 @@ const imageList = images.map((elm, index) => {
 });
 
 const relatedWebsites = {
-  'Visit the website': 'https://msgif.net/',
-  GitHub: 'https://github.com/marieooq/react-msgif',
-  'Product Hunt': 'https://www.producthunt.com/posts/msgif',
+  "Visit the website": "https://msgif.net/",
+  GitHub: "https://github.com/marieooq/react-msgif",
+  "Product Hunt": "https://www.producthunt.com/posts/msgif",
 };
 
 const relatedWebsitesLists = Object.keys(relatedWebsites).map(
@@ -40,11 +40,11 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(
 
 const workObj = {
   img: { HeaderImage },
-  url: 'https://msgif.net/',
-  title: 'Msgif',
+  url: "https://msgif.net/",
+  title: "Msgif",
   description: (
     <>
-      {' '}
+      {" "}
       Msgif is consists of two words, “message” and “gif”. As its name suggests
       this is a GIF generator that converts a message typed by user into a GIF
       animation. I use React and Redux to manage components. To capture the text
@@ -53,14 +53,14 @@ const workObj = {
       library,”jsgif”.
       <br />
       <br />
-      I’ve launched it on{' '}
+      I’ve launched it on{" "}
       <a
         href="https://www.producthunt.com/posts/msgif"
         target="_blank"
         rel="noopener noreferrer"
       >
         ProductHunt
-      </a>{' '}
+      </a>{" "}
       on February 7th, 2020. It ranked 9th and got 185 votes as of the day. The
       number of votes grew up to 303 as of February 15th, 2020. More than 1000
       people visited my website in one day and it was so thrilling to me!
