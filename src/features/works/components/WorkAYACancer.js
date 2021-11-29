@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../../../components/Layout/Layout";
 import CompanyWorkTemplate from "../../../components/WorkTemplate/CompanyWorkTemplate";
-import HeaderImage from "../../../assets/aya_cancer_header.png";
-import AYACancerImage from "../../../assets/aya_cancer_image.png";
+import HeaderImage from "../assets/aya_cancer_header.png";
+import AYACancerImage from "../assets/aya_cancer_image.png";
 
 //////////////////////////////////////
 // set values according to a project
