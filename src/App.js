@@ -1,22 +1,22 @@
-import React from 'react';
-import Home from './pages/home/Home';
-import About from './pages/about/About';
-import Works from './pages/works/Works';
-import Blog from './pages/blog/Blog';
-import WorkYouTubeClone from './pages/works/works/WorkYouTubeClone';
-import WorkCOS from './pages/works/works/WorkCOS';
-import WorkAYACancer from './pages/works/works/WorkAYACancer';
-import WorkGreenSpoon from './pages/works/works/WorkGreenSpoon';
-import WorkMsgif from './pages/works/works/WorkMsgif';
-import WorkStockPrice from './pages/works/works/WorkStockPrice';
-import WorkCrudBlog from './pages/works/works/WorkCrudBlog';
-import WorkPhotomap from './pages/works/works/WorkPhotomap';
-import WorkReactBlog from './pages/works/works/WorkReactBlog';
-import WorkReactNote from './pages/works/works/WorkReactNote';
+import React from "react";
+import Home from "./features/home/Home";
+import About from "./features/about/About";
+import Works from "./features/works/Works";
+import Blog from "./features/blog/Blog";
+import WorkYouTubeClone from "./features/works/works/WorkYouTubeClone";
+import WorkCOS from "./features/works/works/WorkCOS";
+import WorkAYACancer from "./features/works/works/WorkAYACancer";
+import WorkGreenSpoon from "./features/works/works/WorkGreenSpoon";
+import WorkMsgif from "./features/works/works/WorkMsgif";
+import WorkStockPrice from "./features/works/works/WorkStockPrice";
+import WorkCrudBlog from "./features/works/works/WorkCrudBlog";
+import WorkPhotomap from "./features/works/works/WorkPhotomap";
+import WorkReactBlog from "./features/works/works/WorkReactBlog";
+import WorkReactNote from "./features/works/works/WorkReactNote";
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import 'font-awesome/css/font-awesome.min.css';
-import ScrollToTop from './app/util/ScrollToTop';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "font-awesome/css/font-awesome.min.css";
+import ScrollToTop from "./app/util/ScrollToTop";
 
 const App = () => (
   <BrowserRouter>
