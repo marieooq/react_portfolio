@@ -65,6 +65,9 @@ header.work-ph-header a#productHunt_msgif {
   width: 90%;
   margin: 0 auto;
   margin-top: 40px;
+  position: absolute;
+  left: 0;
+
   .introduction-inner {
     // width: 90%;
     // margin: 0 auto;
@@ -205,11 +208,8 @@ header.work-ph-header a#productHunt_msgif {
     width: 380px;
     padding: 0px;
     background-color: transparent;
-    z-index: 2;
     // position: absolute;
-    // top: 38%;
-    // left: 4%;
-    // z-index: 2;
+    // left: 0;
     .introduction-inner {
       margin-top: 60px;
       h1 {
@@ -293,6 +293,8 @@ header.work-ph-header a#productHunt_msgif {
     // left: 4%;
     // z-index: 2;
     margin: 40px 0 0;
+    position: absolute;
+    left: 0;
 
     .introduction-inner {
       margin-top: 90px;
