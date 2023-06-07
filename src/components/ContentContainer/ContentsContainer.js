@@ -10,6 +10,9 @@ const ContentsContainer = (props) => {
   const returnFilteredObject = (filteringWord, projectArray) => {
     if (filteringWord === "all") {
       return projectArray;
+    } else if (filteringWord === "featured") {
+      const filteredObj = projectArray.filter((val) => val.featured);
+      return filteredObj;
     } else {
       const filteredObj = projectArray.filter(
         (val) => val.project === filteringWord
