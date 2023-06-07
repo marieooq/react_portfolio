@@ -1,12 +1,9 @@
 import React from "react";
 import Content from "../Content/Content";
-import { Link, useLocation } from "react-router-dom";
 import "./ContentsContainer.css";
 import SimpleSelect from "../../components/Select/SimpleSelect";
 
 const ContentsContainer = (props) => {
-  let location = useLocation();
-
   const returnFilteredObject = (filteringWord, projectArray) => {
     if (filteringWord === "all") {
       return projectArray;
@@ -34,11 +31,6 @@ const ContentsContainer = (props) => {
           handleChange={props.handleChange}
         />
         {contentLists}
-        {location.pathname === "/" && (
-          <div className="view_more">
-            <Link to="/works">View more works</Link>
-          </div>
-        )}
       </div>
     </div>
   );

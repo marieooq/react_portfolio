@@ -1,7 +1,6 @@
 import React from "react";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
-import Works from "./pages/works/Works";
 import Blog from "./pages/blog/Blog";
 import WorkYouTubeClone from "./pages/works/works/WorkYouTubeClone";
 import WorkCOS from "./pages/works/works/WorkCOS";
@@ -25,7 +24,6 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
-        <Route exact path="/works" component={Works} />
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/works/neo-brutalism" component={WorkNeoBrutalism} />
         <Route exact path="/works/youtube-clone" component={WorkYouTubeClone} />
