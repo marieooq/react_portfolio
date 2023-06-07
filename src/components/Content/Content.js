@@ -1,16 +1,14 @@
-import React from 'react';
-import './Content.scss';
-import { Link, useLocation } from 'react-router-dom';
+import React from "react";
+import "./Content.scss";
+import { Link } from "react-router-dom";
 
 const Content = ({ contentObj }) => {
-  let location = useLocation();
-
   const generateProjectLabel = (project) => {
     return <span className="project-label">{`#${project}`}</span>;
   };
 
   const generateGitHubLabel = (project) => {
-    if (project === 'personal') {
+    if (project === "personal") {
       return (
         <a
           href={contentObj.gitHub}
@@ -33,7 +31,7 @@ const Content = ({ contentObj }) => {
   });
   return (
     <div className="contents">
-      {contentObj.featured && location.pathname === '/' ? (
+      {contentObj.featured ? (
         <div className="contents_image">
           <span className="feature_lalbel">Featured</span>
           <Link to={contentObj.url}>
