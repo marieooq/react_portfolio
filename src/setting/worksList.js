@@ -14,7 +14,7 @@ const worksList = [
   {
     image: NeoBrutalism,
     title: "Neo-Brutalism UI",
-    stack: ["React", "TypeScript", "Tailwindcss", "Storybook"],
+    stack: ["React", "TypeScript", "Tailwindcss"],
     gitHub: "https://github.com/marieooq/neo-brutalism-ui-library",
     description:
       "Neo-Brutalism UI is a collection of React and Tailwind CSS-based components that embody a design approach characterized by bold, high-contrast elements and vibrant colors. It offers a unique and eye-catching aesthetic for webpages.",
