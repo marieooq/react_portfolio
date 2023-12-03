@@ -30,7 +30,7 @@ const CompanyWorkTemplate = (props) => {
 
         {props.video && (
           <div className="content-images">
-            <video width="600" height="450" controls>
+            <video width="100%" height="auto" controls>
               <source src={props.video} type="video/mp4" />
             </video>
           </div>
