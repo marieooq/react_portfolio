@@ -4,12 +4,13 @@ import CompanyWorkTemplate from "../../../components/WorkTemplate/CompanyWorkTem
 import NeoBrutalismHeader from "../../../img/neo_brutalism_header.png";
 import NeoBrutalismImage1 from "../../../img/neo_brutalism_ui_demo.gif";
 import NeoBrutalismImage2 from "../../../img/neo_brutalism_ui_storybook_demo.gif";
+import NeoBrutalismImage3 from "../../../img/neo_brutalism_ui_achievement.png";
 
 //////////////////////////////////////
 // set values according to a project
 //////////////////////////////////////
 const workObj = {
-  url: "https://neo_brutalism-ui-library.vercel.app/",
+  url: "https://neo-brutalism-ui-library.vercel.app/",
   title: "Neo-Brutalism UI",
   description:
     "Neo-Brutalism UI is a collection of React and Tailwind CSS-based components that embody a design approach characterized by bold, high-contrast elements and vibrant colors. It offers a unique and eye-catching aesthetic for webpages.",
@@ -18,12 +19,13 @@ const workObj = {
 
 const tags = ["React", "TypeScript", "Tailwindcss", "Storybook"];
 
-const images = [NeoBrutalismImage1, NeoBrutalismImage2];
+const images = [NeoBrutalismImage3, NeoBrutalismImage1, NeoBrutalismImage2];
 
 const achievements = [
   "Built colorful, bold, and eye-catching components based on React and Tailwind CSS.",
   "Created a user-friendly app. It's easy to use! Just copy and paste the code.",
   "Introduced Storybook to facilitate the reuse of components by users.",
+  "Add: As of December 2023, the GitHub star count has reached 80!",
 ];
 
 const relatedWebsites = {
@@ -61,7 +63,7 @@ const relatedWebsitesLists = Object.keys(relatedWebsites).map(
   }
 );
 
-const WorkYouTubeClone = () => (
+const WorkNeoBrutalism = () => (
   <Layout section="work" imgSrc={NeoBrutalismHeader} url={workObj.url}>
     <CompanyWorkTemplate
       title={workObj.title}
@@ -76,4 +78,4 @@ const WorkYouTubeClone = () => (
   </Layout>
 );
 
-export default WorkYouTubeClone;
+export default WorkNeoBrutalism;

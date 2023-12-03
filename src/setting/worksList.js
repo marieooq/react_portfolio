@@ -23,17 +23,6 @@ const worksList = [
     featured: true,
   },
   {
-    image: YouTubeClone,
-    title: "YouTube clone app",
-    stack: ["React Hooks", "context API", "Jest"],
-    gitHub: "https://github.com/marieooq/react-youtube-clone-public",
-    description:
-      "A YouTube clone application using React. You can search videos by keywords and play the video that you choose on this platform.",
-    url: "/works/youtube-clone",
-    project: "personal",
-    featured: true,
-  },
-  {
     image: MessageGif_image,
     title: "Msgif",
     stack: ["React", "Redux", "Sass"],
@@ -41,6 +30,17 @@ const worksList = [
     description:
       "A gif generator that converts your message into a GIF animation.Once you type your message and press a button your message turns into a GIF animation. I launched it on ProductHunt. It got 328 votes as of December 20, 2020.",
     url: "/works/msgif",
+    project: "personal",
+    featured: true,
+  },
+  {
+    image: YouTubeClone,
+    title: "YouTube clone app",
+    stack: ["React Hooks", "context API", "Jest"],
+    gitHub: "https://github.com/marieooq/react-youtube-clone-public",
+    description:
+      "A YouTube clone application using React. You can search videos by keywords and play the video that you choose on this platform.",
+    url: "/works/youtube-clone",
     project: "personal",
     featured: true,
   },
