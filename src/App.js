@@ -13,6 +13,7 @@ import WorkPhotomap from "./pages/works/works/WorkPhotomap";
 import WorkReactBlog from "./pages/works/works/WorkReactBlog";
 import WorkReactNote from "./pages/works/works/WorkReactNote";
 import WorkNeoBrutalism from "./pages/works/works/WorkNeoBrutalism";
+import WorkYouMatterAI from "./pages/works/works/WorkYouMatterAI";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "font-awesome/css/font-awesome.min.css";
@@ -25,6 +26,7 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/blog" component={Blog} />
+        <Route exact path="/works/youmatter-ai" component={WorkYouMatterAI} />
         <Route exact path="/works/neo-brutalism" component={WorkNeoBrutalism} />
         <Route exact path="/works/youtube-clone" component={WorkYouTubeClone} />
         <Route exact path="/works/cos" component={WorkCOS} />

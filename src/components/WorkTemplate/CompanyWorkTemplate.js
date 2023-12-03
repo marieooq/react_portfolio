@@ -1,9 +1,9 @@
-import React from 'react';
-import './WorkTemplate.scss';
+import React from "react";
+import "./WorkTemplate.scss";
 
-const CompanyWorkTemplate = props => {
+const CompanyWorkTemplate = (props) => {
   const cnvertHtml = () => {
-    let div = document.createElement('div');
+    let div = document.createElement("div");
     div.innerHTML = props.difficultPartDescription;
     return div;
   };
@@ -22,13 +22,20 @@ const CompanyWorkTemplate = props => {
 
         <h2 className="headline">{props.headline}</h2>
 
-        <p className="headline-content">
-            {props.achievementDescription}
-        </p>
+        <p className="headline-content">{props.achievementDescription}</p>
 
-        <div className="content-images">{props.contentImage}</div>
+        {props.contentImage && (
+          <div className="content-images">{props.contentImage}</div>
+        )}
 
-       
+        {props.video && (
+          <div className="content-images">
+            <video width="600" height="450" controls>
+              <source src={props.video} type="video/mp4" />
+            </video>
+          </div>
+        )}
+
         <h2 className="headline">Links</h2>
         <ul className="work_links">{props.relatedWebsitesLists}</ul>
       </div>

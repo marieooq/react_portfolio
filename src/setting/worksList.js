@@ -9,8 +9,19 @@ import Photomap_image from "../img/photomap.png";
 import VanstudentBlog_image from "../img/vanstudents_blog.png";
 import ReactNote_image from "../img/react_note.png";
 import NeoBrutalism from "../img/neo_brutalism.png";
+import YouMatter from "../img/youmatter.png";
 
 const worksList = [
+  {
+    image: YouMatter,
+    title: "youmatter AI",
+    stack: ["Next.js", "TypeScript", "Tailwindcss"],
+    description:
+      "A virtual therapy chatbot that allows you to express and organize your feelings through chatting, built using  Next.js, TypeScript, Tailwindcss, Supabase, and OpenAI API.",
+    url: "/works/youmatter-ai",
+    project: "personal",
+    featured: true,
+  },
   {
     image: NeoBrutalism,
     title: "Neo-Brutalism UI",
