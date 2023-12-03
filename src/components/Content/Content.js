@@ -7,19 +7,17 @@ const Content = ({ contentObj }) => {
     return <span className="project-label">{`#${project}`}</span>;
   };
 
-  const generateGitHubLabel = (project) => {
-    if (project === "personal") {
-      return (
-        <a
-          href={contentObj.gitHub}
-          alt="github"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-github"></i> GitHub
-        </a>
-      );
-    }
+  const generateGitHubLabel = (githubLink) => {
+    return (
+      <a
+        href={githubLink}
+        alt="github"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fab fa-github"></i> GitHub
+      </a>
+    );
   };
 
   const stackLink = contentObj.stack.map((val, index) => {
@@ -56,7 +54,7 @@ const Content = ({ contentObj }) => {
 
         <div className="contents_stack_wrapper">
           <ul className="contents_stack">{stackLink}</ul>
-          {generateGitHubLabel(contentObj.project)}
+          {contentObj.gitHub && generateGitHubLabel(contentObj.github)}
         </div>
         <p>{contentObj.description}</p>
         <Link to={contentObj.url} className="contents-detail">

@@ -9,27 +9,27 @@ import Photomap_image from "../img/photomap.png";
 import VanstudentBlog_image from "../img/vanstudents_blog.png";
 import ReactNote_image from "../img/react_note.png";
 import NeoBrutalism from "../img/neo_brutalism.png";
+import YouMatter from "../img/youmatter.png";
 
 const worksList = [
   {
-    image: NeoBrutalism,
-    title: "Neo-Brutalism UI",
-    stack: ["React", "TypeScript", "Tailwindcss", "Storybook"],
-    gitHub: "https://github.com/marieooq/neo-brutalism-ui-library",
+    image: YouMatter,
+    title: "youmatter AI",
+    stack: ["Next.js", "TypeScript", "Tailwindcss"],
     description:
-      "Neo-Brutalism UI is a collection of React and Tailwind CSS-based components that embody a design approach characterized by bold, high-contrast elements and vibrant colors. It offers a unique and eye-catching aesthetic for webpages.",
-    url: "/works/neo-brutalism",
+      "A virtual therapy chatbot that allows you to express and organize your feelings through chatting, built using  Next.js, TypeScript, Tailwindcss, Supabase, and OpenAI API.",
+    url: "/works/youmatter-ai",
     project: "personal",
     featured: true,
   },
   {
-    image: YouTubeClone,
-    title: "YouTube clone app",
-    stack: ["React Hooks", "context API", "Jest"],
-    gitHub: "https://github.com/marieooq/react-youtube-clone-public",
+    image: NeoBrutalism,
+    title: "Neo-Brutalism UI",
+    stack: ["React", "TypeScript", "Tailwindcss"],
+    gitHub: "https://github.com/marieooq/neo-brutalism-ui-library",
     description:
-      "A YouTube clone application using React. You can search videos by keywords and play the video that you choose on this platform.",
-    url: "/works/youtube-clone",
+      "Neo-Brutalism UI is a collection of React and Tailwind CSS-based components that embody a design approach characterized by bold, high-contrast elements and vibrant colors. It offers a unique and eye-catching aesthetic for webpages.",
+    url: "/works/neo-brutalism",
     project: "personal",
     featured: true,
   },
@@ -41,6 +41,17 @@ const worksList = [
     description:
       "A gif generator that converts your message into a GIF animation.Once you type your message and press a button your message turns into a GIF animation. I launched it on ProductHunt. It got 328 votes as of December 20, 2020.",
     url: "/works/msgif",
+    project: "personal",
+    featured: true,
+  },
+  {
+    image: YouTubeClone,
+    title: "YouTube clone app",
+    stack: ["React Hooks", "context API", "Jest"],
+    gitHub: "https://github.com/marieooq/react-youtube-clone-public",
+    description:
+      "A YouTube clone application using React. You can search videos by keywords and play the video that you choose on this platform.",
+    url: "/works/youtube-clone",
     project: "personal",
     featured: true,
   },
