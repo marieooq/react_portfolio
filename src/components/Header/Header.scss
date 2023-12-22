@@ -179,11 +179,13 @@ header.work-ph-header a#productHunt_msgif {
     justify-content: space-between;
   }
   .main-img {
+    flex-shrink: 0;
     img#profile-photo {
       display: block;
       height: 400px;
       margin: 60px 0 0 0;
       z-index: 1;
+
       // margin: 0;
       // position: absolute;
       // top: 5%;
@@ -261,6 +263,7 @@ header.work-ph-header a#productHunt_msgif {
     justify-content: space-between;
   }
   .main-img {
+    flex-shrink: 0;
     img#profile-photo {
       display: block;
       height: 450px;
@@ -332,6 +335,7 @@ header.work-ph-header a#productHunt_msgif {
   }
 
   .main-img {
+    flex-shrink: 0;
     img {
       height: 800px;
       margin: 0;
