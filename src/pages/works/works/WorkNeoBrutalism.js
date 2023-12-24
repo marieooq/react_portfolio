@@ -25,7 +25,7 @@ const achievements = [
   "Built colorful, bold, and eye-catching components based on React and Tailwind CSS.",
   "Created a user-friendly app. It's easy to use! Just copy and paste the code.",
   "Introduced Storybook to facilitate the reuse of components by users.",
-  "Add: As of December 2023, the GitHub star count has reached 80!",
+  "Add: As of December 2023, the GitHub star count has reached 100!",
 ];
 
 const relatedWebsites = {
