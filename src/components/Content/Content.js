@@ -54,7 +54,7 @@ const Content = ({ contentObj }) => {
 
         <div className="contents_stack_wrapper">
           <ul className="contents_stack">{stackLink}</ul>
-          {contentObj.gitHub && generateGitHubLabel(contentObj.github)}
+          {contentObj.gitHub && generateGitHubLabel(contentObj.gitHub)}
         </div>
         <p>{contentObj.description}</p>
         <Link to={contentObj.url} className="contents-detail">

@@ -77,10 +77,12 @@
     a {
       color: var(--fontColor);
       text-decoration: none;
+      display: block;
     }
 
     a:hover {
       text-decoration: underline;
+      cursor: pointer;
     }
 
     ul.contents_stack {
