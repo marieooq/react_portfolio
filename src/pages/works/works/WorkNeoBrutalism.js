@@ -26,6 +26,7 @@ const achievements = [
   "Created a user-friendly app. It's easy to use! Just copy and paste the code.",
   "Introduced Storybook to facilitate the reuse of components by users.",
   "Add: As of December 2023, the GitHub star count has reached 100!",
+  "Add: As of February 2025, the GitHub star count has reached 325! Thank you!",
 ];
 
 const relatedWebsites = {
